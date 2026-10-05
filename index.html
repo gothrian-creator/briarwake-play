@@ -2,58 +2,37 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/briarwake-play/favicon.svg" />
-    <link rel="manifest" href="/briarwake-play/manifest.webmanifest" />
-    <link rel="apple-touch-icon" href="/briarwake-play/icons/icon-192.png" />
-    <meta name="theme-color" content="#121820" />
-    <!-- Tablet / mobile: lock page scale; Phaser handles pinch zoom in-game -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>Briarwake</title>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="theme-color" content="#0a0e0a" />
+    <link rel="icon" href="data:," />
+    <title>Briarwake — travel prototype</title>
     <style>
-      html, body {
-        margin: 0;
-        padding: 0;
-        background: #121820;
-        width: 100%;
-        height: 100%;
-        height: 100dvh;
-        overflow: hidden;
-        overscroll-behavior: none;
-        touch-action: none;
-        -webkit-user-select: none;
-        user-select: none;
-        -webkit-touch-callout: none;
+      html, body { margin: 0; height: 100%; background: #0a0e0a; overflow: hidden; overscroll-behavior: none; }
+      /* touch: no page scroll / pinch / double-tap zoom, no long-press selection, callout or tap flash */
+      html, body, #game, canvas, #touch-ui {
+        touch-action: none; -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; -webkit-tap-highlight-color: transparent;
       }
-      /* Safe areas: keep canvas (and dock) clear of notch / home indicator */
-      #app {
-        box-sizing: border-box;
-        width: 100%;
-        height: 100%;
-        height: 100dvh;
-        min-height: 100dvh;
-        padding:
-          env(safe-area-inset-top, 0px)
-          env(safe-area-inset-right, 0px)
-          env(safe-area-inset-bottom, 0px)
-          env(safe-area-inset-left, 0px);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        touch-action: none;
-        overscroll-behavior: none;
-      }
-      #app canvas {
-        display: block;
-        image-rendering: pixelated;
-        image-rendering: crisp-edges;
-        touch-action: none;
-      }
+      #game { position: fixed; inset: 0; width: 100vw; height: 100vh; height: 100dvh; display: flex; align-items: center; justify-content: center; }
+      canvas { image-rendering: pixelated; image-rendering: crisp-edges; display: block; }
+      /* on-screen controls (ui/controls.js): stick bottom-left, Use bottom-right, Back / Menu above it. Positions are set from JS. */
+      #touch-ui { position: fixed; inset: 0; z-index: 10; pointer-events: none; font-family: monospace; }
+      #touch-ui[hidden] { display: none; }
+      .tc-stick, .tc-btn { position: absolute; box-sizing: border-box; pointer-events: auto; touch-action: none; }
+      .tc-stick { border-radius: 50%; background: rgba(10, 14, 10, 0.42); border: 2px solid rgba(230, 197, 110, 0.55); }
+      .tc-stick.on { background: rgba(10, 14, 10, 0.55); border-color: rgba(255, 233, 168, 0.9); }
+      .tc-knob { position: absolute; left: 50%; top: 50%; width: 42%; height: 42%; margin: -21% 0 0 -21%; border-radius: 50%; background: rgba(230, 197, 110, 0.7); border: 2px solid rgba(0, 0, 0, 0.55); pointer-events: none; }
+      .tc-btn { border-radius: 50%; border: 2px solid rgba(230, 197, 110, 0.75); background: rgba(40, 70, 40, 0.62); color: #fff3c8; font-size: 18px; font-weight: bold; padding: 0; cursor: pointer; }
+      .tc-side { background: rgba(26, 38, 56, 0.66); font-size: 14px; }
+      .tc-rotate { display: none; position: absolute; left: 0; right: 0; top: 8px; text-align: center; color: #e6c56e; font-size: 12px; text-shadow: 0 1px 2px #000; pointer-events: none; }
+      #touch-ui.narrow .tc-rotate { display: block; }
+      .tc-btn.on { background: rgba(110, 160, 90, 0.85); border-color: #ffe9a8; }
     </style>
-    <script type="module" crossorigin src="/briarwake-play/assets/index-DKuWpdUv.js"></script>
+    <script type="module" crossorigin src="./assets/index-C7-6hPlp.js"></script>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="game"></div>
   </body>
 </html>

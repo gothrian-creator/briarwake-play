@@ -1,0 +1,163 @@
+{
+ "what": "P5 rev 2 proposal: a Covenant green that cannot be confused with the Warden green. Ronja decided the Warden stays green.",
+ "status": "proposal, awaiting Ronja's decision (no other worker's files were changed)",
+ "date": "2026-10-01",
+ "warden": {
+  "ramp16": [
+   "#121a10",
+   "#1c2918",
+   "#283a20",
+   "#36502a",
+   "#476634",
+   "#5b7e40",
+   "#74984e"
+  ],
+  "nes": [
+   "K",
+   "K",
+   "n",
+   "G",
+   "G",
+   "G",
+   "G"
+  ],
+  "hueDeg": 97,
+  "saturation": 0.49,
+  "note": "unchanged olive-moss green. Rev 2 drops the g highlight from the Warden (NES n + G only), so the Warden never uses a Covenant key."
+ },
+ "covenantToday": {
+  "source": "briarwake-travel-proto/src/art/registry.js ART_VARIANTS.covenant + FACTION_NES8.covenant + sprites8.js WALKERS.covenant",
+  "cloth1": [
+   "#16221a",
+   "#24382a",
+   "#34523a",
+   "#486e4c",
+   "#628c62",
+   "#84aa7c"
+  ],
+  "paint": [
+   "#142018",
+   "#1c3622",
+   "#26542e",
+   "#34723a",
+   "#50904a",
+   "#74b064"
+  ],
+  "nes": {
+   "cloth1": {
+    "O": "G",
+    "C": "g"
+   },
+   "paint": {
+    "E": "g",
+    "R": "G",
+    "a": "l"
+   },
+   "walker": {
+    "1": "l",
+    "2": "g",
+    "3": "G"
+   }
+  },
+  "problem": "sage green, hue 126 deg vs the Warden 97 deg; dE to the Warden ramp per step [6.5, 11.6, 16.7, 13.1, 17.9, 26.0] (min 10.6 over the mid/light steps), and both use NES G."
+ },
+ "covenantProposed": {
+  "name": "Covenant jade",
+  "ramps16": {
+   "hood7": [
+    "#081a16",
+    "#0c2c22",
+    "#11402f",
+    "#16563e",
+    "#1d6e4e",
+    "#288860",
+    "#3ea474"
+   ],
+   "cloth1": [
+    "#0a1e18",
+    "#0f3426",
+    "#154c38",
+    "#1c664a",
+    "#26845e",
+    "#3ca476"
+   ],
+   "paint": [
+    "#0a1e18",
+    "#0e3a2a",
+    "#13563c",
+    "#1a7450",
+    "#269466",
+    "#40b880"
+   ]
+  },
+  "nes": {
+   "hood7": [
+    "K",
+    "K",
+    "t",
+    "t",
+    "g",
+    "g",
+    "l"
+   ],
+   "cloth1": [
+    "K",
+    "t",
+    "t",
+    "g",
+    "g",
+    "l"
+   ],
+   "paint": [
+    "K",
+    "t",
+    "g",
+    "g",
+    "l",
+    "l"
+   ]
+  },
+  "nesSwaps": {
+   "FACTION_NES8.covenant": {
+    "cloth1": {
+     "O": "g",
+     "C": "l"
+    },
+    "paint": {
+     "E": "g",
+     "R": "t",
+     "a": "l"
+    }
+   },
+   "WALKERS.covenant": {
+    "1": "l",
+    "2": "g",
+    "3": "t"
+   },
+   "note": "replace every G in the Covenant mappings with t (shade) or g (body); l = light, b = optional single glint."
+  },
+  "hueDeg": 157,
+  "saturation": 0.73,
+  "dEvsWarden": {
+   "perStep": [
+    8.7,
+    15.8,
+    23.5,
+    25.1,
+    29.7,
+    36.8
+   ],
+   "minMidLight": 20.6
+  },
+  "why": "moves the Covenant to a cool blue-green (jade / ivy) with more saturation, while the Warden keeps the warm olive moss. At 16-bit the hue gap is 60 degrees and the closest mid/light steps are 20.6 dE apart (today: 10.6); at 8-bit the two share no key (Warden n/G, Covenant t/g/l), so a Covenant patrol can never read as the hero.",
+  "usedBy": "P5 Mossweave Cowl hood layer (items.hood.mossweave, 7 steps) already uses hood7 + t/g/l, so the Covenant piece reads as Covenant.",
+  "brief": "ART-BRIEF says \"Covenant: moss green hoods\". With the Warden in moss green, this proposal changes the Covenant to jade green hoods (still forest green, still Covenant), which needs Ronja's OK."
+ },
+ "toApply": [
+  "registry.js ART_VARIANTS.covenant.cloth1 / .paint = covenantProposed.ramps16.cloth1 / .paint",
+  "registry.js FACTION_NES8.covenant = covenantProposed.nesSwaps[\"FACTION_NES8.covenant\"]",
+  "sprites8.js WALKERS.covenant = covenantProposed.nesSwaps[\"WALKERS.covenant\"]",
+  "optional: biome/flag colours that use G for the Covenant (units.js patrol_covenant flag \"g\" is already fine)"
+ ],
+ "preview": "hubert-previews/warden-vs-covenant-green.png"
+}

@@ -1,0 +1,323 @@
+{
+  "set": "P3 HUD icons",
+  "date": "2026-09-30",
+  "status": "draft, awaiting Ronja's review",
+  "iconWidth": 16,
+  "iconHeight": 16,
+  "palette": "strict NES: every opaque pixel is an exact colour from reference/nes-palette.js; alpha 0/255 only (checked in code)",
+  "nesKeysUsed": [
+    "C",
+    "D",
+    "E",
+    "K",
+    "O",
+    "R",
+    "S",
+    "T",
+    "a",
+    "i",
+    "n",
+    "r",
+    "s",
+    "w"
+  ],
+  "nesColours": {
+    "C": "#fce0a8",
+    "D": "#503000",
+    "E": "#e45c10",
+    "K": "#000000",
+    "O": "#ac7c00",
+    "R": "#881400",
+    "S": "#7c7c7c",
+    "T": "#f0d0b0",
+    "a": "#fca044",
+    "i": "#6888fc",
+    "n": "#004058",
+    "r": "#a81000",
+    "s": "#bcbcbc",
+    "w": "#fcfcfc"
+  },
+  "atlas": {
+    "file": "hud-icons-atlas.png",
+    "width": 160,
+    "height": 16,
+    "columns": 10,
+    "rows": 1,
+    "spacing": 0,
+    "margin": 0
+  },
+  "order": [
+    "spearmen",
+    "pikemen",
+    "archers",
+    "crossbowmen",
+    "swordsmen",
+    "militia",
+    "light-horse",
+    "brigand-chief",
+    "deserter-sergeant",
+    "mercenary-captain"
+  ],
+  "icons": {
+    "spearmen": {
+      "file": "spearmen-icon.png",
+      "index": 0,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "unit": "spear",
+      "batch": "P1",
+      "walker": "P1-consistency/spearman-walker-draft.png",
+      "nesKeys": [
+        "C",
+        "D",
+        "E",
+        "K",
+        "O",
+        "S",
+        "T",
+        "a",
+        "s",
+        "w"
+      ],
+      "design": "head-and-shoulders bust cut from the walker (frame B, upright), weapon cue kept in frame; bottom row = outline"
+    },
+    "pikemen": {
+      "file": "pikemen-icon.png",
+      "index": 1,
+      "rect": {
+        "x": 16,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "unit": "pike",
+      "batch": "P1",
+      "walker": "P1-consistency/pikeman-walker-draft.png",
+      "nesKeys": [
+        "C",
+        "D",
+        "K",
+        "O",
+        "S",
+        "T",
+        "s",
+        "w"
+      ],
+      "design": "head-and-shoulders bust cut from the walker (frame B, upright), weapon cue kept in frame; bottom row = outline"
+    },
+    "archers": {
+      "file": "archers-icon.png",
+      "index": 2,
+      "rect": {
+        "x": 32,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "unit": "archer",
+      "batch": "P1",
+      "walker": "P1-consistency/archer-walker-draft.png",
+      "nesKeys": [
+        "C",
+        "D",
+        "K",
+        "O",
+        "S",
+        "T",
+        "i",
+        "n",
+        "s",
+        "w"
+      ],
+      "design": "head-and-shoulders bust cut from the walker (frame B, upright), weapon cue kept in frame; bottom row = outline"
+    },
+    "crossbowmen": {
+      "file": "crossbowmen-icon.png",
+      "index": 3,
+      "rect": {
+        "x": 48,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "unit": "xbow",
+      "batch": "P1",
+      "walker": "P1-consistency/crossbowman-walker-draft.png",
+      "nesKeys": [
+        "D",
+        "K",
+        "O",
+        "S",
+        "T",
+        "s",
+        "w"
+      ],
+      "design": "head-and-shoulders bust cut from the walker (frame B, upright), weapon cue kept in frame; bottom row = outline"
+    },
+    "swordsmen": {
+      "file": "swordsmen-icon.png",
+      "index": 4,
+      "rect": {
+        "x": 64,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "unit": "sword",
+      "batch": "P1",
+      "walker": "P1-consistency/swordsman-walker-draft.png",
+      "nesKeys": [
+        "D",
+        "E",
+        "K",
+        "O",
+        "R",
+        "S",
+        "T",
+        "a",
+        "s",
+        "w"
+      ],
+      "design": "head-and-shoulders bust cut from the walker (frame B, upright), weapon cue kept in frame; bottom row = outline"
+    },
+    "militia": {
+      "file": "militia-icon.png",
+      "index": 5,
+      "rect": {
+        "x": 80,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "unit": "militia",
+      "batch": "P1",
+      "walker": "P1-consistency/militia-walker-draft.png",
+      "nesKeys": [
+        "C",
+        "D",
+        "K",
+        "O",
+        "S",
+        "T",
+        "i",
+        "n",
+        "s",
+        "w"
+      ],
+      "design": "head-and-shoulders bust cut from the walker (frame B, upright), weapon cue kept in frame; bottom row = outline"
+    },
+    "light-horse": {
+      "file": "light-horse-icon.png",
+      "index": 6,
+      "rect": {
+        "x": 96,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "unit": "horse",
+      "batch": "P1",
+      "walker": "P1-consistency/light-horse-walker-draft.png",
+      "nesKeys": [
+        "C",
+        "D",
+        "K",
+        "O",
+        "R",
+        "S",
+        "T",
+        "s",
+        "w"
+      ],
+      "design": "horse-and-rider: rider head + shoulders from the walker, full horse head (ears, eye, bridle) and neck in front of him, lance tip up behind (never levelled)"
+    },
+    "brigand-chief": {
+      "file": "brigand-chief-icon.png",
+      "index": 7,
+      "rect": {
+        "x": 112,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "unit": "chief",
+      "batch": "P2",
+      "walker": "P2-consistency/brigand-chief-walker-draft.png",
+      "nesKeys": [
+        "C",
+        "D",
+        "E",
+        "K",
+        "O",
+        "S",
+        "T",
+        "a",
+        "n",
+        "r",
+        "s",
+        "w"
+      ],
+      "design": "head-and-shoulders bust cut from the walker (frame B, upright), weapon cue kept in frame; bottom row = outline"
+    },
+    "deserter-sergeant": {
+      "file": "deserter-sergeant-icon.png",
+      "index": 8,
+      "rect": {
+        "x": 128,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "unit": "sergeant",
+      "batch": "P2",
+      "walker": "P2-consistency/deserter-sergeant-walker-draft.png",
+      "nesKeys": [
+        "C",
+        "D",
+        "E",
+        "K",
+        "O",
+        "R",
+        "S",
+        "T",
+        "r",
+        "s",
+        "w"
+      ],
+      "design": "head-and-shoulders bust cut from the walker (frame B, upright), weapon cue kept in frame; bottom row = outline"
+    },
+    "mercenary-captain": {
+      "file": "mercenary-captain-icon.png",
+      "index": 9,
+      "rect": {
+        "x": 144,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "unit": "captain",
+      "batch": "P2",
+      "walker": "P2-consistency/mercenary-captain-walker-draft.png",
+      "nesKeys": [
+        "D",
+        "E",
+        "K",
+        "O",
+        "S",
+        "T",
+        "a",
+        "n",
+        "r",
+        "s",
+        "w"
+      ],
+      "design": "head-and-shoulders bust cut from the walker (frame B, upright), weapon cue kept in frame; bottom row = outline"
+    }
+  },
+  "facing": "right (same as the walkers)",
+  "source": "src/hud_icons.py (re-run after any walker change; icons are cut from / built on the walker art so they cannot drift)"
+}
