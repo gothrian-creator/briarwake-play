@@ -1,0 +1,793 @@
+{
+ "sheets": {
+  "sword": {
+   "file": "guard-sword-back.png",
+   "columns": 6,
+   "rows": [
+    {
+     "name": "idle",
+     "row": 0,
+     "frames": 4,
+     "startFrame": 0,
+     "endFrame": 3,
+     "fps": 5,
+     "loop": true
+    },
+    {
+     "name": "windup",
+     "row": 1,
+     "frames": 3,
+     "startFrame": 6,
+     "endFrame": 8,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "attack",
+     "row": 2,
+     "frames": 4,
+     "startFrame": 12,
+     "endFrame": 15,
+     "fps": 14,
+     "loop": false,
+     "impactFrame": 1,
+     "strikePoint": [
+      149,
+      63
+     ]
+    },
+    {
+     "name": "recover",
+     "row": 3,
+     "frames": 2,
+     "startFrame": 18,
+     "endFrame": 19,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "hit",
+     "row": 4,
+     "frames": 3,
+     "startFrame": 24,
+     "endFrame": 26,
+     "fps": 12,
+     "loop": false
+    },
+    {
+     "name": "dodge",
+     "row": 5,
+     "frames": 3,
+     "startFrame": 30,
+     "endFrame": 32,
+     "fps": 12,
+     "loop": false
+    },
+    {
+     "name": "block",
+     "row": 6,
+     "frames": 3,
+     "startFrame": 36,
+     "endFrame": 38,
+     "fps": 12,
+     "loop": false
+    },
+    {
+     "name": "death",
+     "row": 7,
+     "frames": 6,
+     "startFrame": 42,
+     "endFrame": 47,
+     "fps": 8,
+     "loop": false
+    },
+    {
+     "name": "getup",
+     "row": 8,
+     "frames": 3,
+     "startFrame": 48,
+     "endFrame": 50,
+     "fps": 8,
+     "loop": false
+    }
+   ],
+   "size": [
+    936,
+    1566
+   ],
+   "feetRow": 168,
+   "hitPoint": [
+    80,
+    91
+   ]
+  },
+  "spear": {
+   "file": "guard-spear-back.png",
+   "columns": 6,
+   "rows": [
+    {
+     "name": "idle",
+     "row": 0,
+     "frames": 4,
+     "startFrame": 0,
+     "endFrame": 3,
+     "fps": 5,
+     "loop": true
+    },
+    {
+     "name": "windup",
+     "row": 1,
+     "frames": 3,
+     "startFrame": 6,
+     "endFrame": 8,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "attack",
+     "row": 2,
+     "frames": 4,
+     "startFrame": 12,
+     "endFrame": 15,
+     "fps": 14,
+     "loop": false,
+     "impactFrame": 1,
+     "strikePoint": [
+      145,
+      42
+     ]
+    },
+    {
+     "name": "recover",
+     "row": 3,
+     "frames": 2,
+     "startFrame": 18,
+     "endFrame": 19,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "hit",
+     "row": 4,
+     "frames": 3,
+     "startFrame": 24,
+     "endFrame": 26,
+     "fps": 12,
+     "loop": false
+    },
+    {
+     "name": "dodge",
+     "row": 5,
+     "frames": 3,
+     "startFrame": 30,
+     "endFrame": 32,
+     "fps": 12,
+     "loop": false
+    },
+    {
+     "name": "block",
+     "row": 6,
+     "frames": 3,
+     "startFrame": 36,
+     "endFrame": 38,
+     "fps": 12,
+     "loop": false
+    },
+    {
+     "name": "death",
+     "row": 7,
+     "frames": 6,
+     "startFrame": 42,
+     "endFrame": 47,
+     "fps": 8,
+     "loop": false
+    },
+    {
+     "name": "getup",
+     "row": 8,
+     "frames": 3,
+     "startFrame": 48,
+     "endFrame": 50,
+     "fps": 8,
+     "loop": false
+    }
+   ],
+   "size": [
+    936,
+    1566
+   ],
+   "feetRow": 168,
+   "hitPoint": [
+    67,
+    89
+   ]
+  },
+  "bow": {
+   "file": "guard-bow-back.png",
+   "columns": 6,
+   "rows": [
+    {
+     "name": "idle",
+     "row": 0,
+     "frames": 4,
+     "startFrame": 0,
+     "endFrame": 3,
+     "fps": 5,
+     "loop": true
+    },
+    {
+     "name": "windup",
+     "row": 1,
+     "frames": 3,
+     "startFrame": 6,
+     "endFrame": 8,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "attack",
+     "row": 2,
+     "frames": 3,
+     "startFrame": 12,
+     "endFrame": 14,
+     "fps": 14,
+     "loop": false,
+     "impactFrame": 0,
+     "strikePoint": [
+      129,
+      86
+     ]
+    },
+    {
+     "name": "recover",
+     "row": 3,
+     "frames": 2,
+     "startFrame": 18,
+     "endFrame": 19,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "hit",
+     "row": 4,
+     "frames": 3,
+     "startFrame": 24,
+     "endFrame": 26,
+     "fps": 12,
+     "loop": false
+    },
+    {
+     "name": "dodge",
+     "row": 5,
+     "frames": 3,
+     "startFrame": 30,
+     "endFrame": 32,
+     "fps": 12,
+     "loop": false
+    },
+    {
+     "name": "block",
+     "row": 6,
+     "frames": 3,
+     "startFrame": 36,
+     "endFrame": 38,
+     "fps": 12,
+     "loop": false
+    },
+    {
+     "name": "death",
+     "row": 7,
+     "frames": 6,
+     "startFrame": 42,
+     "endFrame": 47,
+     "fps": 8,
+     "loop": false
+    },
+    {
+     "name": "getup",
+     "row": 8,
+     "frames": 3,
+     "startFrame": 48,
+     "endFrame": 50,
+     "fps": 8,
+     "loop": false
+    }
+   ],
+   "size": [
+    936,
+    1566
+   ],
+   "feetRow": 168,
+   "hitPoint": [
+    74,
+    91
+   ]
+  },
+  "crossbow": {
+   "file": "guard-crossbow-back.png",
+   "columns": 6,
+   "rows": [
+    {
+     "name": "idle",
+     "row": 0,
+     "frames": 4,
+     "startFrame": 0,
+     "endFrame": 3,
+     "fps": 5,
+     "loop": true
+    },
+    {
+     "name": "windup",
+     "row": 1,
+     "frames": 2,
+     "startFrame": 6,
+     "endFrame": 7,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "attack",
+     "row": 2,
+     "frames": 3,
+     "startFrame": 12,
+     "endFrame": 14,
+     "fps": 14,
+     "loop": false,
+     "impactFrame": 0,
+     "strikePoint": [
+      115,
+      50
+     ]
+    },
+    {
+     "name": "recover",
+     "row": 3,
+     "frames": 2,
+     "startFrame": 18,
+     "endFrame": 19,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "hit",
+     "row": 4,
+     "frames": 3,
+     "startFrame": 24,
+     "endFrame": 26,
+     "fps": 12,
+     "loop": false
+    },
+    {
+     "name": "dodge",
+     "row": 5,
+     "frames": 3,
+     "startFrame": 30,
+     "endFrame": 32,
+     "fps": 12,
+     "loop": false
+    },
+    {
+     "name": "block",
+     "row": 6,
+     "frames": 3,
+     "startFrame": 36,
+     "endFrame": 38,
+     "fps": 12,
+     "loop": false
+    },
+    {
+     "name": "death",
+     "row": 7,
+     "frames": 6,
+     "startFrame": 42,
+     "endFrame": 47,
+     "fps": 8,
+     "loop": false
+    },
+    {
+     "name": "getup",
+     "row": 8,
+     "frames": 3,
+     "startFrame": 48,
+     "endFrame": 50,
+     "fps": 8,
+     "loop": false
+    }
+   ],
+   "size": [
+    936,
+    1566
+   ],
+   "feetRow": 168,
+   "hitPoint": [
+    88,
+    91
+   ]
+  },
+  "axe": {
+   "file": "guard-axe-back.png",
+   "columns": 6,
+   "rows": [
+    {
+     "name": "idle",
+     "row": 0,
+     "frames": 4,
+     "startFrame": 0,
+     "endFrame": 3,
+     "fps": 5,
+     "loop": true
+    },
+    {
+     "name": "windup",
+     "row": 1,
+     "frames": 3,
+     "startFrame": 6,
+     "endFrame": 8,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "attack",
+     "row": 2,
+     "frames": 4,
+     "startFrame": 12,
+     "endFrame": 15,
+     "fps": 14,
+     "loop": false,
+     "impactFrame": 1,
+     "strikePoint": [
+      145,
+      69
+     ]
+    },
+    {
+     "name": "recover",
+     "row": 3,
+     "frames": 2,
+     "startFrame": 18,
+     "endFrame": 19,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "hit",
+     "row": 4,
+     "frames": 3,
+     "startFrame": 24,
+     "endFrame": 26,
+     "fps": 12,
+     "loop": false
+    },
+    {
+     "name": "dodge",
+     "row": 5,
+     "frames": 3,
+     "startFrame": 30,
+     "endFrame": 32,
+     "fps": 12,
+     "loop": false
+    },
+    {
+     "name": "block",
+     "row": 6,
+     "frames": 3,
+     "startFrame": 36,
+     "endFrame": 38,
+     "fps": 12,
+     "loop": false
+    },
+    {
+     "name": "death",
+     "row": 7,
+     "frames": 6,
+     "startFrame": 42,
+     "endFrame": 47,
+     "fps": 8,
+     "loop": false
+    },
+    {
+     "name": "getup",
+     "row": 8,
+     "frames": 3,
+     "startFrame": 48,
+     "endFrame": 50,
+     "fps": 8,
+     "loop": false
+    }
+   ],
+   "size": [
+    936,
+    1566
+   ],
+   "feetRow": 168,
+   "hitPoint": [
+    77,
+    91
+   ]
+  },
+  "mace": {
+   "file": "guard-mace-back.png",
+   "columns": 6,
+   "rows": [
+    {
+     "name": "idle",
+     "row": 0,
+     "frames": 4,
+     "startFrame": 0,
+     "endFrame": 3,
+     "fps": 5,
+     "loop": true
+    },
+    {
+     "name": "windup",
+     "row": 1,
+     "frames": 3,
+     "startFrame": 6,
+     "endFrame": 8,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "attack",
+     "row": 2,
+     "frames": 4,
+     "startFrame": 12,
+     "endFrame": 15,
+     "fps": 14,
+     "loop": false,
+     "impactFrame": 1,
+     "strikePoint": [
+      149,
+      67
+     ]
+    },
+    {
+     "name": "recover",
+     "row": 3,
+     "frames": 2,
+     "startFrame": 18,
+     "endFrame": 19,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "hit",
+     "row": 4,
+     "frames": 3,
+     "startFrame": 24,
+     "endFrame": 26,
+     "fps": 12,
+     "loop": false
+    },
+    {
+     "name": "dodge",
+     "row": 5,
+     "frames": 3,
+     "startFrame": 30,
+     "endFrame": 32,
+     "fps": 12,
+     "loop": false
+    },
+    {
+     "name": "block",
+     "row": 6,
+     "frames": 3,
+     "startFrame": 36,
+     "endFrame": 38,
+     "fps": 12,
+     "loop": false
+    },
+    {
+     "name": "death",
+     "row": 7,
+     "frames": 6,
+     "startFrame": 42,
+     "endFrame": 47,
+     "fps": 8,
+     "loop": false
+    },
+    {
+     "name": "getup",
+     "row": 8,
+     "frames": 3,
+     "startFrame": 48,
+     "endFrame": 50,
+     "fps": 8,
+     "loop": false
+    }
+   ],
+   "size": [
+    936,
+    1566
+   ],
+   "feetRow": 168,
+   "hitPoint": [
+    80,
+    91
+   ]
+  },
+  "fists": {
+   "file": "guard-fists-back.png",
+   "columns": 6,
+   "rows": [
+    {
+     "name": "idle",
+     "row": 0,
+     "frames": 4,
+     "startFrame": 0,
+     "endFrame": 3,
+     "fps": 5,
+     "loop": true
+    },
+    {
+     "name": "windup",
+     "row": 1,
+     "frames": 2,
+     "startFrame": 6,
+     "endFrame": 7,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "attack",
+     "row": 2,
+     "frames": 3,
+     "startFrame": 12,
+     "endFrame": 14,
+     "fps": 14,
+     "loop": false,
+     "impactFrame": 1,
+     "strikePoint": [
+      139,
+      82
+     ]
+    },
+    {
+     "name": "recover",
+     "row": 3,
+     "frames": 2,
+     "startFrame": 18,
+     "endFrame": 19,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "hit",
+     "row": 4,
+     "frames": 3,
+     "startFrame": 24,
+     "endFrame": 26,
+     "fps": 12,
+     "loop": false
+    },
+    {
+     "name": "dodge",
+     "row": 5,
+     "frames": 3,
+     "startFrame": 30,
+     "endFrame": 32,
+     "fps": 12,
+     "loop": false
+    },
+    {
+     "name": "block",
+     "row": 6,
+     "frames": 3,
+     "startFrame": 36,
+     "endFrame": 38,
+     "fps": 12,
+     "loop": false
+    },
+    {
+     "name": "death",
+     "row": 7,
+     "frames": 6,
+     "startFrame": 42,
+     "endFrame": 47,
+     "fps": 8,
+     "loop": false
+    },
+    {
+     "name": "getup",
+     "row": 8,
+     "frames": 3,
+     "startFrame": 48,
+     "endFrame": 50,
+     "fps": 8,
+     "loop": false
+    }
+   ],
+   "size": [
+    936,
+    1566
+   ],
+   "feetRow": 168,
+   "hitPoint": [
+    71,
+    91
+   ]
+  }
+ },
+ "frameWidth": 156,
+ "frameHeight": 174,
+ "downed": {
+  "row": "death",
+  "frame": 5,
+  "note": "hold the last death frame while downed (Grok Bot answer 7)"
+ },
+ "newRows": [
+  "dodge",
+  "block",
+  "getup"
+ ],
+ "livery": {
+  "material": "cloth1",
+  "ramp": [
+   "#2a0c14",
+   "#521420",
+   "#7e2428",
+   "#a83c30",
+   "#cc5c40",
+   "#e48a5c"
+  ],
+  "swapTo": {
+   "red": [
+    "#2a0c14",
+    "#521420",
+    "#7e2428",
+    "#a83c30",
+    "#cc5c40",
+    "#e48a5c"
+   ],
+   "blue": [
+    "#10183a",
+    "#1a2a62",
+    "#2a4690",
+    "#3e68b4",
+    "#5c8ed0",
+    "#8cb8e4"
+   ],
+   "ochre": [
+    "#3a2808",
+    "#5e4210",
+    "#8c6218",
+    "#b8841e",
+    "#dcac34",
+    "#f4d060"
+   ],
+   "brown": [
+    "#20140e",
+    "#3a2418",
+    "#58381e",
+    "#7a5028",
+    "#9c6c36",
+    "#bc8c52"
+   ],
+   "cream": [
+    "#4a4030",
+    "#76684c",
+    "#a09068",
+    "#c4b488",
+    "#e0d4a8",
+    "#f4ecce"
+   ],
+   "grey": [
+    "#1c1c24",
+    "#303038",
+    "#4a4a54",
+    "#686872",
+    "#8c8c94",
+    "#b0b0b4"
+   ],
+   "violet": [
+    "#1c1034",
+    "#2e1c58",
+    "#46308a",
+    "#6246b0",
+    "#8466d0",
+    "#a890e8"
+   ]
+  },
+  "note": "recolour layer: the jack and sleeves use only these 6 colours; map them index for index onto another pal16 cloth ramp (green and teal stay reserved for the Warden and the Covenant)"
+ }
+}

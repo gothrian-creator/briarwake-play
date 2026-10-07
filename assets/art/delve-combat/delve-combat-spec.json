@@ -1,0 +1,467 @@
+{
+ "id": "delve-combat",
+ "version": 1,
+ "tier": "16-bit pal16 (warden.png outline rings: #54063a outer, #260a16 inner)",
+ "screen": {
+  "w": 1024,
+  "h": 576
+ },
+ "filter": "nearest",
+ "frames": {
+  "troop": [
+   156,
+   174
+  ],
+  "captain": [
+   208,
+   188
+  ]
+ },
+ "anchors": {
+  "troop": {
+   "x": 78,
+   "y": 168
+  },
+  "captain": {
+   "x": 104,
+   "y": 182
+  },
+  "desc": "feet point inside a frame: setOrigin(x / w, (y + 1) / h) so the feet sit on the slot y"
+ },
+ "scale": {
+  "party": 0.6,
+  "foe": 0.75,
+  "captain": 0.7
+ },
+ "slots": {
+  "party": [
+   {
+    "id": "p0",
+    "row": "front",
+    "x": 330,
+    "y": 556
+   },
+   {
+    "id": "p1",
+    "row": "front",
+    "x": 470,
+    "y": 556
+   },
+   {
+    "id": "p2",
+    "row": "back",
+    "x": 250,
+    "y": 516
+   },
+   {
+    "id": "p3",
+    "row": "back",
+    "x": 395,
+    "y": 516
+   }
+  ],
+  "foes": [
+   {
+    "id": "f0",
+    "x": 600,
+    "y": 392
+   },
+   {
+    "id": "f1",
+    "x": 730,
+    "y": 372
+   },
+   {
+    "id": "f2",
+    "x": 860,
+    "y": 392
+   },
+   {
+    "id": "f3",
+    "x": 790,
+    "y": 330
+   }
+  ],
+  "captain": {
+   "id": "c0",
+   "x": 760,
+   "y": 384,
+   "takes": [
+    "f1",
+    "f3"
+   ],
+   "note": "a captain counts as 2 foe slots"
+  },
+  "desc": "feet positions on the 1024x576 fight screen. Party seen from behind at the bottom (two in front, two behind and offset left); foes centre to upper right. Draw order: back row, front row, then foes by y."
+ },
+ "backRow": {
+  "tint": "one pal16 ramp step darker (~10%)",
+  "apply": "party slots with row=back",
+  "map": {
+   "#2a1c1c": "#2a1c1c",
+   "#463424": "#2a1c1c",
+   "#664e32": "#463424",
+   "#866c44": "#664e32",
+   "#a68a58": "#866c44",
+   "#c2a878": "#a68a58",
+   "#200e16": "#200e16",
+   "#3a1c16": "#200e16",
+   "#58301e": "#3a1c16",
+   "#7a4628": "#58301e",
+   "#9c6034": "#7a4628",
+   "#bc804a": "#9c6034",
+   "#1c1824": "#1c1824",
+   "#2e2c38": "#1c1824",
+   "#44444f": "#2e2c38",
+   "#5c5e68": "#44444f",
+   "#7a7e84": "#5c5e68",
+   "#9ea09e": "#7a7e84",
+   "#c8c6b6": "#9ea09e",
+   "#1a1618": "#1a1618",
+   "#2c2628": "#1a1618",
+   "#403a38": "#2c2628",
+   "#58504a": "#403a38",
+   "#746a60": "#58504a",
+   "#948878": "#746a60",
+   "#2a1a0a": "#2a1a0a",
+   "#4a3010": "#2a1a0a",
+   "#70501a": "#4a3010",
+   "#987226": "#70501a",
+   "#bf9838": "#987226",
+   "#e2c464": "#bf9838",
+   "#5a2808": "#5a2808",
+   "#94500c": "#5a2808",
+   "#cc8418": "#94500c",
+   "#f0b440": "#cc8418",
+   "#fcdc78": "#f0b440",
+   "#fff8c8": "#fcdc78",
+   "#2c241c": "#2c241c",
+   "#4a3e32": "#2c241c",
+   "#6e6050": "#4a3e32",
+   "#968672": "#6e6050",
+   "#bcae96": "#968672",
+   "#ddd2bc": "#bcae96",
+   "#2a2018": "#2a2018",
+   "#463626": "#2a2018",
+   "#665236": "#463626",
+   "#88704a": "#665236",
+   "#a88e60": "#88704a",
+   "#c4ac7c": "#a88e60",
+   "#160f0b": "#160f0b",
+   "#261a12": "#160f0b",
+   "#3a2a1c": "#261a12",
+   "#503c28": "#3a2a1c",
+   "#6a5236": "#503c28",
+   "#866a48": "#6a5236",
+   "#2e2a36": "#2e2a36",
+   "#44404c": "#2e2a36",
+   "#5e5a66": "#44404c",
+   "#7c7882": "#5e5a66",
+   "#9c98a0": "#7c7882",
+   "#bcb8bc": "#9c98a0",
+   "#33282a": "#33282a",
+   "#4c3c3a": "#33282a",
+   "#685652": "#4c3c3a",
+   "#867268": "#685652",
+   "#a48e80": "#867268",
+   "#c2ac9a": "#a48e80",
+   "#1a1828": "#1a1828",
+   "#2a2840": "#1a1828",
+   "#3c3c58": "#2a2840",
+   "#505470": "#3c3c58",
+   "#6a7090": "#505470",
+   "#8a92ae": "#6a7090",
+   "#3a1a1c": "#3a1a1c",
+   "#62241a": "#3a1a1c",
+   "#8c3418": "#62241a",
+   "#b04a1c": "#8c3418",
+   "#cc6a2a": "#b04a1c",
+   "#e08e44": "#cc6a2a",
+   "#3a2610": "#3a2610",
+   "#5c3e18": "#3a2610",
+   "#84602a": "#5c3e18",
+   "#a8823a": "#84602a",
+   "#c8a44e": "#a8823a",
+   "#e2c870": "#c8a44e",
+   "#f0e8d6": "#ddd2bc",
+   "#0c2c22": "#0c2c22",
+   "#11402f": "#0c2c22",
+   "#16563e": "#11402f",
+   "#1d6e4e": "#16563e",
+   "#288860": "#1d6e4e",
+   "#3ea474": "#288860",
+   "#150f2a": "#150f2a",
+   "#20183e": "#150f2a",
+   "#2c2256": "#20183e",
+   "#3a2e70": "#2c2256",
+   "#4c3e8e": "#3a2e70",
+   "#6656ae": "#4c3e8e",
+   "#1c2918": "#1c2918",
+   "#283a20": "#1c2918",
+   "#36502a": "#283a20",
+   "#476634": "#36502a",
+   "#5b7e40": "#476634",
+   "#74984e": "#5b7e40",
+   "#92b45c": "#74984e",
+   "#3a2a10": "#3a2a10",
+   "#5a4018": "#3a2a10",
+   "#7e5c24": "#5a4018",
+   "#a07c34": "#7e5c24",
+   "#c0a048": "#a07c34",
+   "#dcc068": "#c0a048",
+   "#121a10": "#121a10",
+   "#b4d070": "#92b45c",
+   "#f4e090": "#e2c464",
+   "#2c3450": "#2c3450",
+   "#4a5878": "#2c3450",
+   "#7488a8": "#4a5878",
+   "#a4b6d0": "#7488a8",
+   "#cedae8": "#a4b6d0",
+   "#eef4fa": "#cedae8",
+   "#12203e": "#12203e",
+   "#1a3262": "#12203e",
+   "#244e86": "#1a3262",
+   "#3070a8": "#244e86",
+   "#4c92c4": "#3070a8",
+   "#80bcdc": "#4c92c4",
+   "#bce0ec": "#80bcdc",
+   "#4a3822": "#4a3822",
+   "#6e5632": "#4a3822",
+   "#96784a": "#6e5632",
+   "#b89a62": "#96784a",
+   "#d4b87c": "#b89a62",
+   "#e8d29c": "#d4b87c",
+   "#241612": "#241612",
+   "#3a2418": "#241612",
+   "#54362a": "#3a2418",
+   "#6e4a38": "#54362a",
+   "#8a644a": "#6e4a38",
+   "#a8805e": "#8a644a",
+   "#3a2c22": "#3a2c22",
+   "#54443a": "#3a2c22",
+   "#6e5c4c": "#54443a",
+   "#8a7660": "#6e5c4c",
+   "#a8927a": "#8a7660",
+   "#c4ae94": "#a8927a",
+   "#3a1c22": "#3a1c22",
+   "#64342e": "#3a1c22",
+   "#8e523c": "#64342e",
+   "#b67250": "#8e523c",
+   "#d69466": "#b67250",
+   "#ecb888": "#d69466",
+   "#1e1216": "#1e1216",
+   "#36201c": "#1e1216",
+   "#503222": "#36201c",
+   "#6c482c": "#503222",
+   "#88603a": "#6c482c",
+   "#2a0c14": "#2a0c14",
+   "#521420": "#2a0c14",
+   "#7e2428": "#521420",
+   "#a83c30": "#7e2428",
+   "#cc5c40": "#a83c30",
+   "#e48a5c": "#cc5c40",
+   "#10183a": "#10183a",
+   "#1a2a62": "#10183a",
+   "#2a4690": "#1a2a62",
+   "#3e68b4": "#2a4690",
+   "#5c8ed0": "#3e68b4",
+   "#8cb8e4": "#5c8ed0",
+   "#0c2418": "#0c2418",
+   "#143a24": "#0c2418",
+   "#1e5632": "#143a24",
+   "#2c7640": "#1e5632",
+   "#44965a": "#2c7640",
+   "#6cb678": "#44965a",
+   "#3a2808": "#3a2808",
+   "#5e4210": "#3a2808",
+   "#8c6218": "#5e4210",
+   "#b8841e": "#8c6218",
+   "#dcac34": "#b8841e",
+   "#f4d060": "#dcac34",
+   "#1c1034": "#1c1034",
+   "#2e1c58": "#1c1034",
+   "#46308a": "#2e1c58",
+   "#6246b0": "#46308a",
+   "#8466d0": "#6246b0",
+   "#a890e8": "#8466d0",
+   "#0c2a30": "#0c2a30",
+   "#144450": "#0c2a30",
+   "#1e6070": "#144450",
+   "#2c8290": "#1e6070",
+   "#48a4ae": "#2c8290",
+   "#7cc8cc": "#48a4ae",
+   "#3a1428": "#3a1428",
+   "#64203e": "#3a1428",
+   "#90345a": "#64203e",
+   "#b8507a": "#90345a",
+   "#d8749a": "#b8507a",
+   "#ee9cb8": "#d8749a",
+   "#4a4030": "#4a4030",
+   "#76684c": "#4a4030",
+   "#a09068": "#76684c",
+   "#c4b488": "#a09068",
+   "#e0d4a8": "#c4b488",
+   "#f4ecce": "#e0d4a8",
+   "#1c1c24": "#1c1c24",
+   "#303038": "#1c1c24",
+   "#4a4a54": "#303038",
+   "#686872": "#4a4a54",
+   "#8c8c94": "#686872",
+   "#b0b0b4": "#8c8c94",
+   "#20140e": "#20140e",
+   "#58381e": "#3a2418",
+   "#7a5028": "#58381e",
+   "#9c6c36": "#7a5028",
+   "#bc8c52": "#9c6c36",
+   "#0c0a10": "#0c0a10",
+   "#18141e": "#0c0a10",
+   "#26202c": "#18141e",
+   "#382f40": "#26202c",
+   "#4c4256": "#382f40",
+   "#64586e": "#4c4256",
+   "#5a5058": "#5a5058",
+   "#8c828c": "#5a5058",
+   "#b8b0b8": "#8c828c",
+   "#d8d2d8": "#b8b0b8",
+   "#eeeaee": "#d8d2d8",
+   "#fcfaf8": "#eeeaee",
+   "#3a1608": "#3a1608",
+   "#6a2a0c": "#3a1608",
+   "#9a4410": "#6a2a0c",
+   "#c8641a": "#9a4410",
+   "#e88a2c": "#c8641a",
+   "#f8b050": "#e88a2c"
+  },
+  "desc": "colour -> colour; outline colours map to themselves. Apply once to a copy of the texture (canvas recolour), not as a multiply tint, so it stays inside pal16."
+ },
+ "attackDirection": {
+  "party": "toward the upper right",
+  "foes": "toward the lower left"
+ },
+ "party": {
+  "hero": {
+   "base": "P5-warden-gear/warden-gear.json (back view)",
+   "addon": "P5-warden-delve/warden-delve.json",
+   "addonRows": [
+    "dodge",
+    "block",
+    "getup",
+    "windup_fists",
+    "attack_fists",
+    "recover_fists"
+   ],
+   "downed": {
+    "row": "death",
+    "frame": 5
+   }
+  },
+  "guard": {
+   "meta": "guards.json",
+   "classes": [
+    "sword",
+    "spear",
+    "bow",
+    "crossbow",
+    "axe",
+    "mace",
+    "fists"
+   ],
+   "downed": {
+    "row": "death",
+    "frame": 5,
+    "note": "hold the last death frame while downed (Grok Bot answer 7)"
+   },
+   "livery": "guards.json livery (recolour layer)"
+  }
+ },
+ "foes": {
+  "crawler": {
+   "meta": "crawler.json",
+   "file": "crawler-front.png",
+   "frame": [
+    156,
+    174
+   ],
+   "captain": false,
+   "moves": [
+    "bite",
+    "lunge"
+   ],
+   "reactions": [
+    "hit",
+    "dodge",
+    "death"
+   ]
+  },
+  "young-wolf": {
+   "meta": "wolves.json",
+   "file": "young-wolf-front.png",
+   "frame": [
+    156,
+    174
+   ],
+   "captain": false,
+   "moves": [
+    "bite",
+    "pounce"
+   ],
+   "reactions": [
+    "hit",
+    "dodge",
+    "block",
+    "death"
+   ]
+  },
+  "wolf-mother": {
+   "meta": "wolves.json",
+   "file": "wolf-mother-front.png",
+   "frame": [
+    208,
+    188
+   ],
+   "captain": true,
+   "moves": [
+    "finish",
+    "howl",
+    "maul"
+   ],
+   "reactions": [
+    "hit",
+    "death"
+   ]
+  }
+ },
+ "brigands": {
+  "meta": "brigands-delve.json",
+  "units": [
+   "swordsmen",
+   "archers",
+   "militia",
+   "brigand-chief"
+  ],
+  "desc": "brigands keep the P1/P2 front sheets (idle, windup/attack/recover = swing, hit, death); shove, dodge and block come from the add-on sheets, same grid and anchor, same game tint"
+ },
+ "reactions": {
+  "hit": 3,
+  "dodge": 3,
+  "block": 3,
+  "downed": "hold death last frame",
+  "getup": 3,
+  "death": "5 foes / 6 party",
+  "crit": "code: white flash + the hit frames (no art)"
+ },
+ "effects": {
+  "sheets": [],
+  "attachTo": [
+   "strikePoint",
+   "hitPoint"
+  ],
+  "desc": "effects ship as separate sheets placed at the attacker strikePoint / target hitPoint (frame px, scale with the sprite). Dithered glows, alpha 0/255. Numbers, crit flash and the wipe are code. Batches 4+ fill this list."
+ },
+ "travel": "foe rows carry travel[] (frame px, +x = away from the party): the scene moves the sprite by it, so lunges and pounces can cross the gap without clipping the frame",
+ "backdrop": {
+  "source": "the current delve view (delve16 / delveWalls16 composed 320x240)",
+  "scale": "fit 1024x576, cover",
+  "treat": "blurred and darkened in code (design doc 6.1)"
+ }
+}
