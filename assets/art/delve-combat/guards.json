@@ -89,11 +89,175 @@
      "endFrame": 50,
      "fps": 8,
      "loop": false
+    },
+    {
+     "name": "use",
+     "row": 9,
+     "frames": 4,
+     "startFrame": 54,
+     "endFrame": 57,
+     "fps": 8,
+     "loop": false
+    },
+    {
+     "name": "use_oil",
+     "row": 10,
+     "frames": 4,
+     "startFrame": 60,
+     "endFrame": 63,
+     "fps": 12,
+     "loop": false
+    },
+    {
+     "name": "use_rope",
+     "row": 11,
+     "frames": 4,
+     "startFrame": 66,
+     "endFrame": 69,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "windup_shieldwall",
+     "row": 12,
+     "frames": 1,
+     "startFrame": 72,
+     "endFrame": 72,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "attack_shieldwall",
+     "row": 13,
+     "frames": 4,
+     "startFrame": 78,
+     "endFrame": 81,
+     "fps": 12,
+     "loop": false,
+     "impactFrame": 1,
+     "strikePoint": [
+      123,
+      50
+     ]
+    },
+    {
+     "name": "recover_shieldwall",
+     "row": 14,
+     "frames": 1,
+     "startFrame": 84,
+     "endFrame": 84,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "windup_mark",
+     "row": 15,
+     "frames": 1,
+     "startFrame": 90,
+     "endFrame": 90,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "attack_mark",
+     "row": 16,
+     "frames": 4,
+     "startFrame": 96,
+     "endFrame": 99,
+     "fps": 12,
+     "loop": false,
+     "impactFrame": 1,
+     "strikePoint": [
+      131,
+      45
+     ]
+    },
+    {
+     "name": "recover_mark",
+     "row": 17,
+     "frames": 1,
+     "startFrame": 102,
+     "endFrame": 102,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "windup_rally",
+     "row": 18,
+     "frames": 1,
+     "startFrame": 108,
+     "endFrame": 108,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "attack_rally",
+     "row": 19,
+     "frames": 4,
+     "startFrame": 114,
+     "endFrame": 117,
+     "fps": 12,
+     "loop": false,
+     "impactFrame": 1,
+     "strikePoint": [
+      131,
+      45
+     ]
+    },
+    {
+     "name": "recover_rally",
+     "row": 20,
+     "frames": 1,
+     "startFrame": 120,
+     "endFrame": 120,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "windup_flare",
+     "row": 21,
+     "frames": 1,
+     "startFrame": 126,
+     "endFrame": 126,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "attack_flare",
+     "row": 22,
+     "frames": 4,
+     "startFrame": 132,
+     "endFrame": 135,
+     "fps": 12,
+     "loop": false,
+     "impactFrame": 1,
+     "strikePoint": [
+      129,
+      45
+     ]
+    },
+    {
+     "name": "recover_flare",
+     "row": 23,
+     "frames": 1,
+     "startFrame": 138,
+     "endFrame": 138,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "cast",
+     "row": 24,
+     "frames": 6,
+     "startFrame": 144,
+     "endFrame": 149,
+     "fps": 8,
+     "loop": false
     }
    ],
    "size": [
     936,
-    1566
+    4350
    ],
    "feetRow": 168,
    "hitPoint": [
@@ -190,11 +354,175 @@
      "endFrame": 50,
      "fps": 8,
      "loop": false
+    },
+    {
+     "name": "use",
+     "row": 9,
+     "frames": 4,
+     "startFrame": 54,
+     "endFrame": 57,
+     "fps": 8,
+     "loop": false
+    },
+    {
+     "name": "use_oil",
+     "row": 10,
+     "frames": 4,
+     "startFrame": 60,
+     "endFrame": 63,
+     "fps": 12,
+     "loop": false
+    },
+    {
+     "name": "use_rope",
+     "row": 11,
+     "frames": 4,
+     "startFrame": 66,
+     "endFrame": 69,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "windup_shieldwall",
+     "row": 12,
+     "frames": 1,
+     "startFrame": 72,
+     "endFrame": 72,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "attack_shieldwall",
+     "row": 13,
+     "frames": 4,
+     "startFrame": 78,
+     "endFrame": 81,
+     "fps": 12,
+     "loop": false,
+     "impactFrame": 1,
+     "strikePoint": [
+      111,
+      102
+     ]
+    },
+    {
+     "name": "recover_shieldwall",
+     "row": 14,
+     "frames": 1,
+     "startFrame": 84,
+     "endFrame": 84,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "windup_mark",
+     "row": 15,
+     "frames": 1,
+     "startFrame": 90,
+     "endFrame": 90,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "attack_mark",
+     "row": 16,
+     "frames": 4,
+     "startFrame": 96,
+     "endFrame": 99,
+     "fps": 12,
+     "loop": false,
+     "impactFrame": 1,
+     "strikePoint": [
+      117,
+      65
+     ]
+    },
+    {
+     "name": "recover_mark",
+     "row": 17,
+     "frames": 1,
+     "startFrame": 102,
+     "endFrame": 102,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "windup_rally",
+     "row": 18,
+     "frames": 1,
+     "startFrame": 108,
+     "endFrame": 108,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "attack_rally",
+     "row": 19,
+     "frames": 4,
+     "startFrame": 114,
+     "endFrame": 117,
+     "fps": 12,
+     "loop": false,
+     "impactFrame": 1,
+     "strikePoint": [
+      121,
+      44
+     ]
+    },
+    {
+     "name": "recover_rally",
+     "row": 20,
+     "frames": 1,
+     "startFrame": 120,
+     "endFrame": 120,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "windup_flare",
+     "row": 21,
+     "frames": 1,
+     "startFrame": 126,
+     "endFrame": 126,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "attack_flare",
+     "row": 22,
+     "frames": 4,
+     "startFrame": 132,
+     "endFrame": 135,
+     "fps": 12,
+     "loop": false,
+     "impactFrame": 1,
+     "strikePoint": [
+      115,
+      71
+     ]
+    },
+    {
+     "name": "recover_flare",
+     "row": 23,
+     "frames": 1,
+     "startFrame": 138,
+     "endFrame": 138,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "cast",
+     "row": 24,
+     "frames": 6,
+     "startFrame": 144,
+     "endFrame": 149,
+     "fps": 8,
+     "loop": false
     }
    ],
    "size": [
     936,
-    1566
+    4350
    ],
    "feetRow": 168,
    "hitPoint": [
@@ -291,11 +619,175 @@
      "endFrame": 50,
      "fps": 8,
      "loop": false
+    },
+    {
+     "name": "use",
+     "row": 9,
+     "frames": 4,
+     "startFrame": 54,
+     "endFrame": 57,
+     "fps": 8,
+     "loop": false
+    },
+    {
+     "name": "use_oil",
+     "row": 10,
+     "frames": 4,
+     "startFrame": 60,
+     "endFrame": 63,
+     "fps": 12,
+     "loop": false
+    },
+    {
+     "name": "use_rope",
+     "row": 11,
+     "frames": 4,
+     "startFrame": 66,
+     "endFrame": 69,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "windup_shieldwall",
+     "row": 12,
+     "frames": 1,
+     "startFrame": 72,
+     "endFrame": 72,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "attack_shieldwall",
+     "row": 13,
+     "frames": 4,
+     "startFrame": 78,
+     "endFrame": 81,
+     "fps": 12,
+     "loop": false,
+     "impactFrame": 0,
+     "strikePoint": [
+      111,
+      93
+     ]
+    },
+    {
+     "name": "recover_shieldwall",
+     "row": 14,
+     "frames": 1,
+     "startFrame": 84,
+     "endFrame": 84,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "windup_mark",
+     "row": 15,
+     "frames": 1,
+     "startFrame": 90,
+     "endFrame": 90,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "attack_mark",
+     "row": 16,
+     "frames": 4,
+     "startFrame": 96,
+     "endFrame": 99,
+     "fps": 12,
+     "loop": false,
+     "impactFrame": 0,
+     "strikePoint": [
+      115,
+      90
+     ]
+    },
+    {
+     "name": "recover_mark",
+     "row": 17,
+     "frames": 1,
+     "startFrame": 102,
+     "endFrame": 102,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "windup_rally",
+     "row": 18,
+     "frames": 1,
+     "startFrame": 108,
+     "endFrame": 108,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "attack_rally",
+     "row": 19,
+     "frames": 4,
+     "startFrame": 114,
+     "endFrame": 117,
+     "fps": 12,
+     "loop": false,
+     "impactFrame": 0,
+     "strikePoint": [
+      115,
+      90
+     ]
+    },
+    {
+     "name": "recover_rally",
+     "row": 20,
+     "frames": 1,
+     "startFrame": 120,
+     "endFrame": 120,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "windup_flare",
+     "row": 21,
+     "frames": 1,
+     "startFrame": 126,
+     "endFrame": 126,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "attack_flare",
+     "row": 22,
+     "frames": 4,
+     "startFrame": 132,
+     "endFrame": 135,
+     "fps": 12,
+     "loop": false,
+     "impactFrame": 0,
+     "strikePoint": [
+      115,
+      90
+     ]
+    },
+    {
+     "name": "recover_flare",
+     "row": 23,
+     "frames": 1,
+     "startFrame": 138,
+     "endFrame": 138,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "cast",
+     "row": 24,
+     "frames": 6,
+     "startFrame": 144,
+     "endFrame": 149,
+     "fps": 8,
+     "loop": false
     }
    ],
    "size": [
     936,
-    1566
+    4350
    ],
    "feetRow": 168,
    "hitPoint": [
@@ -392,11 +884,175 @@
      "endFrame": 50,
      "fps": 8,
      "loop": false
+    },
+    {
+     "name": "use",
+     "row": 9,
+     "frames": 4,
+     "startFrame": 54,
+     "endFrame": 57,
+     "fps": 8,
+     "loop": false
+    },
+    {
+     "name": "use_oil",
+     "row": 10,
+     "frames": 4,
+     "startFrame": 60,
+     "endFrame": 63,
+     "fps": 12,
+     "loop": false
+    },
+    {
+     "name": "use_rope",
+     "row": 11,
+     "frames": 4,
+     "startFrame": 66,
+     "endFrame": 69,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "windup_shieldwall",
+     "row": 12,
+     "frames": 1,
+     "startFrame": 72,
+     "endFrame": 72,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "attack_shieldwall",
+     "row": 13,
+     "frames": 4,
+     "startFrame": 78,
+     "endFrame": 81,
+     "fps": 12,
+     "loop": false,
+     "impactFrame": 0,
+     "strikePoint": [
+      143,
+      97
+     ]
+    },
+    {
+     "name": "recover_shieldwall",
+     "row": 14,
+     "frames": 1,
+     "startFrame": 84,
+     "endFrame": 84,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "windup_mark",
+     "row": 15,
+     "frames": 1,
+     "startFrame": 90,
+     "endFrame": 90,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "attack_mark",
+     "row": 16,
+     "frames": 4,
+     "startFrame": 96,
+     "endFrame": 99,
+     "fps": 12,
+     "loop": false,
+     "impactFrame": 0,
+     "strikePoint": [
+      147,
+      79
+     ]
+    },
+    {
+     "name": "recover_mark",
+     "row": 17,
+     "frames": 1,
+     "startFrame": 102,
+     "endFrame": 102,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "windup_rally",
+     "row": 18,
+     "frames": 1,
+     "startFrame": 108,
+     "endFrame": 108,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "attack_rally",
+     "row": 19,
+     "frames": 4,
+     "startFrame": 114,
+     "endFrame": 117,
+     "fps": 12,
+     "loop": false,
+     "impactFrame": 0,
+     "strikePoint": [
+      123,
+      67
+     ]
+    },
+    {
+     "name": "recover_rally",
+     "row": 20,
+     "frames": 1,
+     "startFrame": 120,
+     "endFrame": 120,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "windup_flare",
+     "row": 21,
+     "frames": 1,
+     "startFrame": 126,
+     "endFrame": 126,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "attack_flare",
+     "row": 22,
+     "frames": 4,
+     "startFrame": 132,
+     "endFrame": 135,
+     "fps": 12,
+     "loop": false,
+     "impactFrame": 0,
+     "strikePoint": [
+      135,
+      71
+     ]
+    },
+    {
+     "name": "recover_flare",
+     "row": 23,
+     "frames": 1,
+     "startFrame": 138,
+     "endFrame": 138,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "cast",
+     "row": 24,
+     "frames": 6,
+     "startFrame": 144,
+     "endFrame": 149,
+     "fps": 8,
+     "loop": false
     }
    ],
    "size": [
     936,
-    1566
+    4350
    ],
    "feetRow": 168,
    "hitPoint": [
@@ -493,11 +1149,175 @@
      "endFrame": 50,
      "fps": 8,
      "loop": false
+    },
+    {
+     "name": "use",
+     "row": 9,
+     "frames": 4,
+     "startFrame": 54,
+     "endFrame": 57,
+     "fps": 8,
+     "loop": false
+    },
+    {
+     "name": "use_oil",
+     "row": 10,
+     "frames": 4,
+     "startFrame": 60,
+     "endFrame": 63,
+     "fps": 12,
+     "loop": false
+    },
+    {
+     "name": "use_rope",
+     "row": 11,
+     "frames": 4,
+     "startFrame": 66,
+     "endFrame": 69,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "windup_shieldwall",
+     "row": 12,
+     "frames": 1,
+     "startFrame": 72,
+     "endFrame": 72,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "attack_shieldwall",
+     "row": 13,
+     "frames": 4,
+     "startFrame": 78,
+     "endFrame": 81,
+     "fps": 12,
+     "loop": false,
+     "impactFrame": 1,
+     "strikePoint": [
+      115,
+      57
+     ]
+    },
+    {
+     "name": "recover_shieldwall",
+     "row": 14,
+     "frames": 1,
+     "startFrame": 84,
+     "endFrame": 84,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "windup_mark",
+     "row": 15,
+     "frames": 1,
+     "startFrame": 90,
+     "endFrame": 90,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "attack_mark",
+     "row": 16,
+     "frames": 4,
+     "startFrame": 96,
+     "endFrame": 99,
+     "fps": 12,
+     "loop": false,
+     "impactFrame": 1,
+     "strikePoint": [
+      123,
+      52
+     ]
+    },
+    {
+     "name": "recover_mark",
+     "row": 17,
+     "frames": 1,
+     "startFrame": 102,
+     "endFrame": 102,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "windup_rally",
+     "row": 18,
+     "frames": 1,
+     "startFrame": 108,
+     "endFrame": 108,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "attack_rally",
+     "row": 19,
+     "frames": 4,
+     "startFrame": 114,
+     "endFrame": 117,
+     "fps": 12,
+     "loop": false,
+     "impactFrame": 1,
+     "strikePoint": [
+      123,
+      52
+     ]
+    },
+    {
+     "name": "recover_rally",
+     "row": 20,
+     "frames": 1,
+     "startFrame": 120,
+     "endFrame": 120,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "windup_flare",
+     "row": 21,
+     "frames": 1,
+     "startFrame": 126,
+     "endFrame": 126,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "attack_flare",
+     "row": 22,
+     "frames": 4,
+     "startFrame": 132,
+     "endFrame": 135,
+     "fps": 12,
+     "loop": false,
+     "impactFrame": 1,
+     "strikePoint": [
+      121,
+      52
+     ]
+    },
+    {
+     "name": "recover_flare",
+     "row": 23,
+     "frames": 1,
+     "startFrame": 138,
+     "endFrame": 138,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "cast",
+     "row": 24,
+     "frames": 6,
+     "startFrame": 144,
+     "endFrame": 149,
+     "fps": 8,
+     "loop": false
     }
    ],
    "size": [
     936,
-    1566
+    4350
    ],
    "feetRow": 168,
    "hitPoint": [
@@ -594,11 +1414,175 @@
      "endFrame": 50,
      "fps": 8,
      "loop": false
+    },
+    {
+     "name": "use",
+     "row": 9,
+     "frames": 4,
+     "startFrame": 54,
+     "endFrame": 57,
+     "fps": 8,
+     "loop": false
+    },
+    {
+     "name": "use_oil",
+     "row": 10,
+     "frames": 4,
+     "startFrame": 60,
+     "endFrame": 63,
+     "fps": 12,
+     "loop": false
+    },
+    {
+     "name": "use_rope",
+     "row": 11,
+     "frames": 4,
+     "startFrame": 66,
+     "endFrame": 69,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "windup_shieldwall",
+     "row": 12,
+     "frames": 1,
+     "startFrame": 72,
+     "endFrame": 72,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "attack_shieldwall",
+     "row": 13,
+     "frames": 4,
+     "startFrame": 78,
+     "endFrame": 81,
+     "fps": 12,
+     "loop": false,
+     "impactFrame": 1,
+     "strikePoint": [
+      121,
+      55
+     ]
+    },
+    {
+     "name": "recover_shieldwall",
+     "row": 14,
+     "frames": 1,
+     "startFrame": 84,
+     "endFrame": 84,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "windup_mark",
+     "row": 15,
+     "frames": 1,
+     "startFrame": 90,
+     "endFrame": 90,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "attack_mark",
+     "row": 16,
+     "frames": 4,
+     "startFrame": 96,
+     "endFrame": 99,
+     "fps": 12,
+     "loop": false,
+     "impactFrame": 1,
+     "strikePoint": [
+      129,
+      52
+     ]
+    },
+    {
+     "name": "recover_mark",
+     "row": 17,
+     "frames": 1,
+     "startFrame": 102,
+     "endFrame": 102,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "windup_rally",
+     "row": 18,
+     "frames": 1,
+     "startFrame": 108,
+     "endFrame": 108,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "attack_rally",
+     "row": 19,
+     "frames": 4,
+     "startFrame": 114,
+     "endFrame": 117,
+     "fps": 12,
+     "loop": false,
+     "impactFrame": 1,
+     "strikePoint": [
+      129,
+      52
+     ]
+    },
+    {
+     "name": "recover_rally",
+     "row": 20,
+     "frames": 1,
+     "startFrame": 120,
+     "endFrame": 120,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "windup_flare",
+     "row": 21,
+     "frames": 1,
+     "startFrame": 126,
+     "endFrame": 126,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "attack_flare",
+     "row": 22,
+     "frames": 4,
+     "startFrame": 132,
+     "endFrame": 135,
+     "fps": 12,
+     "loop": false,
+     "impactFrame": 1,
+     "strikePoint": [
+      127,
+      52
+     ]
+    },
+    {
+     "name": "recover_flare",
+     "row": 23,
+     "frames": 1,
+     "startFrame": 138,
+     "endFrame": 138,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "cast",
+     "row": 24,
+     "frames": 6,
+     "startFrame": 144,
+     "endFrame": 149,
+     "fps": 8,
+     "loop": false
     }
    ],
    "size": [
     936,
-    1566
+    4350
    ],
    "feetRow": 168,
    "hitPoint": [
@@ -638,8 +1622,8 @@
      "loop": false,
      "impactFrame": 1,
      "strikePoint": [
-      139,
-      82
+      141,
+      69
      ]
     },
     {
@@ -695,11 +1679,175 @@
      "endFrame": 50,
      "fps": 8,
      "loop": false
+    },
+    {
+     "name": "use",
+     "row": 9,
+     "frames": 4,
+     "startFrame": 54,
+     "endFrame": 57,
+     "fps": 8,
+     "loop": false
+    },
+    {
+     "name": "use_oil",
+     "row": 10,
+     "frames": 4,
+     "startFrame": 60,
+     "endFrame": 63,
+     "fps": 12,
+     "loop": false
+    },
+    {
+     "name": "use_rope",
+     "row": 11,
+     "frames": 4,
+     "startFrame": 66,
+     "endFrame": 69,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "windup_shieldwall",
+     "row": 12,
+     "frames": 1,
+     "startFrame": 72,
+     "endFrame": 72,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "attack_shieldwall",
+     "row": 13,
+     "frames": 4,
+     "startFrame": 78,
+     "endFrame": 81,
+     "fps": 12,
+     "loop": false,
+     "impactFrame": 1,
+     "strikePoint": [
+      107,
+      154
+     ]
+    },
+    {
+     "name": "recover_shieldwall",
+     "row": 14,
+     "frames": 1,
+     "startFrame": 84,
+     "endFrame": 84,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "windup_mark",
+     "row": 15,
+     "frames": 1,
+     "startFrame": 90,
+     "endFrame": 90,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "attack_mark",
+     "row": 16,
+     "frames": 4,
+     "startFrame": 96,
+     "endFrame": 99,
+     "fps": 12,
+     "loop": false,
+     "impactFrame": 1,
+     "strikePoint": [
+      117,
+      40
+     ]
+    },
+    {
+     "name": "recover_mark",
+     "row": 17,
+     "frames": 1,
+     "startFrame": 102,
+     "endFrame": 102,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "windup_rally",
+     "row": 18,
+     "frames": 1,
+     "startFrame": 108,
+     "endFrame": 108,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "attack_rally",
+     "row": 19,
+     "frames": 4,
+     "startFrame": 114,
+     "endFrame": 117,
+     "fps": 12,
+     "loop": false,
+     "impactFrame": 1,
+     "strikePoint": [
+      121,
+      44
+     ]
+    },
+    {
+     "name": "recover_rally",
+     "row": 20,
+     "frames": 1,
+     "startFrame": 120,
+     "endFrame": 120,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "windup_flare",
+     "row": 21,
+     "frames": 1,
+     "startFrame": 126,
+     "endFrame": 126,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "attack_flare",
+     "row": 22,
+     "frames": 4,
+     "startFrame": 132,
+     "endFrame": 135,
+     "fps": 12,
+     "loop": false,
+     "impactFrame": 1,
+     "strikePoint": [
+      113,
+      39
+     ]
+    },
+    {
+     "name": "recover_flare",
+     "row": 23,
+     "frames": 1,
+     "startFrame": 138,
+     "endFrame": 138,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "cast",
+     "row": 24,
+     "frames": 6,
+     "startFrame": 144,
+     "endFrame": 149,
+     "fps": 8,
+     "loop": false
     }
    ],
    "size": [
     936,
-    1566
+    4350
    ],
    "feetRow": 168,
    "hitPoint": [
@@ -718,7 +1866,23 @@
  "newRows": [
   "dodge",
   "block",
-  "getup"
+  "getup",
+  "use",
+  "use_oil",
+  "use_rope",
+  "windup_shieldwall",
+  "attack_shieldwall",
+  "recover_shieldwall",
+  "windup_mark",
+  "attack_mark",
+  "recover_mark",
+  "windup_rally",
+  "attack_rally",
+  "recover_rally",
+  "windup_flare",
+  "attack_flare",
+  "recover_flare",
+  "cast"
  ],
  "livery": {
   "material": "cloth1",

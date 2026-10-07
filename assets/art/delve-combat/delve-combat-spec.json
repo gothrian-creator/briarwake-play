@@ -29,9 +29,9 @@
   "desc": "feet point inside a frame: setOrigin(x / w, (y + 1) / h) so the feet sit on the slot y"
  },
  "scale": {
-  "party": 0.6,
-  "foe": 0.75,
-  "captain": 0.7
+  "party": 0.8,
+  "foe": 1.0,
+  "captain": 0.9
  },
  "slots": {
   "party": [
@@ -429,6 +429,25 @@
     "hit",
     "death"
    ]
+  },
+  "husk": {
+   "meta": "husk.json",
+   "file": "husk-front.png",
+   "frame": [
+    156,
+    174
+   ],
+   "captain": false,
+   "moves": [
+    "bite",
+    "lunge"
+   ],
+   "reactions": [
+    "hit",
+    "dodge",
+    "block",
+    "death"
+   ]
   }
  },
  "brigands": {
@@ -451,12 +470,35 @@
   "crit": "code: white flash + the hit frames (no art)"
  },
  "effects": {
-  "sheets": [],
+  "meta": "effects.json",
+  "sheets": [
+   "bandage",
+   "bite",
+   "blade",
+   "cleave",
+   "crack",
+   "flare",
+   "guard",
+   "hearth",
+   "lamplight",
+   "lunge",
+   "mark",
+   "oil",
+   "pin",
+   "price",
+   "rally",
+   "rootbind",
+   "rope",
+   "shieldwall",
+   "slash",
+   "steadying",
+   "ward"
+  ],
   "attachTo": [
    "strikePoint",
    "hitPoint"
   ],
-  "desc": "effects ship as separate sheets placed at the attacker strikePoint / target hitPoint (frame px, scale with the sprite). Dithered glows, alpha 0/255. Numbers, crit flash and the wipe are code. Batches 4+ fill this list."
+  "desc": "effects ship as separate sheets placed at the attacker strikePoint / target hitPoint (frame px, scale with the sprite). Dithered glows, alpha 0/255. Numbers, crit flash and the wipe are code. effects.json gives file, frames, fps, attach and origin per id."
  },
  "travel": "foe rows carry travel[] (frame px, +x = away from the party): the scene moves the sprite by it, so lunges and pounces can cross the gap without clipping the frame",
  "backdrop": {

@@ -49,9 +49,9 @@
     ],
     "travel": [
      -4,
-     -22,
-     -22,
-     -9
+     -18,
+     -18,
+     -5
     ]
    },
    {
@@ -92,13 +92,13 @@
     "impactFrame": 2,
     "strikePoint": [
      2,
-     98
+     99
     ],
     "travel": [
-     -12,
-     -26,
-     -25,
-     -28
+     -10,
+     -22,
+     -23,
+     -24
     ]
    },
    {
@@ -233,7 +233,7 @@
     "loop": false,
     "impactFrame": 2,
     "strikePoint": [
-     26,
+     32,
      102
     ],
     "travel": [
@@ -281,13 +281,13 @@
     "impactFrame": 1,
     "strikePoint": [
      2,
-     120
+     119
     ],
     "travel": [
-     -8,
-     -32,
-     -26,
-     -19
+     -4,
+     -28,
+     -22,
+     -15
     ]
    },
    {
@@ -328,13 +328,13 @@
     "impactFrame": 1,
     "strikePoint": [
      2,
-     159
+     160
     ],
     "travel": [
      -6,
-     -18,
-     -16,
-     -12
+     -12,
+     -12,
+     -10
     ]
    },
    {
@@ -387,8 +387,8 @@
   ],
   "feetRow": 182,
   "hitPoint": [
-   103,
-   132
+   102,
+   133
   ],
   "view": "front 3/4, facing screen-left",
   "deathHold": {

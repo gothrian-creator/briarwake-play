@@ -1,0 +1,190 @@
+{
+ "husk": {
+  "file": "husk-front.png",
+  "frameWidth": 156,
+  "frameHeight": 174,
+  "columns": 5,
+  "rows": [
+   {
+    "name": "idle",
+    "row": 0,
+    "frames": 4,
+    "startFrame": 0,
+    "endFrame": 3,
+    "fps": 5,
+    "loop": true,
+    "travel": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "name": "windup_bite",
+    "row": 1,
+    "frames": 2,
+    "startFrame": 5,
+    "endFrame": 6,
+    "fps": 10,
+    "loop": false,
+    "travel": [
+     1,
+     3
+    ]
+   },
+   {
+    "name": "attack_bite",
+    "row": 2,
+    "frames": 4,
+    "startFrame": 10,
+    "endFrame": 13,
+    "fps": 14,
+    "loop": false,
+    "impactFrame": 1,
+    "strikePoint": [
+     16,
+     66
+    ],
+    "travel": [
+     -4,
+     -8,
+     -8,
+     -5
+    ]
+   },
+   {
+    "name": "recover_bite",
+    "row": 3,
+    "frames": 2,
+    "startFrame": 15,
+    "endFrame": 16,
+    "fps": 10,
+    "loop": false,
+    "travel": [
+     -3,
+     -1
+    ]
+   },
+   {
+    "name": "windup_lunge",
+    "row": 4,
+    "frames": 3,
+    "startFrame": 20,
+    "endFrame": 22,
+    "fps": 10,
+    "loop": false,
+    "travel": [
+     1,
+     3,
+     3
+    ]
+   },
+   {
+    "name": "attack_lunge",
+    "row": 5,
+    "frames": 4,
+    "startFrame": 25,
+    "endFrame": 28,
+    "fps": 14,
+    "loop": false,
+    "impactFrame": 1,
+    "strikePoint": [
+     18,
+     55
+    ],
+    "travel": [
+     -5,
+     -12,
+     -12,
+     -9
+    ]
+   },
+   {
+    "name": "recover_lunge",
+    "row": 6,
+    "frames": 2,
+    "startFrame": 30,
+    "endFrame": 31,
+    "fps": 10,
+    "loop": false,
+    "travel": [
+     -4,
+     -1
+    ]
+   },
+   {
+    "name": "hit",
+    "row": 7,
+    "frames": 3,
+    "startFrame": 35,
+    "endFrame": 37,
+    "fps": 12,
+    "loop": false,
+    "travel": [
+     3,
+     5,
+     3
+    ]
+   },
+   {
+    "name": "dodge",
+    "row": 8,
+    "frames": 3,
+    "startFrame": 40,
+    "endFrame": 42,
+    "fps": 12,
+    "loop": false,
+    "travel": [
+     5,
+     10,
+     6
+    ]
+   },
+   {
+    "name": "block",
+    "row": 9,
+    "frames": 3,
+    "startFrame": 45,
+    "endFrame": 47,
+    "fps": 12,
+    "loop": false,
+    "travel": [
+     0,
+     3,
+     1
+    ]
+   },
+   {
+    "name": "death",
+    "row": 10,
+    "frames": 5,
+    "startFrame": 50,
+    "endFrame": 54,
+    "fps": 8,
+    "loop": false,
+    "travel": [
+     3,
+     4,
+     4,
+     -12,
+     -42
+    ]
+   }
+  ],
+  "size": [
+   780,
+   1914
+  ],
+  "feetRow": 168,
+  "hitPoint": [
+   78,
+   92
+  ],
+  "view": "front 3/4, facing screen-left",
+  "deathHold": {
+   "row": "death",
+   "frame": 4
+  }
+ }
+}
