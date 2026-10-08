@@ -182,32 +182,78 @@
    "file": "warn.png",
    "key": "cl16-warn",
    "frame": [
-    28,
-    10
+    64,
+    22
    ],
-   "cols": 2,
-   "count": 2,
+   "cols": 6,
+   "count": 6,
    "origin": [
     0.5,
     0.5
    ],
    "scale": 2,
    "groundRow": null,
-   "about": "the red ground ring under a foe in its windup, between it and the hero (F7: risk shown before it lands)",
+   "about": "the red ground ring under a foe in its windup: grows with the windup, wider than the foe from the first frame (F7: risk shown before it lands)",
    "anims": [
     {
-     "name": "pulse",
+     "name": "grow",
      "row": 0,
-     "frames": 2,
-     "fps": 8,
-     "loop": true,
-     "key": "cl16-warn:pulse",
+     "frames": 6,
+     "fps": 12,
+     "loop": false,
+     "key": "cl16-warn:grow",
      "frameList": [
       0,
-      1
+      1,
+      2,
+      3,
+      4,
+      5
      ]
     }
-   ]
+   ],
+   "frameOf": "min(frames - 1, floor((1 - wind / windMax) * frames))",
+   "centre": "the foe's feet"
+  },
+  "halo-wolf": {
+   "group": "foes",
+   "file": "halo-wolf.png",
+   "key": "cl16-wolf-halo",
+   "frame": [
+    40,
+    24
+   ],
+   "cols": 4,
+   "count": 20,
+   "origin": [
+    0.5,
+    0.9583333333333334
+   ],
+   "scale": 2,
+   "groundRow": null,
+   "about": "the red windup outline around the wolf: frame for frame with the wolf, drawn just behind it so only the glow outside its body shows",
+   "anims": [],
+   "frameOf": "the wolf's own frame (same index, same flipX)"
+  },
+  "halo-crawler": {
+   "group": "foes",
+   "file": "halo-crawler.png",
+   "key": "cl16-crawler-halo",
+   "frame": [
+    40,
+    24
+   ],
+   "cols": 4,
+   "count": 20,
+   "origin": [
+    0.5,
+    0.9583333333333334
+   ],
+   "scale": 2,
+   "groundRow": null,
+   "about": "the red windup outline around the crawler: frame for frame with the crawler, drawn just behind it so only the glow outside its body shows",
+   "anims": [],
+   "frameOf": "the crawler's own frame (same index, same flipX)"
   },
   "tree-sapwake": {
    "group": "targets",
@@ -1103,6 +1149,94 @@
     "logbench",
     "bedroll",
     "loot"
+   ]
+  },
+  "giver-badge": {
+   "group": "giver",
+   "file": "giver-badge.png",
+   "key": "cl16-giver-badge",
+   "frame": [
+    11,
+    13
+   ],
+   "cols": 4,
+   "count": 4,
+   "origin": [
+    0.5,
+    1
+   ],
+   "scale": 1,
+   "groundRow": null,
+   "about": "the camp quest giver's badge over his head: gold '!' (take a quest) or green '?' (hand it in); crew never wear it",
+   "anims": [
+    {
+     "name": "quest",
+     "row": 0,
+     "frames": 2,
+     "fps": 3,
+     "loop": true,
+     "key": "cl16-giver-badge:quest",
+     "frameList": [
+      0,
+      1
+     ]
+    },
+    {
+     "name": "handin",
+     "row": 0,
+     "frames": 2,
+     "fps": 3,
+     "loop": true,
+     "key": "cl16-giver-badge:handin",
+     "frameList": [
+      2,
+      3
+     ]
+    }
+   ]
+  },
+  "giver-ring": {
+   "group": "giver",
+   "file": "giver-ring.png",
+   "key": "cl16-giver-ring",
+   "frame": [
+    24,
+    10
+   ],
+   "cols": 4,
+   "count": 4,
+   "origin": [
+    0.5,
+    0.5
+   ],
+   "scale": 1,
+   "groundRow": null,
+   "about": "the small gold (or green) ring under the giver's feet in camp",
+   "anims": [
+    {
+     "name": "quest",
+     "row": 0,
+     "frames": 2,
+     "fps": 3,
+     "loop": true,
+     "key": "cl16-giver-ring:quest",
+     "frameList": [
+      0,
+      1
+     ]
+    },
+    {
+     "name": "handin",
+     "row": 0,
+     "frames": 2,
+     "fps": 3,
+     "loop": true,
+     "key": "cl16-giver-ring:handin",
+     "frameList": [
+      2,
+      3
+     ]
+    }
    ]
   }
  }
