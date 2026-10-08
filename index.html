@@ -15,7 +15,7 @@
       html, body, #game, canvas, #touch-ui {
         touch-action: none; -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; -webkit-tap-highlight-color: transparent;
       }
-      #game { position: fixed; inset: 0; width: 100vw; height: 100vh; height: 100dvh; display: flex; align-items: center; justify-content: center; }
+      #game { position: fixed; inset: 0; width: 100vw; height: 100vh; height: 100dvh; display: block; } /* Phaser centres the canvas (CENTER_BOTH); a flex centre on top pushed it off centre */
       canvas { image-rendering: pixelated; image-rendering: crisp-edges; display: block; }
       /* on-screen controls (ui/controls.js): stick bottom-left, Use bottom-right, Back / Menu above it. Positions are set from JS. */
       #touch-ui { position: fixed; inset: 0; z-index: 10; pointer-events: none; font-family: monospace; }
@@ -30,7 +30,7 @@
       #touch-ui.narrow .tc-rotate { display: block; }
       .tc-btn.on { background: rgba(110, 160, 90, 0.85); border-color: #ffe9a8; }
     </style>
-    <script type="module" crossorigin src="./assets/index-Cj6u-iH7.js"></script>
+    <script type="module" crossorigin src="./assets/index-D1N30AfX.js"></script>
   </head>
   <body>
     <div id="game"></div>
