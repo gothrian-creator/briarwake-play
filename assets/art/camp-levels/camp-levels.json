@@ -1,0 +1,1109 @@
+{
+ "about": "Camp mini-level art, 16-bit camp tier (pal16, outline #260a16, alpha 0/255). Painted at runtime by makeCampLevel16(scene) in src/art/campLevel16.js; these sheets are baked copies. Frames are laid out left to right, top to bottom, `cols` per row; anims list frame indices.",
+ "sheets": {
+  "foe-wolf": {
+   "group": "foes",
+   "file": "foe-wolf.png",
+   "key": "cl16-wolf",
+   "frame": [
+    40,
+    24
+   ],
+   "cols": 4,
+   "count": 20,
+   "origin": [
+    0.5,
+    0.9583333333333334
+   ],
+   "scale": 2,
+   "groundRow": 22,
+   "about": "the camp-level wolf (top-down 3/4, faces right, flipX for left); fur / shell ramps as the den wolf",
+   "anims": [
+    {
+     "name": "walk",
+     "row": 0,
+     "frames": 4,
+     "fps": 8,
+     "loop": true,
+     "key": "cl16-wolf:walk",
+     "frameList": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "name": "snarl",
+     "row": 1,
+     "frames": 3,
+     "fps": 9,
+     "loop": true,
+     "telegraph": true,
+     "key": "cl16-wolf:snarl",
+     "frameList": [
+      4,
+      5,
+      6
+     ]
+    },
+    {
+     "name": "lunge",
+     "row": 2,
+     "frames": 3,
+     "fps": 10,
+     "loop": false,
+     "impactFrame": 1,
+     "key": "cl16-wolf:lunge",
+     "frameList": [
+      8,
+      9,
+      10
+     ]
+    },
+    {
+     "name": "shoved",
+     "row": 3,
+     "frames": 2,
+     "fps": 6,
+     "loop": false,
+     "key": "cl16-wolf:shoved",
+     "frameList": [
+      12,
+      13
+     ]
+    },
+    {
+     "name": "flee",
+     "row": 4,
+     "frames": 4,
+     "fps": 11,
+     "loop": true,
+     "key": "cl16-wolf:flee",
+     "frameList": [
+      16,
+      17,
+      18,
+      19
+     ]
+    }
+   ]
+  },
+  "foe-crawler": {
+   "group": "foes",
+   "file": "foe-crawler.png",
+   "key": "cl16-crawler",
+   "frame": [
+    40,
+    24
+   ],
+   "cols": 4,
+   "count": 20,
+   "origin": [
+    0.5,
+    0.9583333333333334
+   ],
+   "scale": 2,
+   "groundRow": 22,
+   "about": "the camp-level crawler (top-down 3/4, faces right, flipX for left); fur / shell ramps as the den crawler",
+   "anims": [
+    {
+     "name": "walk",
+     "row": 0,
+     "frames": 4,
+     "fps": 8,
+     "loop": true,
+     "key": "cl16-crawler:walk",
+     "frameList": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "name": "snarl",
+     "row": 1,
+     "frames": 3,
+     "fps": 9,
+     "loop": true,
+     "telegraph": true,
+     "key": "cl16-crawler:snarl",
+     "frameList": [
+      4,
+      5,
+      6
+     ]
+    },
+    {
+     "name": "lunge",
+     "row": 2,
+     "frames": 3,
+     "fps": 10,
+     "loop": false,
+     "impactFrame": 1,
+     "key": "cl16-crawler:lunge",
+     "frameList": [
+      8,
+      9,
+      10
+     ]
+    },
+    {
+     "name": "shoved",
+     "row": 3,
+     "frames": 2,
+     "fps": 6,
+     "loop": false,
+     "key": "cl16-crawler:shoved",
+     "frameList": [
+      12,
+      13
+     ]
+    },
+    {
+     "name": "flee",
+     "row": 4,
+     "frames": 4,
+     "fps": 11,
+     "loop": true,
+     "key": "cl16-crawler:flee",
+     "frameList": [
+      16,
+      17,
+      18,
+      19
+     ]
+    }
+   ]
+  },
+  "warn": {
+   "group": "foes",
+   "file": "warn.png",
+   "key": "cl16-warn",
+   "frame": [
+    28,
+    10
+   ],
+   "cols": 2,
+   "count": 2,
+   "origin": [
+    0.5,
+    0.5
+   ],
+   "scale": 2,
+   "groundRow": null,
+   "about": "the red ground ring under a foe in its windup, between it and the hero (F7: risk shown before it lands)",
+   "anims": [
+    {
+     "name": "pulse",
+     "row": 0,
+     "frames": 2,
+     "fps": 8,
+     "loop": true,
+     "key": "cl16-warn:pulse",
+     "frameList": [
+      0,
+      1
+     ]
+    }
+   ]
+  },
+  "tree-sapwake": {
+   "group": "targets",
+   "file": "tree-sapwake.png",
+   "key": "cl16-tree-sapwake",
+   "frame": [
+    40,
+    40
+   ],
+   "cols": 4,
+   "count": 8,
+   "origin": [
+    0.4625,
+    0.975
+   ],
+   "scale": 2,
+   "groundRow": 38,
+   "about": "the quest's own tree (sapwake): marked → notched → leaning → felled, by held-Use progress at 0 / 0.34 / 0.67; the last is the done look",
+   "anims": [],
+   "stages": [
+    "marked",
+    "notched",
+    "leaning",
+    "felled"
+   ],
+   "variants": 2,
+   "stageAt": [
+    0,
+    0.34,
+    0.67
+   ],
+   "frameOf": "variant * stages + stage"
+  },
+  "tree-highleaf": {
+   "group": "targets",
+   "file": "tree-highleaf.png",
+   "key": "cl16-tree-highleaf",
+   "frame": [
+    40,
+    40
+   ],
+   "cols": 4,
+   "count": 8,
+   "origin": [
+    0.4625,
+    0.975
+   ],
+   "scale": 2,
+   "groundRow": 38,
+   "about": "the quest's own tree (highleaf): marked → notched → leaning → felled, by held-Use progress at 0 / 0.34 / 0.67; the last is the done look",
+   "anims": [],
+   "stages": [
+    "marked",
+    "notched",
+    "leaning",
+    "felled"
+   ],
+   "variants": 2,
+   "stageAt": [
+    0,
+    0.34,
+    0.67
+   ],
+   "frameOf": "variant * stages + stage"
+  },
+  "tree-emberfall": {
+   "group": "targets",
+   "file": "tree-emberfall.png",
+   "key": "cl16-tree-emberfall",
+   "frame": [
+    40,
+    40
+   ],
+   "cols": 4,
+   "count": 8,
+   "origin": [
+    0.4625,
+    0.975
+   ],
+   "scale": 2,
+   "groundRow": 38,
+   "about": "the quest's own tree (emberfall): marked → notched → leaning → felled, by held-Use progress at 0 / 0.34 / 0.67; the last is the done look",
+   "anims": [],
+   "stages": [
+    "marked",
+    "notched",
+    "leaning",
+    "felled"
+   ],
+   "variants": 2,
+   "stageAt": [
+    0,
+    0.34,
+    0.67
+   ],
+   "frameOf": "variant * stages + stage"
+  },
+  "tree-deeproot": {
+   "group": "targets",
+   "file": "tree-deeproot.png",
+   "key": "cl16-tree-deeproot",
+   "frame": [
+    40,
+    40
+   ],
+   "cols": 4,
+   "count": 8,
+   "origin": [
+    0.4625,
+    0.975
+   ],
+   "scale": 2,
+   "groundRow": 38,
+   "about": "the quest's own tree (deeproot): marked → notched → leaning → felled, by held-Use progress at 0 / 0.34 / 0.67; the last is the done look",
+   "anims": [],
+   "stages": [
+    "marked",
+    "notched",
+    "leaning",
+    "felled"
+   ],
+   "variants": 2,
+   "stageAt": [
+    0,
+    0.34,
+    0.67
+   ],
+   "frameOf": "variant * stages + stage"
+  },
+  "rock-sapwake": {
+   "group": "targets",
+   "file": "rock-sapwake.png",
+   "key": "cl16-rock-sapwake",
+   "frame": [
+    26,
+    22
+   ],
+   "cols": 4,
+   "count": 8,
+   "origin": [
+    0.5192307692307693,
+    0.9545454545454546
+   ],
+   "scale": 2,
+   "groundRow": 20,
+   "about": "the quest's own rock (sapwake): whole → cracked → split → rubble, by held-Use progress at 0 / 0.4 / 0.75; the last is the done look",
+   "anims": [],
+   "stages": [
+    "whole",
+    "cracked",
+    "split",
+    "rubble"
+   ],
+   "variants": 2,
+   "stageAt": [
+    0,
+    0.4,
+    0.75
+   ],
+   "frameOf": "variant * stages + stage"
+  },
+  "rock-highleaf": {
+   "group": "targets",
+   "file": "rock-highleaf.png",
+   "key": "cl16-rock-highleaf",
+   "frame": [
+    26,
+    22
+   ],
+   "cols": 4,
+   "count": 8,
+   "origin": [
+    0.5192307692307693,
+    0.9545454545454546
+   ],
+   "scale": 2,
+   "groundRow": 20,
+   "about": "the quest's own rock (highleaf): whole → cracked → split → rubble, by held-Use progress at 0 / 0.4 / 0.75; the last is the done look",
+   "anims": [],
+   "stages": [
+    "whole",
+    "cracked",
+    "split",
+    "rubble"
+   ],
+   "variants": 2,
+   "stageAt": [
+    0,
+    0.4,
+    0.75
+   ],
+   "frameOf": "variant * stages + stage"
+  },
+  "rock-emberfall": {
+   "group": "targets",
+   "file": "rock-emberfall.png",
+   "key": "cl16-rock-emberfall",
+   "frame": [
+    26,
+    22
+   ],
+   "cols": 4,
+   "count": 8,
+   "origin": [
+    0.5192307692307693,
+    0.9545454545454546
+   ],
+   "scale": 2,
+   "groundRow": 20,
+   "about": "the quest's own rock (emberfall): whole → cracked → split → rubble, by held-Use progress at 0 / 0.4 / 0.75; the last is the done look",
+   "anims": [],
+   "stages": [
+    "whole",
+    "cracked",
+    "split",
+    "rubble"
+   ],
+   "variants": 2,
+   "stageAt": [
+    0,
+    0.4,
+    0.75
+   ],
+   "frameOf": "variant * stages + stage"
+  },
+  "rock-deeproot": {
+   "group": "targets",
+   "file": "rock-deeproot.png",
+   "key": "cl16-rock-deeproot",
+   "frame": [
+    26,
+    22
+   ],
+   "cols": 4,
+   "count": 8,
+   "origin": [
+    0.5192307692307693,
+    0.9545454545454546
+   ],
+   "scale": 2,
+   "groundRow": 20,
+   "about": "the quest's own rock (deeproot): whole → cracked → split → rubble, by held-Use progress at 0 / 0.4 / 0.75; the last is the done look",
+   "anims": [],
+   "stages": [
+    "whole",
+    "cracked",
+    "split",
+    "rubble"
+   ],
+   "variants": 2,
+   "stageAt": [
+    0,
+    0.4,
+    0.75
+   ],
+   "frameOf": "variant * stages + stage"
+  },
+  "bush-sapwake": {
+   "group": "targets",
+   "file": "bush-sapwake.png",
+   "key": "cl16-bush-sapwake",
+   "frame": [
+    24,
+    20
+   ],
+   "cols": 3,
+   "count": 6,
+   "origin": [
+    0.5208333333333334,
+    0.95
+   ],
+   "scale": 2,
+   "groundRow": 18,
+   "about": "the quest's own bush (sapwake): full → picking → picked, by held-Use progress at 0 / 0.5; the last is the done look",
+   "anims": [],
+   "stages": [
+    "full",
+    "picking",
+    "picked"
+   ],
+   "variants": 2,
+   "stageAt": [
+    0,
+    0.5
+   ],
+   "frameOf": "variant * stages + stage"
+  },
+  "bush-highleaf": {
+   "group": "targets",
+   "file": "bush-highleaf.png",
+   "key": "cl16-bush-highleaf",
+   "frame": [
+    24,
+    20
+   ],
+   "cols": 3,
+   "count": 6,
+   "origin": [
+    0.5208333333333334,
+    0.95
+   ],
+   "scale": 2,
+   "groundRow": 18,
+   "about": "the quest's own bush (highleaf): full → picking → picked, by held-Use progress at 0 / 0.5; the last is the done look",
+   "anims": [],
+   "stages": [
+    "full",
+    "picking",
+    "picked"
+   ],
+   "variants": 2,
+   "stageAt": [
+    0,
+    0.5
+   ],
+   "frameOf": "variant * stages + stage"
+  },
+  "bush-emberfall": {
+   "group": "targets",
+   "file": "bush-emberfall.png",
+   "key": "cl16-bush-emberfall",
+   "frame": [
+    24,
+    20
+   ],
+   "cols": 3,
+   "count": 6,
+   "origin": [
+    0.5208333333333334,
+    0.95
+   ],
+   "scale": 2,
+   "groundRow": 18,
+   "about": "the quest's own bush (emberfall): full → picking → picked, by held-Use progress at 0 / 0.5; the last is the done look",
+   "anims": [],
+   "stages": [
+    "full",
+    "picking",
+    "picked"
+   ],
+   "variants": 2,
+   "stageAt": [
+    0,
+    0.5
+   ],
+   "frameOf": "variant * stages + stage"
+  },
+  "bush-deeproot": {
+   "group": "targets",
+   "file": "bush-deeproot.png",
+   "key": "cl16-bush-deeproot",
+   "frame": [
+    24,
+    20
+   ],
+   "cols": 3,
+   "count": 6,
+   "origin": [
+    0.5208333333333334,
+    0.95
+   ],
+   "scale": 2,
+   "groundRow": 18,
+   "about": "the quest's own bush (deeproot): full → picking → picked, by held-Use progress at 0 / 0.5; the last is the done look",
+   "anims": [],
+   "stages": [
+    "full",
+    "picking",
+    "picked"
+   ],
+   "variants": 2,
+   "stageAt": [
+    0,
+    0.5
+   ],
+   "frameOf": "variant * stages + stage"
+  },
+  "cart": {
+   "group": "props",
+   "file": "cart.png",
+   "key": "cl16-cart",
+   "frame": [
+    46,
+    32
+   ],
+   "cols": 5,
+   "count": 15,
+   "origin": [
+    0.5760869565217391,
+    0.96875
+   ],
+   "scale": 2,
+   "groundRow": 30,
+   "about": "the handcart at the start of a hauling run, with 0..4 loads left on it; rows timber, stone, grain",
+   "anims": [],
+   "rows": [
+    "timber",
+    "stone",
+    "grain"
+   ],
+   "frameOf": "row(res) * 5 + loads left (0..4)"
+  },
+  "site": {
+   "group": "props",
+   "file": "site.png",
+   "key": "cl16-site",
+   "frame": [
+    48,
+    40
+   ],
+   "cols": 5,
+   "count": 15,
+   "origin": [
+    0.5104166666666666,
+    0.975
+   ],
+   "scale": 2,
+   "groundRow": 38,
+   "about": "the crew's site frame; the delivered loads stack in front",
+   "anims": [],
+   "rows": [
+    "timber",
+    "stone",
+    "grain"
+   ],
+   "frameOf": "row(res) * 5 + loads delivered (0..4)"
+  },
+  "load": {
+   "group": "props",
+   "file": "load.png",
+   "key": "cl16-load",
+   "frame": [
+    14,
+    10
+   ],
+   "cols": 3,
+   "count": 3,
+   "origin": [
+    0.5,
+    1
+   ],
+   "scale": 2,
+   "groundRow": null,
+   "about": "the load the hero carries over his head (timber, stone, grain)",
+   "anims": [],
+   "frames": [
+    "timber",
+    "stone",
+    "grain"
+   ]
+  },
+  "post": {
+   "group": "props",
+   "file": "post.png",
+   "key": "cl16-post",
+   "frame": [
+    18,
+    30
+   ],
+   "cols": 3,
+   "count": 3,
+   "origin": [
+    0.4722222222222222,
+    0.9666666666666667
+   ],
+   "scale": 2,
+   "groundRow": 28,
+   "about": "a marker post: unset (a stake by a chalked spot), set (driven, gold pennant flapping)",
+   "anims": [
+    {
+     "name": "flag",
+     "row": 0,
+     "frames": 2,
+     "fps": 3,
+     "loop": true,
+     "key": "cl16-post:flag",
+     "frameList": [
+      1,
+      2
+     ]
+    }
+   ],
+   "frames": [
+    "unset",
+    "set0",
+    "set1"
+   ]
+  },
+  "ring": {
+   "group": "props",
+   "file": "ring.png",
+   "key": "cl16-ring",
+   "frame": [
+    38,
+    14
+   ],
+   "cols": 4,
+   "count": 4,
+   "origin": [
+    0.5,
+    0.5
+   ],
+   "scale": 2,
+   "groundRow": null,
+   "about": "the gold goal ring under a quest target (clear goal): gold, outlined dark inside and out, a glint runs round",
+   "anims": [
+    {
+     "name": "pulse",
+     "row": 0,
+     "frames": 4,
+     "fps": 6,
+     "loop": true,
+     "key": "cl16-ring:pulse",
+     "frameList": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ]
+  },
+  "arrow": {
+   "group": "props",
+   "file": "arrow.png",
+   "key": "cl16-arrow",
+   "frame": [
+    18,
+    20
+   ],
+   "cols": 4,
+   "count": 4,
+   "origin": [
+    0.5,
+    1
+   ],
+   "scale": 2,
+   "groundRow": null,
+   "about": "the goal arrow over the next target (the scene bobs it); gold, dark outline, a glint slides down",
+   "anims": [
+    {
+     "name": "glint",
+     "row": 0,
+     "frames": 4,
+     "fps": 6,
+     "loop": true,
+     "key": "cl16-arrow:glint",
+     "frameList": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ]
+  },
+  "guard": {
+   "group": "stealth",
+   "file": "guard.png",
+   "key": "cl16-guard",
+   "frame": [
+    22,
+    24
+   ],
+   "cols": 4,
+   "count": 20,
+   "origin": [
+    0.5227272727272727,
+    0.9583333333333334
+   ],
+   "scale": 2,
+   "groundRow": 22,
+   "about": "the brigand sentry with a lantern (stealth scouting, Planned): walk down / up / right (flip for left), look (the lantern swings), alert",
+   "anims": [
+    {
+     "name": "walk-down",
+     "row": 0,
+     "frames": 4,
+     "fps": 6,
+     "loop": true,
+     "key": "cl16-guard:walk-down",
+     "frameList": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "name": "walk-up",
+     "row": 1,
+     "frames": 4,
+     "fps": 6,
+     "loop": true,
+     "key": "cl16-guard:walk-up",
+     "frameList": [
+      4,
+      5,
+      6,
+      7
+     ]
+    },
+    {
+     "name": "walk-right",
+     "row": 2,
+     "frames": 4,
+     "fps": 6,
+     "loop": true,
+     "key": "cl16-guard:walk-right",
+     "frameList": [
+      8,
+      9,
+      10,
+      11
+     ]
+    },
+    {
+     "name": "look",
+     "row": 3,
+     "frames": 2,
+     "fps": 2,
+     "loop": true,
+     "key": "cl16-guard:look",
+     "frameList": [
+      12,
+      13
+     ]
+    },
+    {
+     "name": "alert",
+     "row": 4,
+     "frames": 2,
+     "fps": 6,
+     "loop": true,
+     "telegraph": true,
+     "key": "cl16-guard:alert",
+     "frameList": [
+      16,
+      17
+     ]
+    }
+   ]
+  },
+  "cone": {
+   "group": "stealth",
+   "file": "cone.png",
+   "key": "cl16-cone",
+   "frame": [
+    66,
+    65
+   ],
+   "cols": 2,
+   "count": 2,
+   "origin": [
+    0,
+    0.5
+   ],
+   "scale": 2,
+   "groundRow": null,
+   "about": "the sight cone look (calm pale, alert red), checker fill + solid rim, alpha 0/255; the level draws it in code from its own range and angle",
+   "anims": [],
+   "frames": [
+    "calm",
+    "alert"
+   ],
+   "drawnInCode": "paintSightCone(range, halfAngle, alert): the level paints its own cone from its sight geometry; this bake is the reference look"
+  },
+  "hide-sapwake": {
+   "group": "stealth",
+   "file": "hide-sapwake.png",
+   "key": "cl16-hide-sapwake",
+   "frame": [
+    32,
+    22
+   ],
+   "cols": 4,
+   "count": 4,
+   "origin": [
+    0.515625,
+    0.9545454545454546
+   ],
+   "scale": 2,
+   "groundRow": 20,
+   "about": "a bush to hide in (sapwake): still, rustle (someone pushes in, or runs past), hidden (eyes in the leaves)",
+   "anims": [
+    {
+     "name": "rustle",
+     "row": 0,
+     "frames": 2,
+     "fps": 8,
+     "loop": false,
+     "key": "cl16-hide-sapwake:rustle",
+     "frameList": [
+      1,
+      2
+     ]
+    }
+   ],
+   "frames": [
+    "still",
+    "rustle0",
+    "rustle1",
+    "hidden"
+   ]
+  },
+  "hide-highleaf": {
+   "group": "stealth",
+   "file": "hide-highleaf.png",
+   "key": "cl16-hide-highleaf",
+   "frame": [
+    32,
+    22
+   ],
+   "cols": 4,
+   "count": 4,
+   "origin": [
+    0.515625,
+    0.9545454545454546
+   ],
+   "scale": 2,
+   "groundRow": 20,
+   "about": "a bush to hide in (highleaf): still, rustle (someone pushes in, or runs past), hidden (eyes in the leaves)",
+   "anims": [
+    {
+     "name": "rustle",
+     "row": 0,
+     "frames": 2,
+     "fps": 8,
+     "loop": false,
+     "key": "cl16-hide-highleaf:rustle",
+     "frameList": [
+      1,
+      2
+     ]
+    }
+   ],
+   "frames": [
+    "still",
+    "rustle0",
+    "rustle1",
+    "hidden"
+   ]
+  },
+  "hide-emberfall": {
+   "group": "stealth",
+   "file": "hide-emberfall.png",
+   "key": "cl16-hide-emberfall",
+   "frame": [
+    32,
+    22
+   ],
+   "cols": 4,
+   "count": 4,
+   "origin": [
+    0.515625,
+    0.9545454545454546
+   ],
+   "scale": 2,
+   "groundRow": 20,
+   "about": "a bush to hide in (emberfall): still, rustle (someone pushes in, or runs past), hidden (eyes in the leaves)",
+   "anims": [
+    {
+     "name": "rustle",
+     "row": 0,
+     "frames": 2,
+     "fps": 8,
+     "loop": false,
+     "key": "cl16-hide-emberfall:rustle",
+     "frameList": [
+      1,
+      2
+     ]
+    }
+   ],
+   "frames": [
+    "still",
+    "rustle0",
+    "rustle1",
+    "hidden"
+   ]
+  },
+  "hide-deeproot": {
+   "group": "stealth",
+   "file": "hide-deeproot.png",
+   "key": "cl16-hide-deeproot",
+   "frame": [
+    32,
+    22
+   ],
+   "cols": 4,
+   "count": 4,
+   "origin": [
+    0.515625,
+    0.9545454545454546
+   ],
+   "scale": 2,
+   "groundRow": 20,
+   "about": "a bush to hide in (deeproot): still, rustle (someone pushes in, or runs past), hidden (eyes in the leaves)",
+   "anims": [
+    {
+     "name": "rustle",
+     "row": 0,
+     "frames": 2,
+     "fps": 8,
+     "loop": false,
+     "key": "cl16-hide-deeproot:rustle",
+     "frameList": [
+      1,
+      2
+     ]
+    }
+   ],
+   "frames": [
+    "still",
+    "rustle0",
+    "rustle1",
+    "hidden"
+   ]
+  },
+  "brigand-tent": {
+   "group": "stealth",
+   "file": "brigand-tent.png",
+   "key": "cl16-brigand-tent",
+   "frame": [
+    48,
+    36
+   ],
+   "cols": 1,
+   "count": 1,
+   "origin": [
+    0.5104166666666666,
+    0.9722222222222222
+   ],
+   "scale": 2,
+   "groundRow": 34,
+   "about": "the brigand camp: a patched ridge tent with a red rag on the pole",
+   "anims": []
+  },
+  "campfire": {
+   "group": "stealth",
+   "file": "campfire.png",
+   "key": "cl16-campfire",
+   "frame": [
+    18,
+    20
+   ],
+   "cols": 4,
+   "count": 4,
+   "origin": [
+    0.5277777777777778,
+    0.95
+   ],
+   "scale": 2,
+   "groundRow": 18,
+   "about": "the brigand camp: a campfire in a stone ring",
+   "anims": [
+    {
+     "name": "burn",
+     "row": 0,
+     "frames": 4,
+     "fps": 8,
+     "loop": true,
+     "key": "cl16-campfire:burn",
+     "frameList": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ]
+  },
+  "camp-props": {
+   "group": "stealth",
+   "file": "camp-props.png",
+   "key": "cl16-camp-props",
+   "frame": [
+    24,
+    18
+   ],
+   "cols": 4,
+   "count": 4,
+   "origin": [
+    0.5208333333333334,
+    0.9444444444444444
+   ],
+   "scale": 2,
+   "groundRow": 16,
+   "about": "the brigand camp: crates, a log bench, a bedroll, the stolen loot",
+   "anims": [],
+   "frames": [
+    "crates",
+    "logbench",
+    "bedroll",
+    "loot"
+   ]
+  }
+ }
+}
