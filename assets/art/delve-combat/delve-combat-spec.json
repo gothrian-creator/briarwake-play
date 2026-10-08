@@ -31,7 +31,7 @@
  "scale": {
   "party": 0.8,
   "foe": 1.0,
-  "captain": 0.9
+  "captain": 1.2
  },
  "slots": {
   "party": [
