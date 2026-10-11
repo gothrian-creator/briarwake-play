@@ -1,0 +1,10772 @@
+{
+ "about": "Settler work animations, 16-bit people tier (art/people16.js looks). Painted at runtime per look by src/art/work16.js registerWorkWalker(scene, look, walkerKey); the PNGs here are baked samples (one look per kit) + the load layer. Coordinates are frame pixels (16x18, origin = walker anchor (8,17) via FOOT). left = mirrored right.",
+ "frame": {
+  "w": 16,
+  "h": 18,
+  "anchorX": 8,
+  "anchorY": 17
+ },
+ "dirs": [
+  "down",
+  "up",
+  "left",
+  "right"
+ ],
+ "cols": 23,
+ "frameIndex": "dirIndex * cols + col0 + f",
+ "texture": "<walkerKey>-work",
+ "animKey": "<walkerKey>-work-<anim>-<dir>",
+ "actAnim": {
+  "chop": "chop",
+  "craft": "chop",
+  "pick": "pick",
+  "farm": "pick",
+  "mine": "mine",
+  "build": "hammer",
+  "haul": "carry",
+  "carry": "carry"
+ },
+ "jobLoad": {
+  "wood": "wood",
+  "craft": "wood",
+  "mine": "stone",
+  "forage": "food",
+  "farm": "food",
+  "build": "bundle",
+  "haul": "bundle",
+  "guard": "bundle"
+ },
+ "kitAnims": {
+  "logger": [
+   "chop",
+   "carry"
+  ],
+  "sawyer": [
+   "chop",
+   "carry"
+  ],
+  "farmer": [
+   "pick",
+   "carry"
+  ],
+  "forager": [
+   "pick",
+   "carry"
+  ],
+  "miner": [
+   "mine",
+   "carry"
+  ],
+  "builder": [
+   "hammer",
+   "carry"
+  ],
+  "porter": [
+   "carry"
+  ],
+  "t-militia": [
+   "carry"
+  ],
+  "villager": [
+   "carry"
+  ]
+ },
+ "phase": {
+  "chop": "work (plan.act chop | craft)",
+  "pick": "work (plan.act pick | farm)",
+  "mine": "work (plan.act mine)",
+  "hammer": "work (plan.act build)",
+  "carry": "carry leg (o.phase carry) and haul"
+ },
+ "loads": {
+  "texture": "work16-loads",
+  "kinds": [
+   "wood",
+   "stone",
+   "food",
+   "bundle"
+  ],
+  "frameIndex": "dirIndex * 4 + kindIndex",
+  "file": "work16-loads.png",
+  "yOffset": "geom(look).ty - 8",
+  "depth": "+0.6 over the worker; -0.1 under it when dir is up"
+ },
+ "anims": {
+  "chop": {
+   "col0": 0,
+   "frames": 5,
+   "fps": 9,
+   "impactFrame": 3,
+   "tool": "axe",
+   "anchors": {
+    "b0h0": {
+     "down": [
+      {
+       "tip": [
+        12,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        13
+       ]
+      },
+      {
+       "tip": [
+        11,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        9,
+        3
+       ]
+      },
+      {
+       "tip": [
+        13,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        10
+       ]
+      },
+      {
+       "tip": [
+        11,
+        16
+       ],
+       "hit": [
+        11,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        9,
+        13
+       ]
+      },
+      {
+       "tip": [
+        12,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        14
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": [
+        3,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        13
+       ]
+      },
+      {
+       "tip": [
+        4,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        6,
+        3
+       ]
+      },
+      {
+       "tip": [
+        4,
+        5
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        9
+       ]
+      },
+      {
+       "tip": [
+        7,
+        16
+       ],
+       "hit": [
+        7,
+        8
+       ],
+       "carry": null,
+       "hand": [
+        7,
+        11
+       ]
+      },
+      {
+       "tip": [
+        3,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        14
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": [
+        3,
+        9
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        13
+       ]
+      },
+      {
+       "tip": [
+        11,
+        3
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        8,
+        8
+       ]
+      },
+      {
+       "tip": [
+        2,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        9
+       ]
+      },
+      {
+       "tip": [
+        2,
+        12
+       ],
+       "hit": [
+        1,
+        12
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        12
+       ]
+      },
+      {
+       "tip": [
+        3,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        13
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": [
+        12,
+        9
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        13
+       ]
+      },
+      {
+       "tip": [
+        4,
+        3
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        7,
+        8
+       ]
+      },
+      {
+       "tip": [
+        13,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        9
+       ]
+      },
+      {
+       "tip": [
+        13,
+        12
+       ],
+       "hit": [
+        14,
+        12
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        12
+       ]
+      },
+      {
+       "tip": [
+        12,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        13
+       ]
+      }
+     ]
+    },
+    "b0h1": {
+     "down": [
+      {
+       "tip": [
+        12,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        12
+       ]
+      },
+      {
+       "tip": [
+        11,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        9,
+        2
+       ]
+      },
+      {
+       "tip": [
+        13,
+        6
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        9
+       ]
+      },
+      {
+       "tip": [
+        11,
+        16
+       ],
+       "hit": [
+        11,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        9,
+        12
+       ]
+      },
+      {
+       "tip": [
+        12,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        13
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": [
+        3,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        12
+       ]
+      },
+      {
+       "tip": [
+        4,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        6,
+        2
+       ]
+      },
+      {
+       "tip": [
+        4,
+        4
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        8
+       ]
+      },
+      {
+       "tip": [
+        7,
+        15
+       ],
+       "hit": [
+        7,
+        7
+       ],
+       "carry": null,
+       "hand": [
+        7,
+        10
+       ]
+      },
+      {
+       "tip": [
+        3,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        13
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": [
+        3,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        12
+       ]
+      },
+      {
+       "tip": [
+        11,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        8,
+        7
+       ]
+      },
+      {
+       "tip": [
+        2,
+        6
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        8
+       ]
+      },
+      {
+       "tip": [
+        2,
+        11
+       ],
+       "hit": [
+        1,
+        11
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        11
+       ]
+      },
+      {
+       "tip": [
+        3,
+        15
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        12
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": [
+        12,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        12
+       ]
+      },
+      {
+       "tip": [
+        4,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        7,
+        7
+       ]
+      },
+      {
+       "tip": [
+        13,
+        6
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        8
+       ]
+      },
+      {
+       "tip": [
+        13,
+        11
+       ],
+       "hit": [
+        14,
+        11
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        11
+       ]
+      },
+      {
+       "tip": [
+        12,
+        15
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        12
+       ]
+      }
+     ]
+    },
+    "b0h2": {
+     "down": [
+      {
+       "tip": [
+        12,
+        6
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        11
+       ]
+      },
+      {
+       "tip": [
+        11,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        9,
+        1
+       ]
+      },
+      {
+       "tip": [
+        13,
+        5
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        8
+       ]
+      },
+      {
+       "tip": [
+        11,
+        15
+       ],
+       "hit": [
+        11,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        9,
+        11
+       ]
+      },
+      {
+       "tip": [
+        12,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        12
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": [
+        3,
+        6
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        11
+       ]
+      },
+      {
+       "tip": [
+        4,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        6,
+        1
+       ]
+      },
+      {
+       "tip": [
+        4,
+        3
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        7
+       ]
+      },
+      {
+       "tip": [
+        7,
+        14
+       ],
+       "hit": [
+        7,
+        6
+       ],
+       "carry": null,
+       "hand": [
+        7,
+        9
+       ]
+      },
+      {
+       "tip": [
+        3,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        12
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": [
+        3,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        11
+       ]
+      },
+      {
+       "tip": [
+        11,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        8,
+        6
+       ]
+      },
+      {
+       "tip": [
+        2,
+        5
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        7
+       ]
+      },
+      {
+       "tip": [
+        2,
+        10
+       ],
+       "hit": [
+        1,
+        10
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        10
+       ]
+      },
+      {
+       "tip": [
+        3,
+        14
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        11
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": [
+        12,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        11
+       ]
+      },
+      {
+       "tip": [
+        4,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        7,
+        6
+       ]
+      },
+      {
+       "tip": [
+        13,
+        5
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        7
+       ]
+      },
+      {
+       "tip": [
+        13,
+        10
+       ],
+       "hit": [
+        14,
+        10
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        10
+       ]
+      },
+      {
+       "tip": [
+        12,
+        14
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        11
+       ]
+      }
+     ]
+    },
+    "b1h0": {
+     "down": [
+      {
+       "tip": [
+        13,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        13
+       ]
+      },
+      {
+       "tip": [
+        12,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        3
+       ]
+      },
+      {
+       "tip": [
+        13,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        10
+       ]
+      },
+      {
+       "tip": [
+        11,
+        16
+       ],
+       "hit": [
+        11,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        9,
+        13
+       ]
+      },
+      {
+       "tip": [
+        13,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        14
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": [
+        2,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        13
+       ]
+      },
+      {
+       "tip": [
+        3,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        3
+       ]
+      },
+      {
+       "tip": [
+        3,
+        5
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        9
+       ]
+      },
+      {
+       "tip": [
+        7,
+        16
+       ],
+       "hit": [
+        7,
+        8
+       ],
+       "carry": null,
+       "hand": [
+        7,
+        11
+       ]
+      },
+      {
+       "tip": [
+        2,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        14
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": [
+        3,
+        9
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        13
+       ]
+      },
+      {
+       "tip": [
+        12,
+        3
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        9,
+        8
+       ]
+      },
+      {
+       "tip": [
+        2,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        9
+       ]
+      },
+      {
+       "tip": [
+        2,
+        12
+       ],
+       "hit": [
+        1,
+        12
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        12
+       ]
+      },
+      {
+       "tip": [
+        3,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        13
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": [
+        12,
+        9
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        13
+       ]
+      },
+      {
+       "tip": [
+        3,
+        3
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        6,
+        8
+       ]
+      },
+      {
+       "tip": [
+        13,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        9
+       ]
+      },
+      {
+       "tip": [
+        13,
+        12
+       ],
+       "hit": [
+        14,
+        12
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        12
+       ]
+      },
+      {
+       "tip": [
+        12,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        13
+       ]
+      }
+     ]
+    },
+    "b1h1": {
+     "down": [
+      {
+       "tip": [
+        13,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        12
+       ]
+      },
+      {
+       "tip": [
+        12,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        2
+       ]
+      },
+      {
+       "tip": [
+        13,
+        6
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        9
+       ]
+      },
+      {
+       "tip": [
+        11,
+        16
+       ],
+       "hit": [
+        11,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        9,
+        12
+       ]
+      },
+      {
+       "tip": [
+        13,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        13
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": [
+        2,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        12
+       ]
+      },
+      {
+       "tip": [
+        3,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        2
+       ]
+      },
+      {
+       "tip": [
+        3,
+        4
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        8
+       ]
+      },
+      {
+       "tip": [
+        7,
+        15
+       ],
+       "hit": [
+        7,
+        7
+       ],
+       "carry": null,
+       "hand": [
+        7,
+        10
+       ]
+      },
+      {
+       "tip": [
+        2,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        13
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": [
+        3,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        12
+       ]
+      },
+      {
+       "tip": [
+        12,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        9,
+        7
+       ]
+      },
+      {
+       "tip": [
+        2,
+        6
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        8
+       ]
+      },
+      {
+       "tip": [
+        2,
+        11
+       ],
+       "hit": [
+        1,
+        11
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        11
+       ]
+      },
+      {
+       "tip": [
+        3,
+        15
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        12
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": [
+        12,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        12
+       ]
+      },
+      {
+       "tip": [
+        3,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        6,
+        7
+       ]
+      },
+      {
+       "tip": [
+        13,
+        6
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        8
+       ]
+      },
+      {
+       "tip": [
+        13,
+        11
+       ],
+       "hit": [
+        14,
+        11
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        11
+       ]
+      },
+      {
+       "tip": [
+        12,
+        15
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        12
+       ]
+      }
+     ]
+    },
+    "b1h2": {
+     "down": [
+      {
+       "tip": [
+        13,
+        6
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        11
+       ]
+      },
+      {
+       "tip": [
+        12,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        1
+       ]
+      },
+      {
+       "tip": [
+        13,
+        5
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        8
+       ]
+      },
+      {
+       "tip": [
+        11,
+        15
+       ],
+       "hit": [
+        11,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        9,
+        11
+       ]
+      },
+      {
+       "tip": [
+        13,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        12
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": [
+        2,
+        6
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        11
+       ]
+      },
+      {
+       "tip": [
+        3,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        1
+       ]
+      },
+      {
+       "tip": [
+        3,
+        3
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        7
+       ]
+      },
+      {
+       "tip": [
+        7,
+        14
+       ],
+       "hit": [
+        7,
+        6
+       ],
+       "carry": null,
+       "hand": [
+        7,
+        9
+       ]
+      },
+      {
+       "tip": [
+        2,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        12
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": [
+        3,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        11
+       ]
+      },
+      {
+       "tip": [
+        12,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        9,
+        6
+       ]
+      },
+      {
+       "tip": [
+        2,
+        5
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        7
+       ]
+      },
+      {
+       "tip": [
+        2,
+        10
+       ],
+       "hit": [
+        1,
+        10
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        10
+       ]
+      },
+      {
+       "tip": [
+        3,
+        14
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        11
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": [
+        12,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        11
+       ]
+      },
+      {
+       "tip": [
+        3,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        6,
+        6
+       ]
+      },
+      {
+       "tip": [
+        13,
+        5
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        7
+       ]
+      },
+      {
+       "tip": [
+        13,
+        10
+       ],
+       "hit": [
+        14,
+        10
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        10
+       ]
+      },
+      {
+       "tip": [
+        12,
+        14
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        11
+       ]
+      }
+     ]
+    },
+    "b2h0": {
+     "down": [
+      {
+       "tip": [
+        13,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        13,
+        13
+       ]
+      },
+      {
+       "tip": [
+        13,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        3
+       ]
+      },
+      {
+       "tip": [
+        13,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        13,
+        10
+       ]
+      },
+      {
+       "tip": [
+        11,
+        16
+       ],
+       "hit": [
+        11,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        9,
+        13
+       ]
+      },
+      {
+       "tip": [
+        13,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        13,
+        14
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": [
+        2,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        2,
+        13
+       ]
+      },
+      {
+       "tip": [
+        2,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        3
+       ]
+      },
+      {
+       "tip": [
+        2,
+        5
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        9
+       ]
+      },
+      {
+       "tip": [
+        7,
+        16
+       ],
+       "hit": [
+        7,
+        8
+       ],
+       "carry": null,
+       "hand": [
+        7,
+        11
+       ]
+      },
+      {
+       "tip": [
+        2,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        2,
+        14
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": [
+        2,
+        9
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        13
+       ]
+      },
+      {
+       "tip": [
+        11,
+        3
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        8,
+        8
+       ]
+      },
+      {
+       "tip": [
+        2,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        9
+       ]
+      },
+      {
+       "tip": [
+        2,
+        12
+       ],
+       "hit": [
+        1,
+        12
+       ],
+       "carry": null,
+       "hand": [
+        3,
+        12
+       ]
+      },
+      {
+       "tip": [
+        2,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        13
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": [
+        13,
+        9
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        13
+       ]
+      },
+      {
+       "tip": [
+        4,
+        3
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        7,
+        8
+       ]
+      },
+      {
+       "tip": [
+        13,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        9
+       ]
+      },
+      {
+       "tip": [
+        13,
+        12
+       ],
+       "hit": [
+        14,
+        12
+       ],
+       "carry": null,
+       "hand": [
+        12,
+        12
+       ]
+      },
+      {
+       "tip": [
+        13,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        13
+       ]
+      }
+     ]
+    },
+    "b2h1": {
+     "down": [
+      {
+       "tip": [
+        13,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        13,
+        12
+       ]
+      },
+      {
+       "tip": [
+        13,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        2
+       ]
+      },
+      {
+       "tip": [
+        13,
+        6
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        13,
+        9
+       ]
+      },
+      {
+       "tip": [
+        11,
+        16
+       ],
+       "hit": [
+        11,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        9,
+        12
+       ]
+      },
+      {
+       "tip": [
+        13,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        13,
+        13
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": [
+        2,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        2,
+        12
+       ]
+      },
+      {
+       "tip": [
+        2,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        2
+       ]
+      },
+      {
+       "tip": [
+        2,
+        4
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        8
+       ]
+      },
+      {
+       "tip": [
+        7,
+        15
+       ],
+       "hit": [
+        7,
+        7
+       ],
+       "carry": null,
+       "hand": [
+        7,
+        10
+       ]
+      },
+      {
+       "tip": [
+        2,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        2,
+        13
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": [
+        2,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        12
+       ]
+      },
+      {
+       "tip": [
+        11,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        8,
+        7
+       ]
+      },
+      {
+       "tip": [
+        2,
+        6
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        8
+       ]
+      },
+      {
+       "tip": [
+        2,
+        11
+       ],
+       "hit": [
+        1,
+        11
+       ],
+       "carry": null,
+       "hand": [
+        3,
+        11
+       ]
+      },
+      {
+       "tip": [
+        2,
+        15
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        12
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": [
+        13,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        12
+       ]
+      },
+      {
+       "tip": [
+        4,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        7,
+        7
+       ]
+      },
+      {
+       "tip": [
+        13,
+        6
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        8
+       ]
+      },
+      {
+       "tip": [
+        13,
+        11
+       ],
+       "hit": [
+        14,
+        11
+       ],
+       "carry": null,
+       "hand": [
+        12,
+        11
+       ]
+      },
+      {
+       "tip": [
+        13,
+        15
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        12
+       ]
+      }
+     ]
+    },
+    "b2h2": {
+     "down": [
+      {
+       "tip": [
+        13,
+        6
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        13,
+        11
+       ]
+      },
+      {
+       "tip": [
+        13,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        1
+       ]
+      },
+      {
+       "tip": [
+        13,
+        5
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        13,
+        8
+       ]
+      },
+      {
+       "tip": [
+        11,
+        15
+       ],
+       "hit": [
+        11,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        9,
+        11
+       ]
+      },
+      {
+       "tip": [
+        13,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        13,
+        12
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": [
+        2,
+        6
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        2,
+        11
+       ]
+      },
+      {
+       "tip": [
+        2,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        1
+       ]
+      },
+      {
+       "tip": [
+        2,
+        3
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        7
+       ]
+      },
+      {
+       "tip": [
+        7,
+        14
+       ],
+       "hit": [
+        7,
+        6
+       ],
+       "carry": null,
+       "hand": [
+        7,
+        9
+       ]
+      },
+      {
+       "tip": [
+        2,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        2,
+        12
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": [
+        2,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        11
+       ]
+      },
+      {
+       "tip": [
+        11,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        8,
+        6
+       ]
+      },
+      {
+       "tip": [
+        2,
+        5
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        7
+       ]
+      },
+      {
+       "tip": [
+        2,
+        10
+       ],
+       "hit": [
+        1,
+        10
+       ],
+       "carry": null,
+       "hand": [
+        3,
+        10
+       ]
+      },
+      {
+       "tip": [
+        2,
+        14
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        11
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": [
+        13,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        11
+       ]
+      },
+      {
+       "tip": [
+        4,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        7,
+        6
+       ]
+      },
+      {
+       "tip": [
+        13,
+        5
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        7
+       ]
+      },
+      {
+       "tip": [
+        13,
+        10
+       ],
+       "hit": [
+        14,
+        10
+       ],
+       "carry": null,
+       "hand": [
+        12,
+        10
+       ]
+      },
+      {
+       "tip": [
+        13,
+        14
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        11
+       ]
+      }
+     ]
+    }
+   }
+  },
+  "pick": {
+   "col0": 5,
+   "frames": 5,
+   "fps": 6,
+   "impactFrame": 2,
+   "tool": "basket",
+   "anchors": {
+    "b0h0": {
+     "down": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        12,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        12,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        13
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        4,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        4,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        13
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        4,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        4,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        6,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        7,
+        13
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        11,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        11,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        9,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        8,
+        13
+       ]
+      }
+     ]
+    },
+    "b0h1": {
+     "down": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        12,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        12,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        13
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        12
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        4,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        4,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        13
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        12
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        4,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        4,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        6,
+        13
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        7,
+        12
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        11,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        11,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        9,
+        13
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        8,
+        12
+       ]
+      }
+     ]
+    },
+    "b0h2": {
+     "down": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        13
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        12,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        12,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        11
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        13
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        4,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        4,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        11
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        13
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        4,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        4,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        6,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        7,
+        11
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        13
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        11,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        11,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        9,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        8,
+        11
+       ]
+      }
+     ]
+    },
+    "b1h0": {
+     "down": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        13,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        12,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        13,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        12,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        13
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        3,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        3,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        3,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        3,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        13
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        4,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        4,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        6,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        7,
+        13
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        11,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        11,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        9,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        8,
+        13
+       ]
+      }
+     ]
+    },
+    "b1h1": {
+     "down": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        13,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        12,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        13,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        12,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        13
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        12
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        3,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        3,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        3,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        3,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        13
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        12
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        4,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        4,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        6,
+        13
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        7,
+        12
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        11,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        11,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        9,
+        13
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        8,
+        12
+       ]
+      }
+     ]
+    },
+    "b1h2": {
+     "down": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        13
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        13,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        12,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        13,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        12,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        11
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        13
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        3,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        3,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        3,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        3,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        11
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        13
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        4,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        4,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        6,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        7,
+        11
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        13
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        11,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        11,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        9,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        8,
+        11
+       ]
+      }
+     ]
+    },
+    "b2h0": {
+     "down": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        13,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        14,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        13,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        14,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        13,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        13,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        13,
+        13
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        2,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        2,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        2,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        2,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        2,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        2,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        2,
+        13
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        3,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        3,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        3,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        3,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        6,
+        13
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        12,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        12,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        12,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        12,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        9,
+        13
+       ]
+      }
+     ]
+    },
+    "b2h1": {
+     "down": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        13,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        14,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        13,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        14,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        13,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        13,
+        13
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        13,
+        12
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        2,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        2,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        2,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        2,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        2,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        2,
+        13
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        2,
+        12
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        3,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        3,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        3,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        3,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        13
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        6,
+        12
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        12,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        12,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        12,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        12,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        13
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        9,
+        12
+       ]
+      }
+     ]
+    },
+    "b2h2": {
+     "down": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        13,
+        13
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        14,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        13,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        14,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        13,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        13,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        13,
+        11
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        2,
+        13
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        2,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        2,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        2,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        2,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        2,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        2,
+        11
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        13
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        3,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        3,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        3,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        3,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        6,
+        11
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        13
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        12,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        12,
+        15
+       ]
+      },
+      {
+       "tip": null,
+       "hit": [
+        12,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        12,
+        14
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": null,
+       "hand": [
+        9,
+        11
+       ]
+      }
+     ]
+    }
+   }
+  },
+  "mine": {
+   "col0": 10,
+   "frames": 5,
+   "fps": 9,
+   "impactFrame": 3,
+   "tool": "pick",
+   "anchors": {
+    "b0h0": {
+     "down": [
+      {
+       "tip": [
+        12,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        13
+       ]
+      },
+      {
+       "tip": [
+        11,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        9,
+        3
+       ]
+      },
+      {
+       "tip": [
+        13,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        10
+       ]
+      },
+      {
+       "tip": [
+        10,
+        16
+       ],
+       "hit": [
+        10,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        9,
+        14
+       ]
+      },
+      {
+       "tip": [
+        12,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        14
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": [
+        3,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        13
+       ]
+      },
+      {
+       "tip": [
+        4,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        6,
+        3
+       ]
+      },
+      {
+       "tip": [
+        4,
+        5
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        9
+       ]
+      },
+      {
+       "tip": [
+        7,
+        16
+       ],
+       "hit": [
+        7,
+        8
+       ],
+       "carry": null,
+       "hand": [
+        7,
+        11
+       ]
+      },
+      {
+       "tip": [
+        3,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        14
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": [
+        3,
+        9
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        13
+       ]
+      },
+      {
+       "tip": [
+        11,
+        3
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        8,
+        8
+       ]
+      },
+      {
+       "tip": [
+        2,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        9
+       ]
+      },
+      {
+       "tip": [
+        2,
+        16
+       ],
+       "hit": [
+        2,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        13
+       ]
+      },
+      {
+       "tip": [
+        3,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        13
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": [
+        12,
+        9
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        13
+       ]
+      },
+      {
+       "tip": [
+        4,
+        3
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        7,
+        8
+       ]
+      },
+      {
+       "tip": [
+        13,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        9
+       ]
+      },
+      {
+       "tip": [
+        13,
+        16
+       ],
+       "hit": [
+        13,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        13
+       ]
+      },
+      {
+       "tip": [
+        12,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        13
+       ]
+      }
+     ]
+    },
+    "b0h1": {
+     "down": [
+      {
+       "tip": [
+        12,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        12
+       ]
+      },
+      {
+       "tip": [
+        11,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        9,
+        2
+       ]
+      },
+      {
+       "tip": [
+        13,
+        6
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        9
+       ]
+      },
+      {
+       "tip": [
+        10,
+        16
+       ],
+       "hit": [
+        10,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        9,
+        13
+       ]
+      },
+      {
+       "tip": [
+        12,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        13
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": [
+        3,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        12
+       ]
+      },
+      {
+       "tip": [
+        4,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        6,
+        2
+       ]
+      },
+      {
+       "tip": [
+        4,
+        4
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        8
+       ]
+      },
+      {
+       "tip": [
+        7,
+        15
+       ],
+       "hit": [
+        7,
+        7
+       ],
+       "carry": null,
+       "hand": [
+        7,
+        10
+       ]
+      },
+      {
+       "tip": [
+        3,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        13
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": [
+        3,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        12
+       ]
+      },
+      {
+       "tip": [
+        11,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        8,
+        7
+       ]
+      },
+      {
+       "tip": [
+        2,
+        6
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        8
+       ]
+      },
+      {
+       "tip": [
+        2,
+        16
+       ],
+       "hit": [
+        2,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        12
+       ]
+      },
+      {
+       "tip": [
+        3,
+        15
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        12
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": [
+        12,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        12
+       ]
+      },
+      {
+       "tip": [
+        4,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        7,
+        7
+       ]
+      },
+      {
+       "tip": [
+        13,
+        6
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        8
+       ]
+      },
+      {
+       "tip": [
+        13,
+        16
+       ],
+       "hit": [
+        13,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        12
+       ]
+      },
+      {
+       "tip": [
+        12,
+        15
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        12
+       ]
+      }
+     ]
+    },
+    "b0h2": {
+     "down": [
+      {
+       "tip": [
+        12,
+        6
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        11
+       ]
+      },
+      {
+       "tip": [
+        11,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        9,
+        1
+       ]
+      },
+      {
+       "tip": [
+        13,
+        5
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        8
+       ]
+      },
+      {
+       "tip": [
+        10,
+        16
+       ],
+       "hit": [
+        10,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        9,
+        12
+       ]
+      },
+      {
+       "tip": [
+        12,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        12
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": [
+        3,
+        6
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        11
+       ]
+      },
+      {
+       "tip": [
+        4,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        6,
+        1
+       ]
+      },
+      {
+       "tip": [
+        4,
+        3
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        7
+       ]
+      },
+      {
+       "tip": [
+        7,
+        14
+       ],
+       "hit": [
+        7,
+        6
+       ],
+       "carry": null,
+       "hand": [
+        7,
+        9
+       ]
+      },
+      {
+       "tip": [
+        3,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        12
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": [
+        3,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        11
+       ]
+      },
+      {
+       "tip": [
+        11,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        8,
+        6
+       ]
+      },
+      {
+       "tip": [
+        2,
+        5
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        7
+       ]
+      },
+      {
+       "tip": [
+        2,
+        16
+       ],
+       "hit": [
+        2,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        11
+       ]
+      },
+      {
+       "tip": [
+        3,
+        14
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        11
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": [
+        12,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        11
+       ]
+      },
+      {
+       "tip": [
+        4,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        7,
+        6
+       ]
+      },
+      {
+       "tip": [
+        13,
+        5
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        7
+       ]
+      },
+      {
+       "tip": [
+        13,
+        16
+       ],
+       "hit": [
+        13,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        11
+       ]
+      },
+      {
+       "tip": [
+        12,
+        14
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        11
+       ]
+      }
+     ]
+    },
+    "b1h0": {
+     "down": [
+      {
+       "tip": [
+        13,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        13
+       ]
+      },
+      {
+       "tip": [
+        12,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        3
+       ]
+      },
+      {
+       "tip": [
+        13,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        10
+       ]
+      },
+      {
+       "tip": [
+        10,
+        16
+       ],
+       "hit": [
+        10,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        9,
+        14
+       ]
+      },
+      {
+       "tip": [
+        13,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        14
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": [
+        2,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        13
+       ]
+      },
+      {
+       "tip": [
+        3,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        3
+       ]
+      },
+      {
+       "tip": [
+        3,
+        5
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        9
+       ]
+      },
+      {
+       "tip": [
+        7,
+        16
+       ],
+       "hit": [
+        7,
+        8
+       ],
+       "carry": null,
+       "hand": [
+        7,
+        11
+       ]
+      },
+      {
+       "tip": [
+        2,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        14
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": [
+        3,
+        9
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        13
+       ]
+      },
+      {
+       "tip": [
+        12,
+        3
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        9,
+        8
+       ]
+      },
+      {
+       "tip": [
+        2,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        9
+       ]
+      },
+      {
+       "tip": [
+        2,
+        16
+       ],
+       "hit": [
+        2,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        13
+       ]
+      },
+      {
+       "tip": [
+        3,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        13
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": [
+        12,
+        9
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        13
+       ]
+      },
+      {
+       "tip": [
+        3,
+        3
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        6,
+        8
+       ]
+      },
+      {
+       "tip": [
+        13,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        9
+       ]
+      },
+      {
+       "tip": [
+        13,
+        16
+       ],
+       "hit": [
+        13,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        13
+       ]
+      },
+      {
+       "tip": [
+        12,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        13
+       ]
+      }
+     ]
+    },
+    "b1h1": {
+     "down": [
+      {
+       "tip": [
+        13,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        12
+       ]
+      },
+      {
+       "tip": [
+        12,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        2
+       ]
+      },
+      {
+       "tip": [
+        13,
+        6
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        9
+       ]
+      },
+      {
+       "tip": [
+        10,
+        16
+       ],
+       "hit": [
+        10,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        9,
+        13
+       ]
+      },
+      {
+       "tip": [
+        13,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        13
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": [
+        2,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        12
+       ]
+      },
+      {
+       "tip": [
+        3,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        2
+       ]
+      },
+      {
+       "tip": [
+        3,
+        4
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        8
+       ]
+      },
+      {
+       "tip": [
+        7,
+        15
+       ],
+       "hit": [
+        7,
+        7
+       ],
+       "carry": null,
+       "hand": [
+        7,
+        10
+       ]
+      },
+      {
+       "tip": [
+        2,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        13
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": [
+        3,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        12
+       ]
+      },
+      {
+       "tip": [
+        12,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        9,
+        7
+       ]
+      },
+      {
+       "tip": [
+        2,
+        6
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        8
+       ]
+      },
+      {
+       "tip": [
+        2,
+        16
+       ],
+       "hit": [
+        2,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        12
+       ]
+      },
+      {
+       "tip": [
+        3,
+        15
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        12
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": [
+        12,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        12
+       ]
+      },
+      {
+       "tip": [
+        3,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        6,
+        7
+       ]
+      },
+      {
+       "tip": [
+        13,
+        6
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        8
+       ]
+      },
+      {
+       "tip": [
+        13,
+        16
+       ],
+       "hit": [
+        13,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        12
+       ]
+      },
+      {
+       "tip": [
+        12,
+        15
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        12
+       ]
+      }
+     ]
+    },
+    "b1h2": {
+     "down": [
+      {
+       "tip": [
+        13,
+        6
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        11
+       ]
+      },
+      {
+       "tip": [
+        12,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        1
+       ]
+      },
+      {
+       "tip": [
+        13,
+        5
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        8
+       ]
+      },
+      {
+       "tip": [
+        10,
+        16
+       ],
+       "hit": [
+        10,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        9,
+        12
+       ]
+      },
+      {
+       "tip": [
+        13,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        12
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": [
+        2,
+        6
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        11
+       ]
+      },
+      {
+       "tip": [
+        3,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        1
+       ]
+      },
+      {
+       "tip": [
+        3,
+        3
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        7
+       ]
+      },
+      {
+       "tip": [
+        7,
+        14
+       ],
+       "hit": [
+        7,
+        6
+       ],
+       "carry": null,
+       "hand": [
+        7,
+        9
+       ]
+      },
+      {
+       "tip": [
+        2,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        12
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": [
+        3,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        11
+       ]
+      },
+      {
+       "tip": [
+        12,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        9,
+        6
+       ]
+      },
+      {
+       "tip": [
+        2,
+        5
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        7
+       ]
+      },
+      {
+       "tip": [
+        2,
+        16
+       ],
+       "hit": [
+        2,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        11
+       ]
+      },
+      {
+       "tip": [
+        3,
+        14
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        11
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": [
+        12,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        11
+       ]
+      },
+      {
+       "tip": [
+        3,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        6,
+        6
+       ]
+      },
+      {
+       "tip": [
+        13,
+        5
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        7
+       ]
+      },
+      {
+       "tip": [
+        13,
+        16
+       ],
+       "hit": [
+        13,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        11
+       ]
+      },
+      {
+       "tip": [
+        12,
+        14
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        11
+       ]
+      }
+     ]
+    },
+    "b2h0": {
+     "down": [
+      {
+       "tip": [
+        13,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        13,
+        13
+       ]
+      },
+      {
+       "tip": [
+        13,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        3
+       ]
+      },
+      {
+       "tip": [
+        13,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        13,
+        10
+       ]
+      },
+      {
+       "tip": [
+        10,
+        16
+       ],
+       "hit": [
+        10,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        9,
+        14
+       ]
+      },
+      {
+       "tip": [
+        13,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        13,
+        14
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": [
+        2,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        2,
+        13
+       ]
+      },
+      {
+       "tip": [
+        2,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        3
+       ]
+      },
+      {
+       "tip": [
+        2,
+        5
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        9
+       ]
+      },
+      {
+       "tip": [
+        7,
+        16
+       ],
+       "hit": [
+        7,
+        8
+       ],
+       "carry": null,
+       "hand": [
+        7,
+        11
+       ]
+      },
+      {
+       "tip": [
+        2,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        2,
+        14
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": [
+        2,
+        9
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        13
+       ]
+      },
+      {
+       "tip": [
+        11,
+        3
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        8,
+        8
+       ]
+      },
+      {
+       "tip": [
+        2,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        9
+       ]
+      },
+      {
+       "tip": [
+        2,
+        16
+       ],
+       "hit": [
+        1,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        3,
+        13
+       ]
+      },
+      {
+       "tip": [
+        2,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        13
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": [
+        13,
+        9
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        13
+       ]
+      },
+      {
+       "tip": [
+        4,
+        3
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        7,
+        8
+       ]
+      },
+      {
+       "tip": [
+        13,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        9
+       ]
+      },
+      {
+       "tip": [
+        13,
+        16
+       ],
+       "hit": [
+        14,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        12,
+        13
+       ]
+      },
+      {
+       "tip": [
+        13,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        13
+       ]
+      }
+     ]
+    },
+    "b2h1": {
+     "down": [
+      {
+       "tip": [
+        13,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        13,
+        12
+       ]
+      },
+      {
+       "tip": [
+        13,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        2
+       ]
+      },
+      {
+       "tip": [
+        13,
+        6
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        13,
+        9
+       ]
+      },
+      {
+       "tip": [
+        10,
+        16
+       ],
+       "hit": [
+        10,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        9,
+        13
+       ]
+      },
+      {
+       "tip": [
+        13,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        13,
+        13
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": [
+        2,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        2,
+        12
+       ]
+      },
+      {
+       "tip": [
+        2,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        2
+       ]
+      },
+      {
+       "tip": [
+        2,
+        4
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        8
+       ]
+      },
+      {
+       "tip": [
+        7,
+        15
+       ],
+       "hit": [
+        7,
+        7
+       ],
+       "carry": null,
+       "hand": [
+        7,
+        10
+       ]
+      },
+      {
+       "tip": [
+        2,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        2,
+        13
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": [
+        2,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        12
+       ]
+      },
+      {
+       "tip": [
+        11,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        8,
+        7
+       ]
+      },
+      {
+       "tip": [
+        2,
+        6
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        8
+       ]
+      },
+      {
+       "tip": [
+        2,
+        16
+       ],
+       "hit": [
+        1,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        3,
+        12
+       ]
+      },
+      {
+       "tip": [
+        2,
+        15
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        12
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": [
+        13,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        12
+       ]
+      },
+      {
+       "tip": [
+        4,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        7,
+        7
+       ]
+      },
+      {
+       "tip": [
+        13,
+        6
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        8
+       ]
+      },
+      {
+       "tip": [
+        13,
+        16
+       ],
+       "hit": [
+        14,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        12,
+        12
+       ]
+      },
+      {
+       "tip": [
+        13,
+        15
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        12
+       ]
+      }
+     ]
+    },
+    "b2h2": {
+     "down": [
+      {
+       "tip": [
+        13,
+        6
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        13,
+        11
+       ]
+      },
+      {
+       "tip": [
+        13,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        1
+       ]
+      },
+      {
+       "tip": [
+        13,
+        5
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        13,
+        8
+       ]
+      },
+      {
+       "tip": [
+        10,
+        16
+       ],
+       "hit": [
+        10,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        9,
+        12
+       ]
+      },
+      {
+       "tip": [
+        13,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        13,
+        12
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": [
+        2,
+        6
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        2,
+        11
+       ]
+      },
+      {
+       "tip": [
+        2,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        1
+       ]
+      },
+      {
+       "tip": [
+        2,
+        3
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        7
+       ]
+      },
+      {
+       "tip": [
+        7,
+        14
+       ],
+       "hit": [
+        7,
+        6
+       ],
+       "carry": null,
+       "hand": [
+        7,
+        9
+       ]
+      },
+      {
+       "tip": [
+        2,
+        16
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        2,
+        12
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": [
+        2,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        11
+       ]
+      },
+      {
+       "tip": [
+        11,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        8,
+        6
+       ]
+      },
+      {
+       "tip": [
+        2,
+        5
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        7
+       ]
+      },
+      {
+       "tip": [
+        2,
+        16
+       ],
+       "hit": [
+        1,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        3,
+        11
+       ]
+      },
+      {
+       "tip": [
+        2,
+        14
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        11
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": [
+        13,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        11
+       ]
+      },
+      {
+       "tip": [
+        4,
+        2
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        7,
+        6
+       ]
+      },
+      {
+       "tip": [
+        13,
+        5
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        7
+       ]
+      },
+      {
+       "tip": [
+        13,
+        16
+       ],
+       "hit": [
+        14,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        12,
+        11
+       ]
+      },
+      {
+       "tip": [
+        13,
+        14
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        11
+       ]
+      }
+     ]
+    }
+   }
+  },
+  "hammer": {
+   "col0": 15,
+   "frames": 4,
+   "fps": 10,
+   "impactFrame": 2,
+   "tool": "hammer",
+   "anchors": {
+    "b0h0": {
+     "down": [
+      {
+       "tip": [
+        11,
+        10
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        13
+       ]
+      },
+      {
+       "tip": [
+        11,
+        5
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        8
+       ]
+      },
+      {
+       "tip": [
+        9,
+        16
+       ],
+       "hit": [
+        9,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        10,
+        14
+       ]
+      },
+      {
+       "tip": [
+        12,
+        9
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        12
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": [
+        4,
+        10
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        13
+       ]
+      },
+      {
+       "tip": [
+        4,
+        5
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        8
+       ]
+      },
+      {
+       "tip": [
+        6,
+        15
+       ],
+       "hit": [
+        5,
+        8
+       ],
+       "carry": null,
+       "hand": [
+        5,
+        12
+       ]
+      },
+      {
+       "tip": [
+        3,
+        9
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        12
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": [
+        4,
+        10
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        13
+       ]
+      },
+      {
+       "tip": [
+        8,
+        5
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        6,
+        8
+       ]
+      },
+      {
+       "tip": [
+        2,
+        14
+       ],
+       "hit": [
+        1,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        13
+       ]
+      },
+      {
+       "tip": [
+        2,
+        10
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        12
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": [
+        11,
+        10
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        13
+       ]
+      },
+      {
+       "tip": [
+        7,
+        5
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        9,
+        8
+       ]
+      },
+      {
+       "tip": [
+        13,
+        14
+       ],
+       "hit": [
+        14,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        13
+       ]
+      },
+      {
+       "tip": [
+        13,
+        10
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        12
+       ]
+      }
+     ]
+    },
+    "b0h1": {
+     "down": [
+      {
+       "tip": [
+        11,
+        9
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        12
+       ]
+      },
+      {
+       "tip": [
+        11,
+        4
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        7
+       ]
+      },
+      {
+       "tip": [
+        9,
+        16
+       ],
+       "hit": [
+        9,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        10,
+        13
+       ]
+      },
+      {
+       "tip": [
+        12,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        11
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": [
+        4,
+        9
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        12
+       ]
+      },
+      {
+       "tip": [
+        4,
+        4
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        7
+       ]
+      },
+      {
+       "tip": [
+        6,
+        14
+       ],
+       "hit": [
+        5,
+        7
+       ],
+       "carry": null,
+       "hand": [
+        5,
+        11
+       ]
+      },
+      {
+       "tip": [
+        3,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        11
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": [
+        4,
+        9
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        12
+       ]
+      },
+      {
+       "tip": [
+        8,
+        4
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        6,
+        7
+       ]
+      },
+      {
+       "tip": [
+        2,
+        13
+       ],
+       "hit": [
+        1,
+        14
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        12
+       ]
+      },
+      {
+       "tip": [
+        2,
+        9
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        11
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": [
+        11,
+        9
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        12
+       ]
+      },
+      {
+       "tip": [
+        7,
+        4
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        9,
+        7
+       ]
+      },
+      {
+       "tip": [
+        13,
+        13
+       ],
+       "hit": [
+        14,
+        14
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        12
+       ]
+      },
+      {
+       "tip": [
+        13,
+        9
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        11
+       ]
+      }
+     ]
+    },
+    "b0h2": {
+     "down": [
+      {
+       "tip": [
+        11,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        11
+       ]
+      },
+      {
+       "tip": [
+        11,
+        3
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        6
+       ]
+      },
+      {
+       "tip": [
+        9,
+        15
+       ],
+       "hit": [
+        9,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        10,
+        12
+       ]
+      },
+      {
+       "tip": [
+        12,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        10
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": [
+        4,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        11
+       ]
+      },
+      {
+       "tip": [
+        4,
+        3
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        6
+       ]
+      },
+      {
+       "tip": [
+        6,
+        13
+       ],
+       "hit": [
+        5,
+        6
+       ],
+       "carry": null,
+       "hand": [
+        5,
+        10
+       ]
+      },
+      {
+       "tip": [
+        3,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        10
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": [
+        4,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        11
+       ]
+      },
+      {
+       "tip": [
+        8,
+        3
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        6,
+        6
+       ]
+      },
+      {
+       "tip": [
+        2,
+        12
+       ],
+       "hit": [
+        1,
+        13
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        11
+       ]
+      },
+      {
+       "tip": [
+        2,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        10
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": [
+        11,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        11
+       ]
+      },
+      {
+       "tip": [
+        7,
+        3
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        9,
+        6
+       ]
+      },
+      {
+       "tip": [
+        13,
+        12
+       ],
+       "hit": [
+        14,
+        13
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        11
+       ]
+      },
+      {
+       "tip": [
+        13,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        10
+       ]
+      }
+     ]
+    },
+    "b1h0": {
+     "down": [
+      {
+       "tip": [
+        12,
+        10
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        13
+       ]
+      },
+      {
+       "tip": [
+        12,
+        5
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        8
+       ]
+      },
+      {
+       "tip": [
+        10,
+        16
+       ],
+       "hit": [
+        10,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        14
+       ]
+      },
+      {
+       "tip": [
+        13,
+        9
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        12
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": [
+        3,
+        10
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        13
+       ]
+      },
+      {
+       "tip": [
+        3,
+        5
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        8
+       ]
+      },
+      {
+       "tip": [
+        5,
+        15
+       ],
+       "hit": [
+        4,
+        8
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        12
+       ]
+      },
+      {
+       "tip": [
+        2,
+        9
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        12
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": [
+        4,
+        10
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        13
+       ]
+      },
+      {
+       "tip": [
+        8,
+        5
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        6,
+        8
+       ]
+      },
+      {
+       "tip": [
+        2,
+        14
+       ],
+       "hit": [
+        1,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        13
+       ]
+      },
+      {
+       "tip": [
+        2,
+        10
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        12
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": [
+        11,
+        10
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        13
+       ]
+      },
+      {
+       "tip": [
+        7,
+        5
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        9,
+        8
+       ]
+      },
+      {
+       "tip": [
+        13,
+        14
+       ],
+       "hit": [
+        14,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        13
+       ]
+      },
+      {
+       "tip": [
+        13,
+        10
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        12
+       ]
+      }
+     ]
+    },
+    "b1h1": {
+     "down": [
+      {
+       "tip": [
+        12,
+        9
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        12
+       ]
+      },
+      {
+       "tip": [
+        12,
+        4
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        7
+       ]
+      },
+      {
+       "tip": [
+        10,
+        16
+       ],
+       "hit": [
+        10,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        13
+       ]
+      },
+      {
+       "tip": [
+        13,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        11
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": [
+        3,
+        9
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        12
+       ]
+      },
+      {
+       "tip": [
+        3,
+        4
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        7
+       ]
+      },
+      {
+       "tip": [
+        5,
+        14
+       ],
+       "hit": [
+        4,
+        7
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        11
+       ]
+      },
+      {
+       "tip": [
+        2,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        11
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": [
+        4,
+        9
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        12
+       ]
+      },
+      {
+       "tip": [
+        8,
+        4
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        6,
+        7
+       ]
+      },
+      {
+       "tip": [
+        2,
+        13
+       ],
+       "hit": [
+        1,
+        14
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        12
+       ]
+      },
+      {
+       "tip": [
+        2,
+        9
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        11
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": [
+        11,
+        9
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        12
+       ]
+      },
+      {
+       "tip": [
+        7,
+        4
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        9,
+        7
+       ]
+      },
+      {
+       "tip": [
+        13,
+        13
+       ],
+       "hit": [
+        14,
+        14
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        12
+       ]
+      },
+      {
+       "tip": [
+        13,
+        9
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        11
+       ]
+      }
+     ]
+    },
+    "b1h2": {
+     "down": [
+      {
+       "tip": [
+        12,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        11
+       ]
+      },
+      {
+       "tip": [
+        12,
+        3
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        6
+       ]
+      },
+      {
+       "tip": [
+        10,
+        15
+       ],
+       "hit": [
+        10,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        12
+       ]
+      },
+      {
+       "tip": [
+        13,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        10
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": [
+        3,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        11
+       ]
+      },
+      {
+       "tip": [
+        3,
+        3
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        6
+       ]
+      },
+      {
+       "tip": [
+        5,
+        13
+       ],
+       "hit": [
+        4,
+        6
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        10
+       ]
+      },
+      {
+       "tip": [
+        2,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        10
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": [
+        4,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        11
+       ]
+      },
+      {
+       "tip": [
+        8,
+        3
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        6,
+        6
+       ]
+      },
+      {
+       "tip": [
+        2,
+        12
+       ],
+       "hit": [
+        1,
+        13
+       ],
+       "carry": null,
+       "hand": [
+        4,
+        11
+       ]
+      },
+      {
+       "tip": [
+        2,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        10
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": [
+        11,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        11
+       ]
+      },
+      {
+       "tip": [
+        7,
+        3
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        9,
+        6
+       ]
+      },
+      {
+       "tip": [
+        13,
+        12
+       ],
+       "hit": [
+        14,
+        13
+       ],
+       "carry": null,
+       "hand": [
+        11,
+        11
+       ]
+      },
+      {
+       "tip": [
+        13,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        10
+       ]
+      }
+     ]
+    },
+    "b2h0": {
+     "down": [
+      {
+       "tip": [
+        13,
+        10
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        13,
+        13
+       ]
+      },
+      {
+       "tip": [
+        13,
+        5
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        13,
+        8
+       ]
+      },
+      {
+       "tip": [
+        11,
+        16
+       ],
+       "hit": [
+        11,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        12,
+        14
+       ]
+      },
+      {
+       "tip": [
+        13,
+        9
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        13,
+        12
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": [
+        2,
+        10
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        2,
+        13
+       ]
+      },
+      {
+       "tip": [
+        2,
+        5
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        2,
+        8
+       ]
+      },
+      {
+       "tip": [
+        4,
+        15
+       ],
+       "hit": [
+        3,
+        8
+       ],
+       "carry": null,
+       "hand": [
+        3,
+        12
+       ]
+      },
+      {
+       "tip": [
+        2,
+        9
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        2,
+        12
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": [
+        3,
+        10
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        13
+       ]
+      },
+      {
+       "tip": [
+        7,
+        5
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        8
+       ]
+      },
+      {
+       "tip": [
+        2,
+        14
+       ],
+       "hit": [
+        1,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        3,
+        13
+       ]
+      },
+      {
+       "tip": [
+        2,
+        10
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        12
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": [
+        12,
+        10
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        13
+       ]
+      },
+      {
+       "tip": [
+        8,
+        5
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        8
+       ]
+      },
+      {
+       "tip": [
+        13,
+        14
+       ],
+       "hit": [
+        14,
+        15
+       ],
+       "carry": null,
+       "hand": [
+        12,
+        13
+       ]
+      },
+      {
+       "tip": [
+        13,
+        10
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        12
+       ]
+      }
+     ]
+    },
+    "b2h1": {
+     "down": [
+      {
+       "tip": [
+        13,
+        9
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        13,
+        12
+       ]
+      },
+      {
+       "tip": [
+        13,
+        4
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        13,
+        7
+       ]
+      },
+      {
+       "tip": [
+        11,
+        16
+       ],
+       "hit": [
+        11,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        12,
+        13
+       ]
+      },
+      {
+       "tip": [
+        13,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        13,
+        11
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": [
+        2,
+        9
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        2,
+        12
+       ]
+      },
+      {
+       "tip": [
+        2,
+        4
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        2,
+        7
+       ]
+      },
+      {
+       "tip": [
+        4,
+        14
+       ],
+       "hit": [
+        3,
+        7
+       ],
+       "carry": null,
+       "hand": [
+        3,
+        11
+       ]
+      },
+      {
+       "tip": [
+        2,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        2,
+        11
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": [
+        3,
+        9
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        12
+       ]
+      },
+      {
+       "tip": [
+        7,
+        4
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        7
+       ]
+      },
+      {
+       "tip": [
+        2,
+        13
+       ],
+       "hit": [
+        1,
+        14
+       ],
+       "carry": null,
+       "hand": [
+        3,
+        12
+       ]
+      },
+      {
+       "tip": [
+        2,
+        9
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        11
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": [
+        12,
+        9
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        12
+       ]
+      },
+      {
+       "tip": [
+        8,
+        4
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        7
+       ]
+      },
+      {
+       "tip": [
+        13,
+        13
+       ],
+       "hit": [
+        14,
+        14
+       ],
+       "carry": null,
+       "hand": [
+        12,
+        12
+       ]
+      },
+      {
+       "tip": [
+        13,
+        9
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        11
+       ]
+      }
+     ]
+    },
+    "b2h2": {
+     "down": [
+      {
+       "tip": [
+        13,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        13,
+        11
+       ]
+      },
+      {
+       "tip": [
+        13,
+        3
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        13,
+        6
+       ]
+      },
+      {
+       "tip": [
+        11,
+        15
+       ],
+       "hit": [
+        11,
+        16
+       ],
+       "carry": null,
+       "hand": [
+        12,
+        12
+       ]
+      },
+      {
+       "tip": [
+        13,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        13,
+        10
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": [
+        2,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        2,
+        11
+       ]
+      },
+      {
+       "tip": [
+        2,
+        3
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        2,
+        6
+       ]
+      },
+      {
+       "tip": [
+        4,
+        13
+       ],
+       "hit": [
+        3,
+        6
+       ],
+       "carry": null,
+       "hand": [
+        3,
+        10
+       ]
+      },
+      {
+       "tip": [
+        2,
+        7
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        2,
+        10
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": [
+        3,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        4,
+        11
+       ]
+      },
+      {
+       "tip": [
+        7,
+        3
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        5,
+        6
+       ]
+      },
+      {
+       "tip": [
+        2,
+        12
+       ],
+       "hit": [
+        1,
+        13
+       ],
+       "carry": null,
+       "hand": [
+        3,
+        11
+       ]
+      },
+      {
+       "tip": [
+        2,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        3,
+        10
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": [
+        12,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        11,
+        11
+       ]
+      },
+      {
+       "tip": [
+        8,
+        3
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        10,
+        6
+       ]
+      },
+      {
+       "tip": [
+        13,
+        12
+       ],
+       "hit": [
+        14,
+        13
+       ],
+       "carry": null,
+       "hand": [
+        12,
+        11
+       ]
+      },
+      {
+       "tip": [
+        13,
+        8
+       ],
+       "hit": null,
+       "carry": null,
+       "hand": [
+        12,
+        10
+       ]
+      }
+     ]
+    }
+   }
+  },
+  "carry": {
+   "col0": 19,
+   "frames": 4,
+   "fps": 8,
+   "impactFrame": -1,
+   "tool": null,
+   "anchors": {
+    "b0h0": {
+     "down": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        11
+       ],
+       "hand": [
+        11,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        11
+       ],
+       "hand": [
+        11,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        11
+       ],
+       "hand": [
+        11,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        11
+       ],
+       "hand": [
+        11,
+        12
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        11
+       ],
+       "hand": [
+        4,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        11
+       ],
+       "hand": [
+        4,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        11
+       ],
+       "hand": [
+        4,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        11
+       ],
+       "hand": [
+        4,
+        12
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        7,
+        11
+       ],
+       "hand": [
+        5,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        7,
+        11
+       ],
+       "hand": [
+        5,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        7,
+        11
+       ],
+       "hand": [
+        5,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        7,
+        11
+       ],
+       "hand": [
+        5,
+        12
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        11,
+        11
+       ],
+       "hand": [
+        10,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        11,
+        11
+       ],
+       "hand": [
+        10,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        11,
+        11
+       ],
+       "hand": [
+        10,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        11,
+        11
+       ],
+       "hand": [
+        10,
+        12
+       ]
+      }
+     ]
+    },
+    "b0h1": {
+     "down": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        10
+       ],
+       "hand": [
+        11,
+        11
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        10
+       ],
+       "hand": [
+        11,
+        11
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        10
+       ],
+       "hand": [
+        11,
+        11
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        10
+       ],
+       "hand": [
+        11,
+        11
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        10
+       ],
+       "hand": [
+        4,
+        11
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        10
+       ],
+       "hand": [
+        4,
+        11
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        10
+       ],
+       "hand": [
+        4,
+        11
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        10
+       ],
+       "hand": [
+        4,
+        11
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        7,
+        10
+       ],
+       "hand": [
+        5,
+        11
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        7,
+        10
+       ],
+       "hand": [
+        5,
+        11
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        7,
+        10
+       ],
+       "hand": [
+        5,
+        11
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        7,
+        10
+       ],
+       "hand": [
+        5,
+        11
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        11,
+        10
+       ],
+       "hand": [
+        10,
+        11
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        11,
+        10
+       ],
+       "hand": [
+        10,
+        11
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        11,
+        10
+       ],
+       "hand": [
+        10,
+        11
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        11,
+        10
+       ],
+       "hand": [
+        10,
+        11
+       ]
+      }
+     ]
+    },
+    "b0h2": {
+     "down": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        9
+       ],
+       "hand": [
+        11,
+        10
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        9
+       ],
+       "hand": [
+        11,
+        10
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        9
+       ],
+       "hand": [
+        11,
+        10
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        9
+       ],
+       "hand": [
+        11,
+        10
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        9
+       ],
+       "hand": [
+        4,
+        10
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        9
+       ],
+       "hand": [
+        4,
+        10
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        9
+       ],
+       "hand": [
+        4,
+        10
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        9
+       ],
+       "hand": [
+        4,
+        10
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        7,
+        9
+       ],
+       "hand": [
+        5,
+        10
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        7,
+        9
+       ],
+       "hand": [
+        5,
+        10
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        7,
+        9
+       ],
+       "hand": [
+        5,
+        10
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        7,
+        9
+       ],
+       "hand": [
+        5,
+        10
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        11,
+        9
+       ],
+       "hand": [
+        10,
+        10
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        11,
+        9
+       ],
+       "hand": [
+        10,
+        10
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        11,
+        9
+       ],
+       "hand": [
+        10,
+        10
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        11,
+        9
+       ],
+       "hand": [
+        10,
+        10
+       ]
+      }
+     ]
+    },
+    "b1h0": {
+     "down": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        11
+       ],
+       "hand": [
+        12,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        11
+       ],
+       "hand": [
+        12,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        11
+       ],
+       "hand": [
+        12,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        11
+       ],
+       "hand": [
+        12,
+        12
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        11
+       ],
+       "hand": [
+        3,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        11
+       ],
+       "hand": [
+        3,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        11
+       ],
+       "hand": [
+        3,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        11
+       ],
+       "hand": [
+        3,
+        12
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        7,
+        11
+       ],
+       "hand": [
+        5,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        7,
+        11
+       ],
+       "hand": [
+        5,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        7,
+        11
+       ],
+       "hand": [
+        5,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        7,
+        11
+       ],
+       "hand": [
+        5,
+        12
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        11,
+        11
+       ],
+       "hand": [
+        10,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        11,
+        11
+       ],
+       "hand": [
+        10,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        11,
+        11
+       ],
+       "hand": [
+        10,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        11,
+        11
+       ],
+       "hand": [
+        10,
+        12
+       ]
+      }
+     ]
+    },
+    "b1h1": {
+     "down": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        10
+       ],
+       "hand": [
+        12,
+        11
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        10
+       ],
+       "hand": [
+        12,
+        11
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        10
+       ],
+       "hand": [
+        12,
+        11
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        10
+       ],
+       "hand": [
+        12,
+        11
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        10
+       ],
+       "hand": [
+        3,
+        11
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        10
+       ],
+       "hand": [
+        3,
+        11
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        10
+       ],
+       "hand": [
+        3,
+        11
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        10
+       ],
+       "hand": [
+        3,
+        11
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        7,
+        10
+       ],
+       "hand": [
+        5,
+        11
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        7,
+        10
+       ],
+       "hand": [
+        5,
+        11
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        7,
+        10
+       ],
+       "hand": [
+        5,
+        11
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        7,
+        10
+       ],
+       "hand": [
+        5,
+        11
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        11,
+        10
+       ],
+       "hand": [
+        10,
+        11
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        11,
+        10
+       ],
+       "hand": [
+        10,
+        11
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        11,
+        10
+       ],
+       "hand": [
+        10,
+        11
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        11,
+        10
+       ],
+       "hand": [
+        10,
+        11
+       ]
+      }
+     ]
+    },
+    "b1h2": {
+     "down": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        9
+       ],
+       "hand": [
+        12,
+        10
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        9
+       ],
+       "hand": [
+        12,
+        10
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        9
+       ],
+       "hand": [
+        12,
+        10
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        9
+       ],
+       "hand": [
+        12,
+        10
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        9
+       ],
+       "hand": [
+        3,
+        10
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        9
+       ],
+       "hand": [
+        3,
+        10
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        9
+       ],
+       "hand": [
+        3,
+        10
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        9
+       ],
+       "hand": [
+        3,
+        10
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        7,
+        9
+       ],
+       "hand": [
+        5,
+        10
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        7,
+        9
+       ],
+       "hand": [
+        5,
+        10
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        7,
+        9
+       ],
+       "hand": [
+        5,
+        10
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        7,
+        9
+       ],
+       "hand": [
+        5,
+        10
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        11,
+        9
+       ],
+       "hand": [
+        10,
+        10
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        11,
+        9
+       ],
+       "hand": [
+        10,
+        10
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        11,
+        9
+       ],
+       "hand": [
+        10,
+        10
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        11,
+        9
+       ],
+       "hand": [
+        10,
+        10
+       ]
+      }
+     ]
+    },
+    "b2h0": {
+     "down": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        11
+       ],
+       "hand": [
+        13,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        11
+       ],
+       "hand": [
+        13,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        11
+       ],
+       "hand": [
+        13,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        11
+       ],
+       "hand": [
+        13,
+        12
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        11
+       ],
+       "hand": [
+        2,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        11
+       ],
+       "hand": [
+        2,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        11
+       ],
+       "hand": [
+        2,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        11
+       ],
+       "hand": [
+        2,
+        12
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        7,
+        11
+       ],
+       "hand": [
+        4,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        7,
+        11
+       ],
+       "hand": [
+        4,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        7,
+        11
+       ],
+       "hand": [
+        4,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        7,
+        11
+       ],
+       "hand": [
+        4,
+        12
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        12,
+        11
+       ],
+       "hand": [
+        11,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        12,
+        11
+       ],
+       "hand": [
+        11,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        12,
+        11
+       ],
+       "hand": [
+        11,
+        12
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        12,
+        11
+       ],
+       "hand": [
+        11,
+        12
+       ]
+      }
+     ]
+    },
+    "b2h1": {
+     "down": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        10
+       ],
+       "hand": [
+        13,
+        11
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        10
+       ],
+       "hand": [
+        13,
+        11
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        10
+       ],
+       "hand": [
+        13,
+        11
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        10
+       ],
+       "hand": [
+        13,
+        11
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        10
+       ],
+       "hand": [
+        2,
+        11
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        10
+       ],
+       "hand": [
+        2,
+        11
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        10
+       ],
+       "hand": [
+        2,
+        11
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        10
+       ],
+       "hand": [
+        2,
+        11
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        7,
+        10
+       ],
+       "hand": [
+        4,
+        11
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        7,
+        10
+       ],
+       "hand": [
+        4,
+        11
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        7,
+        10
+       ],
+       "hand": [
+        4,
+        11
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        7,
+        10
+       ],
+       "hand": [
+        4,
+        11
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        12,
+        10
+       ],
+       "hand": [
+        11,
+        11
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        12,
+        10
+       ],
+       "hand": [
+        11,
+        11
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        12,
+        10
+       ],
+       "hand": [
+        11,
+        11
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        12,
+        10
+       ],
+       "hand": [
+        11,
+        11
+       ]
+      }
+     ]
+    },
+    "b2h2": {
+     "down": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        9
+       ],
+       "hand": [
+        13,
+        10
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        9
+       ],
+       "hand": [
+        13,
+        10
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        9
+       ],
+       "hand": [
+        13,
+        10
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        9
+       ],
+       "hand": [
+        13,
+        10
+       ]
+      }
+     ],
+     "up": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        9
+       ],
+       "hand": [
+        2,
+        10
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        9
+       ],
+       "hand": [
+        2,
+        10
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        9
+       ],
+       "hand": [
+        2,
+        10
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        8,
+        9
+       ],
+       "hand": [
+        2,
+        10
+       ]
+      }
+     ],
+     "left": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        7,
+        9
+       ],
+       "hand": [
+        4,
+        10
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        7,
+        9
+       ],
+       "hand": [
+        4,
+        10
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        7,
+        9
+       ],
+       "hand": [
+        4,
+        10
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        7,
+        9
+       ],
+       "hand": [
+        4,
+        10
+       ]
+      }
+     ],
+     "right": [
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        12,
+        9
+       ],
+       "hand": [
+        11,
+        10
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        12,
+        9
+       ],
+       "hand": [
+        11,
+        10
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        12,
+        9
+       ],
+       "hand": [
+        11,
+        10
+       ]
+      },
+      {
+       "tip": null,
+       "hit": null,
+       "carry": [
+        12,
+        9
+       ],
+       "hand": [
+        11,
+        10
+       ]
+      }
+     ]
+    }
+   }
+  }
+ },
+ "samples": {
+  "logger": {
+   "file": "work-logger.png",
+   "walker": "walk-logger.png",
+   "look": {
+    "g": "m",
+    "b": 2,
+    "h": 2,
+    "s": 7,
+    "hs": "short",
+    "hc": 4,
+    "bd": "stubble",
+    "tp": "vest",
+    "tc": "orange",
+    "tr": "white",
+    "lg": "cream",
+    "hw": "cap",
+    "hwc": "blue",
+    "ac": "pouch",
+    "ax": "ochre",
+    "tl": "axe",
+    "kit": "logger"
+   },
+   "size": [
+    368,
+    72
+   ]
+  },
+  "sawyer": {
+   "file": "work-sawyer.png",
+   "walker": "walk-sawyer.png",
+   "look": {
+    "g": "m",
+    "b": 1,
+    "h": 1,
+    "s": 7,
+    "hs": "short",
+    "hc": 1,
+    "bd": "full",
+    "tp": "tunic",
+    "tc": "cream",
+    "tr": "cream",
+    "lg": "leather",
+    "hw": "kerchief",
+    "hwc": "grey",
+    "ac": "scarf",
+    "ax": "ochre",
+    "tl": "saw",
+    "kit": "sawyer"
+   },
+   "size": [
+    368,
+    72
+   ]
+  },
+  "farmer": {
+   "file": "work-farmer.png",
+   "walker": "walk-farmer.png",
+   "look": {
+    "g": "m",
+    "b": 0,
+    "h": 2,
+    "s": 1,
+    "hs": "shaggy",
+    "hc": 6,
+    "bd": "moustache",
+    "tp": "tunic",
+    "tc": "brown",
+    "tr": "ochre",
+    "lg": "brown",
+    "hw": "straw",
+    "hwc": "ochre",
+    "ac": "sash",
+    "ax": "blue",
+    "tl": "hoe",
+    "kit": "farmer"
+   },
+   "size": [
+    368,
+    72
+   ]
+  },
+  "forager": {
+   "file": "work-forager.png",
+   "walker": "walk-forager.png",
+   "look": {
+    "g": "m",
+    "b": 2,
+    "h": 0,
+    "s": 4,
+    "hs": "bald",
+    "hc": 7,
+    "bd": "moustache",
+    "tp": "smock",
+    "tc": "cream",
+    "tr": "green",
+    "lg": "black",
+    "hw": "straw",
+    "hwc": "ochre",
+    "ac": "scarf",
+    "ax": "green",
+    "tl": "basket",
+    "kit": "forager"
+   },
+   "size": [
+    368,
+    72
+   ]
+  },
+  "miner": {
+   "file": "work-miner.png",
+   "walker": "walk-miner.png",
+   "look": {
+    "g": "m",
+    "b": 2,
+    "h": 1,
+    "s": 7,
+    "hs": "curly",
+    "hc": 6,
+    "bd": "none",
+    "tp": "smock",
+    "tc": "brown",
+    "tr": "red",
+    "lg": "cream",
+    "hw": "hood",
+    "hwc": "grey",
+    "ac": "pack",
+    "ax": "blue",
+    "tl": "pick",
+    "kit": "miner"
+   },
+   "size": [
+    368,
+    72
+   ]
+  },
+  "builder": {
+   "file": "work-builder.png",
+   "walker": "walk-builder.png",
+   "look": {
+    "g": "m",
+    "b": 1,
+    "h": 2,
+    "s": 4,
+    "hs": "crop",
+    "hc": 0,
+    "bd": "stubble",
+    "tp": "vest",
+    "tc": "teal",
+    "tr": "grey",
+    "lg": "slate",
+    "hw": "cap",
+    "hwc": "orange",
+    "ac": "pouch",
+    "ax": "blue",
+    "tl": "hammer",
+    "kit": "builder"
+   },
+   "size": [
+    368,
+    72
+   ]
+  },
+  "porter": {
+   "file": "work-porter.png",
+   "walker": "walk-porter.png",
+   "look": {
+    "g": "m",
+    "b": 0,
+    "h": 0,
+    "s": 3,
+    "hs": "shaggy",
+    "hc": 2,
+    "bd": "full",
+    "tp": "vest",
+    "tc": "grey",
+    "tr": "cream",
+    "lg": "cream",
+    "hw": "cap",
+    "hwc": "ochre",
+    "ac": "pack",
+    "ax": "red",
+    "tl": "bundle",
+    "kit": "porter"
+   },
+   "size": [
+    368,
+    72
+   ]
+  },
+  "t-militia": {
+   "file": "work-t-militia.png",
+   "walker": "walk-t-militia.png",
+   "look": {
+    "g": "m",
+    "b": 1,
+    "h": 2,
+    "s": 2,
+    "hs": "short",
+    "hc": 0,
+    "bd": "stubble",
+    "tp": "vest",
+    "tc": "grey",
+    "tr": "brown",
+    "lg": "grey",
+    "hw": "straw",
+    "hwc": "ochre",
+    "ac": "none",
+    "ax": "brown",
+    "tl": "axe",
+    "kit": "t-militia"
+   },
+   "size": [
+    368,
+    72
+   ]
+  },
+  "villager": {
+   "file": "work-villager.png",
+   "walker": "walk-villager.png",
+   "look": {
+    "g": "m",
+    "b": 2,
+    "h": 2,
+    "s": 2,
+    "hs": "short",
+    "hc": 3,
+    "bd": "none",
+    "tp": "tunic",
+    "tc": "green",
+    "tr": "grey",
+    "lg": "grey",
+    "hw": "felt",
+    "hwc": "cream",
+    "ac": "sash",
+    "ax": "red",
+    "tl": "none",
+    "kit": "villager"
+   },
+   "size": [
+    368,
+    72
+   ]
+  }
+ }
+}
