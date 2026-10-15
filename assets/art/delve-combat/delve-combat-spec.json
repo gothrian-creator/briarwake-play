@@ -448,6 +448,80 @@
     "block",
     "death"
    ]
+  },
+  "boar": {
+   "meta": "beasts1015.json",
+   "file": "boar-front.png",
+   "frame": [
+    156,
+    174
+   ],
+   "captain": false,
+   "moves": [
+    "bite",
+    "lunge"
+   ],
+   "reactions": [
+    "hit",
+    "dodge",
+    "death"
+   ]
+  },
+  "briar-crawler": {
+   "meta": "beasts1015.json",
+   "file": "briar-crawler-front.png",
+   "frame": [
+    156,
+    174
+   ],
+   "captain": false,
+   "moves": [
+    "bite",
+    "lunge"
+   ],
+   "reactions": [
+    "hit",
+    "dodge",
+    "death"
+   ]
+  },
+  "bats": {
+   "meta": "beasts1015.json",
+   "file": "bats-front.png",
+   "frame": [
+    156,
+    174
+   ],
+   "captain": false,
+   "moves": [
+    "bite",
+    "lunge"
+   ],
+   "reactions": [
+    "hit",
+    "dodge",
+    "death"
+   ],
+   "airborne": true
+  },
+  "bog-wight": {
+   "meta": "beasts1015.json",
+   "file": "bog-wight-front.png",
+   "frame": [
+    156,
+    174
+   ],
+   "captain": false,
+   "moves": [
+    "bite",
+    "lunge"
+   ],
+   "reactions": [
+    "hit",
+    "dodge",
+    "block",
+    "death"
+   ]
   }
  },
  "brigands": {

@@ -5,7 +5,8 @@
  "revision": 2,
  "revisions": [
   "2026-10-01 rev 1: style test, panels 2 + 5",
-  "2026-10-02 rev 2: panel 2's falling banner split into its own layer (base + banner-<faction> for league / covenant / nightglass / brigand, 3 sizes, base + layer == full render 0 px); every banner uses only its faction's colours (League emblem cream -> gilt, Covenant emblem moss -> jpaint, knobs per faction); lantern post (panel 2) and the dropped League standard (panel 5) lifted above the text band (y 396); swappable-banner layer convention for panel 8 and panels 1-12; reserved slot 13 for courtship (not drawn, on hold)"
+  "2026-10-02 rev 2: panel 2's falling banner split into its own layer (base + banner-<faction> for league / covenant / nightglass / brigand, 3 sizes, base + layer == full render 0 px); every banner uses only its faction's colours (League emblem cream -> gilt, Covenant emblem moss -> jpaint, knobs per faction); lantern post (panel 2) and the dropped League standard (panel 5) lifted above the text band (y 396); swappable-banner layer convention for panel 8 and panels 1-12; reserved slot 13 for courtship (not drawn, on hold)",
+  "2026-10-15: opening panels (opening-leave, -road, -clearing, -camp, -elder) for the new-game cutscene, same format and checks"
  ],
  "panels": [
   {
@@ -487,6 +488,166 @@
     "upperStd": 30.6,
     "objectPxBelowY396InBox": 0,
     "objectPxBelowY396AllWidth": 0
+   }
+  },
+  {
+   "id": "opening-leave",
+   "name": "Caravan leaving",
+   "file": "panel-opening-leave.png",
+   "also": [
+    "panel-opening-leave-1024x576.png",
+    "panel-opening-leave-480x270.png"
+   ],
+   "set": "opening (2026-10-15)",
+   "checks": {
+    "colours": 125,
+    "offPalette": 0,
+    "nonGridPixelsAreEdgeRingOnly": true,
+    "calmBandStd": 9.4,
+    "upperStd": 27.1,
+    "objectPxBelowY396InBox": 0,
+    "sizes": {
+     "1024x576": [
+      1024,
+      576
+     ],
+     "960x540": [
+      960,
+      540
+     ],
+     "480x270": [
+      480,
+      270
+     ]
+    }
+   }
+  },
+  {
+   "id": "opening-road",
+   "name": "The long road",
+   "file": "panel-opening-road.png",
+   "also": [
+    "panel-opening-road-1024x576.png",
+    "panel-opening-road-480x270.png"
+   ],
+   "set": "opening (2026-10-15)",
+   "checks": {
+    "colours": 69,
+    "offPalette": 0,
+    "nonGridPixelsAreEdgeRingOnly": true,
+    "calmBandStd": 9.3,
+    "upperStd": 20.2,
+    "objectPxBelowY396InBox": 0,
+    "sizes": {
+     "1024x576": [
+      1024,
+      576
+     ],
+     "960x540": [
+      960,
+      540
+     ],
+     "480x270": [
+      480,
+      270
+     ]
+    }
+   }
+  },
+  {
+   "id": "opening-clearing",
+   "name": "Finding the clearing",
+   "file": "panel-opening-clearing.png",
+   "also": [
+    "panel-opening-clearing-1024x576.png",
+    "panel-opening-clearing-480x270.png"
+   ],
+   "set": "opening (2026-10-15)",
+   "checks": {
+    "colours": 121,
+    "offPalette": 0,
+    "nonGridPixelsAreEdgeRingOnly": true,
+    "calmBandStd": 9.1,
+    "upperStd": 34.0,
+    "objectPxBelowY396InBox": 0,
+    "sizes": {
+     "1024x576": [
+      1024,
+      576
+     ],
+     "960x540": [
+      960,
+      540
+     ],
+     "480x270": [
+      480,
+      270
+     ]
+    }
+   }
+  },
+  {
+   "id": "opening-camp",
+   "name": "Making camp",
+   "file": "panel-opening-camp.png",
+   "also": [
+    "panel-opening-camp-1024x576.png",
+    "panel-opening-camp-480x270.png"
+   ],
+   "set": "opening (2026-10-15)",
+   "checks": {
+    "colours": 106,
+    "offPalette": 0,
+    "nonGridPixelsAreEdgeRingOnly": true,
+    "calmBandStd": 9.0,
+    "upperStd": 20.4,
+    "objectPxBelowY396InBox": 0,
+    "sizes": {
+     "1024x576": [
+      1024,
+      576
+     ],
+     "960x540": [
+      960,
+      540
+     ],
+     "480x270": [
+      480,
+      270
+     ]
+    }
+   }
+  },
+  {
+   "id": "opening-elder",
+   "name": "Elder by the fire",
+   "file": "panel-opening-elder.png",
+   "also": [
+    "panel-opening-elder-1024x576.png",
+    "panel-opening-elder-480x270.png"
+   ],
+   "set": "opening (2026-10-15)",
+   "checks": {
+    "colours": 125,
+    "offPalette": 0,
+    "nonGridPixelsAreEdgeRingOnly": true,
+    "calmBandStd": 14.0,
+    "upperStd": 23.2,
+    "objectPxBelowY396InBox": 0,
+    "sizes": {
+     "1024x576": [
+      1024,
+      576
+     ],
+     "960x540": [
+      960,
+      540
+     ],
+     "480x270": [
+      480,
+      270
+     ]
+    }
    }
   }
  ],

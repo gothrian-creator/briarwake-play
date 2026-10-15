@@ -177,6 +177,182 @@
     }
    ]
   },
+  "foe-boar": {
+   "group": "foes",
+   "file": "foe-boar.png",
+   "key": "cl16-boar",
+   "frame": [
+    40,
+    24
+   ],
+   "cols": 4,
+   "count": 20,
+   "origin": [
+    0.5,
+    0.9583333333333334
+   ],
+   "scale": 2,
+   "groundRow": 22,
+   "about": "the camp-level boar (top-down 3/4, faces right, flipX for left); fur / shell ramps as the den boar",
+   "anims": [
+    {
+     "name": "walk",
+     "row": 0,
+     "frames": 4,
+     "fps": 8,
+     "loop": true,
+     "key": "cl16-boar:walk",
+     "frameList": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "name": "snarl",
+     "row": 1,
+     "frames": 3,
+     "fps": 9,
+     "loop": true,
+     "telegraph": true,
+     "key": "cl16-boar:snarl",
+     "frameList": [
+      4,
+      5,
+      6
+     ]
+    },
+    {
+     "name": "lunge",
+     "row": 2,
+     "frames": 3,
+     "fps": 10,
+     "loop": false,
+     "impactFrame": 1,
+     "key": "cl16-boar:lunge",
+     "frameList": [
+      8,
+      9,
+      10
+     ]
+    },
+    {
+     "name": "shoved",
+     "row": 3,
+     "frames": 2,
+     "fps": 6,
+     "loop": false,
+     "key": "cl16-boar:shoved",
+     "frameList": [
+      12,
+      13
+     ]
+    },
+    {
+     "name": "flee",
+     "row": 4,
+     "frames": 4,
+     "fps": 11,
+     "loop": true,
+     "key": "cl16-boar:flee",
+     "frameList": [
+      16,
+      17,
+      18,
+      19
+     ]
+    }
+   ]
+  },
+  "foe-briarCrawler": {
+   "group": "foes",
+   "file": "foe-briarCrawler.png",
+   "key": "cl16-briarCrawler",
+   "frame": [
+    40,
+    24
+   ],
+   "cols": 4,
+   "count": 20,
+   "origin": [
+    0.5,
+    0.9583333333333334
+   ],
+   "scale": 2,
+   "groundRow": 22,
+   "about": "the camp-level briarCrawler (top-down 3/4, faces right, flipX for left); fur / shell ramps as the den briarCrawler",
+   "anims": [
+    {
+     "name": "walk",
+     "row": 0,
+     "frames": 4,
+     "fps": 8,
+     "loop": true,
+     "key": "cl16-briarCrawler:walk",
+     "frameList": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "name": "snarl",
+     "row": 1,
+     "frames": 3,
+     "fps": 9,
+     "loop": true,
+     "telegraph": true,
+     "key": "cl16-briarCrawler:snarl",
+     "frameList": [
+      4,
+      5,
+      6
+     ]
+    },
+    {
+     "name": "lunge",
+     "row": 2,
+     "frames": 3,
+     "fps": 10,
+     "loop": false,
+     "impactFrame": 1,
+     "key": "cl16-briarCrawler:lunge",
+     "frameList": [
+      8,
+      9,
+      10
+     ]
+    },
+    {
+     "name": "shoved",
+     "row": 3,
+     "frames": 2,
+     "fps": 6,
+     "loop": false,
+     "key": "cl16-briarCrawler:shoved",
+     "frameList": [
+      12,
+      13
+     ]
+    },
+    {
+     "name": "flee",
+     "row": 4,
+     "frames": 4,
+     "fps": 11,
+     "loop": true,
+     "key": "cl16-briarCrawler:flee",
+     "frameList": [
+      16,
+      17,
+      18,
+      19
+     ]
+    }
+   ]
+  },
   "warn": {
    "group": "foes",
    "file": "warn.png",
@@ -254,6 +430,46 @@
    "about": "the red windup outline around the crawler: frame for frame with the crawler, drawn just behind it so only the glow outside its body shows",
    "anims": [],
    "frameOf": "the crawler's own frame (same index, same flipX)"
+  },
+  "halo-boar": {
+   "group": "foes",
+   "file": "halo-boar.png",
+   "key": "cl16-boar-halo",
+   "frame": [
+    40,
+    24
+   ],
+   "cols": 4,
+   "count": 20,
+   "origin": [
+    0.5,
+    0.9583333333333334
+   ],
+   "scale": 2,
+   "groundRow": null,
+   "about": "the red windup outline around the boar: frame for frame with the boar, drawn just behind it so only the glow outside its body shows",
+   "anims": [],
+   "frameOf": "the boar's own frame (same index, same flipX)"
+  },
+  "halo-briarCrawler": {
+   "group": "foes",
+   "file": "halo-briarCrawler.png",
+   "key": "cl16-briarCrawler-halo",
+   "frame": [
+    40,
+    24
+   ],
+   "cols": 4,
+   "count": 20,
+   "origin": [
+    0.5,
+    0.9583333333333334
+   ],
+   "scale": 2,
+   "groundRow": null,
+   "about": "the red windup outline around the briarCrawler: frame for frame with the briarCrawler, drawn just behind it so only the glow outside its body shows",
+   "anims": [],
+   "frameOf": "the briarCrawler's own frame (same index, same flipX)"
   },
   "tree-sapwake": {
    "group": "targets",
@@ -741,6 +957,62 @@
     "set0",
     "set1"
    ]
+  },
+  "snare": {
+   "group": "props",
+   "file": "snare.png",
+   "key": "cl16-snare",
+   "frame": [
+    18,
+    30
+   ],
+   "cols": 3,
+   "count": 3,
+   "origin": [
+    0.4722222222222222,
+    0.9666666666666667
+   ],
+   "scale": 2,
+   "groundRow": 28,
+   "about": "the hunting ground's snare (theme.post, same layout as the post): unset (peg and coiled cord by a chalked spot), set (a hazel spring pole over a driven peg, the noose swaying)",
+   "anims": [
+    {
+     "name": "flag",
+     "row": 0,
+     "frames": 2,
+     "fps": 3,
+     "loop": true,
+     "key": "cl16-snare:flag",
+     "frameList": [
+      1,
+      2
+     ]
+    }
+   ],
+   "frames": [
+    "unset",
+    "set0",
+    "set1"
+   ]
+  },
+  "mast": {
+   "group": "ground",
+   "file": "mast.png",
+   "key": "cl16-mast",
+   "frame": [
+    16,
+    16
+   ],
+   "cols": 6,
+   "count": 6,
+   "origin": [
+    0,
+    0
+   ],
+   "scale": 2,
+   "groundRow": null,
+   "about": "the hunting ground's floor (theme.tiles): beech mast and copper leaf litter on dark soil, 6 variants of a 16x16 tile at x2",
+   "anims": []
   },
   "ring": {
    "group": "props",
