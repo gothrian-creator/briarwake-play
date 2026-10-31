@@ -1,0 +1,238 @@
+{
+ "frameWidth": 128,
+ "frameHeight": 128,
+ "desc": "one sheet per effect, frames in one row; draw at the attach point (origin = frame px of the effect centre / ground point), unscaled or with the sprite scale. Alpha 0/255.",
+ "effects": {
+  "slash": {
+   "file": "fx/fx-slash.png",
+   "frames": 5,
+   "fps": 18,
+   "attach": "hitPoint",
+   "origin": [
+    64,
+    64
+   ],
+   "batch": "combat"
+  },
+  "bite": {
+   "file": "fx/fx-bite.png",
+   "frames": 5,
+   "fps": 16,
+   "attach": "hitPoint",
+   "origin": [
+    64,
+    64
+   ],
+   "batch": "combat"
+  },
+  "lunge": {
+   "file": "fx/fx-lunge.png",
+   "frames": 6,
+   "fps": 16,
+   "attach": "hitPoint",
+   "origin": [
+    64,
+    64
+   ],
+   "batch": "combat"
+  },
+  "crack": {
+   "file": "fx/fx-crack.png",
+   "frames": 6,
+   "fps": 14,
+   "attach": "hitPoint",
+   "origin": [
+    64,
+    64
+   ],
+   "batch": "combat"
+  },
+  "cleave": {
+   "file": "fx/fx-cleave.png",
+   "frames": 6,
+   "fps": 16,
+   "attach": "hitPoint",
+   "origin": [
+    64,
+    64
+   ],
+   "batch": "combat"
+  },
+  "pin": {
+   "file": "fx/fx-pin.png",
+   "frames": 5,
+   "fps": 14,
+   "attach": "hitPoint",
+   "origin": [
+    64,
+    64
+   ],
+   "batch": "combat"
+  },
+  "guard": {
+   "file": "fx/fx-guard.png",
+   "frames": 4,
+   "fps": 14,
+   "attach": "hitPoint",
+   "origin": [
+    64,
+    64
+   ],
+   "batch": "combat"
+  },
+  "bandage": {
+   "file": "fx/fx-bandage.png",
+   "frames": 6,
+   "fps": 10,
+   "attach": "hitPoint",
+   "origin": [
+    64,
+    64
+   ],
+   "batch": "items"
+  },
+  "oil": {
+   "file": "fx/fx-oil.png",
+   "frames": 7,
+   "fps": 12,
+   "attach": "hitPoint",
+   "origin": [
+    64,
+    64
+   ],
+   "batch": "items"
+  },
+  "rope": {
+   "file": "fx/fx-rope.png",
+   "frames": 6,
+   "fps": 10,
+   "attach": "hitPoint",
+   "origin": [
+    64,
+    64
+   ],
+   "batch": "items"
+  },
+  "shieldwall": {
+   "file": "fx/fx-shieldwall.png",
+   "frames": 7,
+   "fps": 10,
+   "attach": "hitPoint",
+   "origin": [
+    64,
+    64
+   ],
+   "batch": "abilities"
+  },
+  "mark": {
+   "file": "fx/fx-mark.png",
+   "frames": 6,
+   "fps": 10,
+   "attach": "hitPoint",
+   "origin": [
+    64,
+    64
+   ],
+   "batch": "abilities"
+  },
+  "rally": {
+   "file": "fx/fx-rally.png",
+   "frames": 7,
+   "fps": 10,
+   "attach": "hitPoint",
+   "origin": [
+    64,
+    64
+   ],
+   "batch": "abilities"
+  },
+  "flare": {
+   "file": "fx/fx-flare.png",
+   "frames": 7,
+   "fps": 12,
+   "attach": "strikePoint",
+   "origin": [
+    64,
+    64
+   ],
+   "batch": "abilities"
+  },
+  "ward": {
+   "file": "fx/fx-ward.png",
+   "frames": 8,
+   "fps": 10,
+   "attach": "hitPoint",
+   "origin": [
+    64,
+    64
+   ],
+   "batch": "cast"
+  },
+  "steadying": {
+   "file": "fx/fx-steadying.png",
+   "frames": 8,
+   "fps": 10,
+   "attach": "hitPoint",
+   "origin": [
+    64,
+    64
+   ],
+   "batch": "cast"
+  },
+  "blade": {
+   "file": "fx/fx-blade.png",
+   "frames": 6,
+   "fps": 12,
+   "attach": "strikePoint",
+   "origin": [
+    64,
+    64
+   ],
+   "batch": "cast"
+  },
+  "hearth": {
+   "file": "fx/fx-hearth.png",
+   "frames": 8,
+   "fps": 8,
+   "attach": "hitPoint",
+   "origin": [
+    64,
+    64
+   ],
+   "batch": "cast"
+  },
+  "lamplight": {
+   "file": "fx/fx-lamplight.png",
+   "frames": 8,
+   "fps": 8,
+   "attach": "hitPoint",
+   "origin": [
+    64,
+    64
+   ],
+   "batch": "cast"
+  },
+  "price": {
+   "file": "fx/fx-price.png",
+   "frames": 6,
+   "fps": 8,
+   "attach": "hitPoint",
+   "origin": [
+    64,
+    64
+   ],
+   "batch": "cast"
+  },
+  "rootbind": {
+   "file": "fx/fx-rootbind.png",
+   "frames": 9,
+   "fps": 10,
+   "attach": "feet",
+   "origin": [
+    64,
+    120
+   ],
+   "batch": "roots"
+  }
+ }
+}
