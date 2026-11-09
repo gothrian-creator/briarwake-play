@@ -1,0 +1,346 @@
+{
+ "swordsmen": {
+  "file": "brigand-swordsmen-front-delve.png",
+  "frameWidth": 156,
+  "frameHeight": 174,
+  "columns": 4,
+  "size": [
+   624,
+   870
+  ],
+  "rows": [
+   {
+    "name": "windup_shove",
+    "row": 0,
+    "frames": 3,
+    "startFrame": 0,
+    "endFrame": 2,
+    "fps": 10,
+    "loop": false,
+    "offsetX": [
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "name": "attack_shove",
+    "row": 1,
+    "frames": 4,
+    "startFrame": 4,
+    "endFrame": 7,
+    "fps": 14,
+    "loop": false,
+    "offsetX": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "name": "recover_shove",
+    "row": 2,
+    "frames": 2,
+    "startFrame": 8,
+    "endFrame": 9,
+    "fps": 10,
+    "loop": false,
+    "offsetX": [
+     0,
+     0
+    ]
+   },
+   {
+    "name": "dodge",
+    "row": 3,
+    "frames": 3,
+    "startFrame": 12,
+    "endFrame": 14,
+    "fps": 12,
+    "loop": false,
+    "offsetX": [
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "name": "block",
+    "row": 4,
+    "frames": 3,
+    "startFrame": 16,
+    "endFrame": 18,
+    "fps": 12,
+    "loop": false,
+    "offsetX": [
+     0,
+     0,
+     0
+    ]
+   }
+  ],
+  "extends": "P1-swordsmen/swordsmen-front.png",
+  "tint": "0x9c8c78",
+  "paletteFrom": "P1-swordsmen/swordsmen-front.png",
+  "note": "add-on rows for the existing front sheet (same grid and anchor); idle/attack/hit/death come from it"
+ },
+ "archers": {
+  "file": "brigand-archers-front-delve.png",
+  "frameWidth": 156,
+  "frameHeight": 174,
+  "columns": 4,
+  "size": [
+   624,
+   870
+  ],
+  "rows": [
+   {
+    "name": "windup_shove",
+    "row": 0,
+    "frames": 3,
+    "startFrame": 0,
+    "endFrame": 2,
+    "fps": 10,
+    "loop": false,
+    "offsetX": [
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "name": "attack_shove",
+    "row": 1,
+    "frames": 4,
+    "startFrame": 4,
+    "endFrame": 7,
+    "fps": 14,
+    "loop": false,
+    "offsetX": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "name": "recover_shove",
+    "row": 2,
+    "frames": 2,
+    "startFrame": 8,
+    "endFrame": 9,
+    "fps": 10,
+    "loop": false,
+    "offsetX": [
+     0,
+     0
+    ]
+   },
+   {
+    "name": "dodge",
+    "row": 3,
+    "frames": 3,
+    "startFrame": 12,
+    "endFrame": 14,
+    "fps": 12,
+    "loop": false,
+    "offsetX": [
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "name": "block",
+    "row": 4,
+    "frames": 3,
+    "startFrame": 16,
+    "endFrame": 18,
+    "fps": 12,
+    "loop": false,
+    "offsetX": [
+     0,
+     0,
+     0
+    ]
+   }
+  ],
+  "extends": "P1-archers/archers-front.png",
+  "tint": "0xc8b49c",
+  "paletteFrom": "P1-archers/archers-front.png",
+  "note": "add-on rows for the existing front sheet (same grid and anchor); idle/attack/hit/death come from it"
+ },
+ "militia": {
+  "file": "brigand-militia-front-delve.png",
+  "frameWidth": 156,
+  "frameHeight": 174,
+  "columns": 4,
+  "size": [
+   624,
+   870
+  ],
+  "rows": [
+   {
+    "name": "windup_shove",
+    "row": 0,
+    "frames": 3,
+    "startFrame": 0,
+    "endFrame": 2,
+    "fps": 10,
+    "loop": false,
+    "offsetX": [
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "name": "attack_shove",
+    "row": 1,
+    "frames": 4,
+    "startFrame": 4,
+    "endFrame": 7,
+    "fps": 14,
+    "loop": false,
+    "offsetX": [
+     -2,
+     -2,
+     -2,
+     -2
+    ]
+   },
+   {
+    "name": "recover_shove",
+    "row": 2,
+    "frames": 2,
+    "startFrame": 8,
+    "endFrame": 9,
+    "fps": 10,
+    "loop": false,
+    "offsetX": [
+     0,
+     0
+    ]
+   },
+   {
+    "name": "dodge",
+    "row": 3,
+    "frames": 3,
+    "startFrame": 12,
+    "endFrame": 14,
+    "fps": 12,
+    "loop": false,
+    "offsetX": [
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "name": "block",
+    "row": 4,
+    "frames": 3,
+    "startFrame": 16,
+    "endFrame": 18,
+    "fps": 12,
+    "loop": false,
+    "offsetX": [
+     0,
+     0,
+     0
+    ]
+   }
+  ],
+  "extends": "P1-militia/militia-front.png",
+  "tint": "0xb89c80",
+  "paletteFrom": "P1-militia/militia-front.png",
+  "note": "add-on rows for the existing front sheet (same grid and anchor); idle/attack/hit/death come from it"
+ },
+ "brigand-chief": {
+  "file": "brigand-brigand-chief-front-delve.png",
+  "frameWidth": 208,
+  "frameHeight": 188,
+  "columns": 4,
+  "size": [
+   832,
+   940
+  ],
+  "rows": [
+   {
+    "name": "windup_shove",
+    "row": 0,
+    "frames": 3,
+    "startFrame": 0,
+    "endFrame": 2,
+    "fps": 10,
+    "loop": false,
+    "offsetX": [
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "name": "attack_shove",
+    "row": 1,
+    "frames": 4,
+    "startFrame": 4,
+    "endFrame": 7,
+    "fps": 14,
+    "loop": false,
+    "offsetX": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "name": "recover_shove",
+    "row": 2,
+    "frames": 2,
+    "startFrame": 8,
+    "endFrame": 9,
+    "fps": 10,
+    "loop": false,
+    "offsetX": [
+     0,
+     0
+    ]
+   },
+   {
+    "name": "dodge",
+    "row": 3,
+    "frames": 3,
+    "startFrame": 12,
+    "endFrame": 14,
+    "fps": 12,
+    "loop": false,
+    "offsetX": [
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "name": "block",
+    "row": 4,
+    "frames": 3,
+    "startFrame": 16,
+    "endFrame": 18,
+    "fps": 12,
+    "loop": false,
+    "offsetX": [
+     0,
+     0,
+     0
+    ]
+   }
+  ],
+  "extends": "P2-brigand-chief/brigand-chief-front.png",
+  "tint": null,
+  "paletteFrom": "P2-brigand-chief/brigand-chief-front.png",
+  "note": "add-on rows for the existing front sheet (same grid and anchor); idle/attack/hit/death come from it"
+ }
+}
