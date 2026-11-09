@@ -1,0 +1,22 @@
+{
+ "key": "pt16-maud",
+ "file": "pt16-maud.png",
+ "frameWidth": 48,
+ "frameHeight": 48,
+ "frames": [
+  "rest",
+  "speak",
+  "smile"
+ ],
+ "look": {
+  "hair": "grey",
+  "kerchief": "ochre",
+  "shawl": "green",
+  "dress": "brown",
+  "skin": "skin",
+  "eyes": "grey",
+  "beads": "wood"
+ },
+ "opaque": true,
+ "use": "storycard portrait: { key: 'pt16-maud', frame: 0|1|2, scale: 2 }; ensureMaud16(scene) paints the same frames at runtime"
+}
